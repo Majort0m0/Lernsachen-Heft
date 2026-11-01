@@ -29,6 +29,8 @@ Lernsachen-Heft setzt keine Cookies und verwendet keine Analyse-, Statistik- ode
 
 Nur wenn du im Bild-Dialog **selbst** suchst oder ein Ergebnis übernimmst, verbindet sich dein Browser direkt mit dem Dienst: **ARASAAC** (Regierung von Aragón, Spanien; [Datenschutz](https://arasaac.org/privacy-policy)) oder **Wikimedia Commons** (Wikimedia Foundation, USA; [Datenschutz](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/de)). Dabei werden deine IP-Adresse, der Suchbegriff und übliche technische Angaben des Browsers übermittelt. Gib deshalb keine Namen oder andere persönliche Daten als Suchbegriff ein. Fügst du eine Bildadresse ein, lädt dein Browser das Bild von dieser Webseite.
 
+Die ARASAAC-Piktogramme der Vorlagen „Buchstaben üben“, „Ziffern üben“ und „Rechnen mit Geld“ sind in Lernsachen-Heft enthalten – dafür geht nichts ins Internet.
+
 ## 5. Videos, Webseiten und Links
 
 Fügst du die Adresse eines Videos von **YouTube** oder **Vimeo** ein, holt dein Browser einmal den Titel und das Vorschaubild vom Anbieter (YouTube: Google Ireland Limited, [Datenschutz](https://policies.google.com/privacy?hl=de); Vimeo: Vimeo.com, Inc., USA, [Datenschutz](https://vimeo.com/privacy)). Das Vorschaubild wird im Heft gespeichert. Erst wenn jemand auf ▶ tippt, lädt der Browser den Player des Anbieters – bei YouTube über youtube-nocookie.com, bei Vimeo mit „Do Not Track“. Dabei werden die IP-Adresse und übliche technische Angaben des Browsers an den Anbieter übermittelt; der Anbieter kann außerdem eigene Daten speichern.
