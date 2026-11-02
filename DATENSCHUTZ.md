@@ -7,7 +7,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 - Lernsachen-Heft hat keinen Server. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
-- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest.
+- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt, das Wetter im Element „Datum“ zeigst oder eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest.
 
 ## 1. Alles läuft lokal
 
@@ -17,9 +17,9 @@ Rufst du Lernsachen-Heft von einer Webseite aus auf (z. B. über GitHub Pages), 
 
 ## 2. Speicherung auf deinem Gerät
 
-Damit nichts verloren geht, speichert Lernsachen-Heft deine Hefte – und deine eigenen Designs und Vorlagen und die Reihenfolge von Heften, Kategorien und Vorlagen – automatisch im Speicher deines Browsers (IndexedDB), nur auf diesem Gerät, nur in diesem Browser. Eine Sicherung (Seite → Einstellungen) ist eine Datei, die nur auf deinem Gerät entsteht. Du löschst ein Heft unter „Meine Hefte“ über das Menü des Hefts, alle Daten löschst du über die Website-Daten deines Browsers. Die Einstellungen des Stifts (Farbe, Dicke, „Nur Stift“) und der Arbeitsblätter (Mathe, Uhrzeiten, Buchstaben) und die zuletzt benutzten Vorlagen merkt sich der Browser im lokalen Speicher (localStorage); dort stehen keine Inhalte.
+Damit nichts verloren geht, speichert Lernsachen-Heft deine Hefte – und deine eigenen Designs, Vorlagen und Regal-Elemente („Persönlich“) und die Reihenfolge von Heften, Kategorien und Vorlagen – automatisch im Speicher deines Browsers (IndexedDB), nur auf diesem Gerät, nur in diesem Browser. Eine Sicherung (Seite → Einstellungen) ist eine Datei, die nur auf deinem Gerät entsteht. Du löschst ein Heft unter „Meine Hefte“ über das Menü des Hefts, alle Daten löschst du über die Website-Daten deines Browsers. Die Einstellungen des Stifts (Farbe, Dicke, „Nur Stift“) und der Arbeitsblätter (Mathe, Uhrzeiten, Buchstaben), die zuletzt benutzten Vorlagen und der zuletzt gewählte Ort für das Wetter (mit dem zuletzt geladenen Wetter) merkt sich der Browser im lokalen Speicher (localStorage); dort stehen keine Inhalte.
 
-Dateien (Heft zum Ansehen, Heft zum Weiterarbeiten, PDF, ePub) entstehen ebenfalls nur auf deinem Gerät. Wohin du sie speicherst oder schickst, entscheidest du.
+Dateien (Heft zum Ansehen, Heft zum Weiterarbeiten, PDF, ePub, SCORM-Paket) entstehen ebenfalls nur auf deinem Gerät. Wohin du sie speicherst oder schickst, entscheidest du. Ein SCORM-Paket, das du in ein Lernsystem wie Moodle oder mebis hochlädst, übermittelt diesem beim Bearbeiten die aktuelle Seite, den Bearbeitungsstand der Übungen (z. B. eingegebene Antworten) und die Punkte – es gelten die Datenschutzregeln des Lernsystems und deiner Schule.
 
 ## 3. Keine Cookies, kein Tracking
 
@@ -29,7 +29,7 @@ Lernsachen-Heft setzt keine Cookies und verwendet keine Analyse-, Statistik- ode
 
 Nur wenn du im Bild-Dialog **selbst** suchst oder ein Ergebnis übernimmst, verbindet sich dein Browser direkt mit dem Dienst: **ARASAAC** (Regierung von Aragón, Spanien; [Datenschutz](https://arasaac.org/privacy-policy)) oder **Wikimedia Commons** (Wikimedia Foundation, USA; [Datenschutz](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/de)). Dabei werden deine IP-Adresse, der Suchbegriff und übliche technische Angaben des Browsers übermittelt. Gib deshalb keine Namen oder andere persönliche Daten als Suchbegriff ein. Fügst du eine Bildadresse ein, lädt dein Browser das Bild von dieser Webseite.
 
-Die ARASAAC-Piktogramme der Vorlagen „Buchstaben üben“, „Ziffern üben“ und „Rechnen mit Geld“ sind in Lernsachen-Heft enthalten – dafür geht nichts ins Internet.
+Die ARASAAC-Piktogramme der Vorlagen „Buchstaben üben“, „Ziffern üben“, „Rechnen mit Geld“ und der fertigen Kommunikationstafeln sind in Lernsachen-Heft enthalten – dafür geht nichts ins Internet.
 
 ## 5. Videos, Webseiten, Links und interaktive Übungen
 
@@ -38,6 +38,8 @@ Fügst du die Adresse eines Videos von **YouTube** oder **Vimeo** ein, holt dein
 Bei Videos des **ZDF** (auch logo!) lädt der Browser den Player des ZDF (ngp.zdf.de) – im Dialog schon beim Einfügen als Vorschau, im Heft erst beim Antippen von ▶ (ZDF, Mainz, [Datenschutz](https://www.zdf.de/datenschutz)). Auch dabei werden die IP-Adresse und übliche technische Angaben übermittelt.
 
 Eine eingebettete Webseite lädt der Browser direkt von dieser Webseite, sobald die Seite des Hefts angezeigt wird. Links öffnen die Webseite erst beim Antippen. Es gelten jeweils die Datenschutzerklärungen dieser Webseiten. Bette deshalb nur Webseiten ein, denen du vertraust.
+
+Das Element **Datum** (Regal, „Zeit & Kalender“) kann das Wetter eines Orts zeigen. Dafür schickt dein Browser beim Einfügen den gesuchten Ortsnamen (oder die Postleitzahl) an die Ortssuche von **Open-Meteo** und danach, solange eine Seite mit dem Datum gezeigt wird, etwa alle 30 Minuten die Koordinaten des Orts an den Wetterdienst von Open-Meteo ([Bedingungen und Datenschutz](https://open-meteo.com/en/terms)); dabei werden die IP-Adresse und übliche technische Angaben übermittelt. Daten über dich oder die Kinder gehen nicht mit. Ohne Ort oder ohne Internet zeigt das Datum kein Wetter. Uhr und Timer brauchen kein Internet.
 
 Ein **Quiz** (Vorlage „Quiz“) entsteht mit Quizsachen, eine **Zuordnung** (Vorlage „Zuordnungen“) mit Schiebesachen, eine Aufgabe zum **Lesen & Schreiben** mit Textsachen. Mit „… erstellen“ oder „Bearbeiten“ öffnet Lernsachen-Heft die App direkt im Heft; dein Browser lädt sie dabei von GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)), wobei die IP-Adresse und übliche technische Angaben übermittelt werden. Bis die Übung im Heft ist, speichert die App einen Entwurf in deinem Browser; die Übung selbst gibt sie nur an das Heft in deinem Browser weiter. Für Quizsachen, Schiebesachen und Textsachen gelten deren eigene Datenschutzhinweise. Eine Übung kannst du auch als Datei einfügen. Im Heft stehen nur die Übungsdaten; gespielt wird mit den Playern, die in Lernsachen-Heft enthalten sind – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert.
 
