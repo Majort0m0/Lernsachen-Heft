@@ -7,7 +7,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 - Lernsachen-Heft hat keinen Server. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
-- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder Quizsachen öffnest.
+- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder ein Quiz mit Quizsachen erstellst oder bearbeitest.
 
 ## 1. Alles läuft lokal
 
@@ -39,7 +39,7 @@ Bei Videos des **ZDF** (auch logo!) lädt der Browser den Player des ZDF (ngp.zd
 
 Eine eingebettete Webseite lädt der Browser direkt von dieser Webseite, sobald die Seite des Hefts angezeigt wird. Links öffnen die Webseite erst beim Antippen. Es gelten jeweils die Datenschutzerklärungen dieser Webseiten. Bette deshalb nur Webseiten ein, denen du vertraust.
 
-Ein **Quiz** (Vorlage „Quiz“) übernimmt Lernsachen-Heft aus einer Datei, die du mit Quizsachen erstellt hast. Im Heft stehen nur die Quizdaten; gespielt wird mit dem Quiz-Player, der in Lernsachen-Heft enthalten ist – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert. Der Link „Quizsachen öffnen“ öffnet Quizsachen in einem neuen Tab. Quizsachen liegt auf GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)); dabei werden die IP-Adresse und übliche technische Angaben übermittelt. Für Quizsachen gelten dessen eigene Datenschutzhinweise.
+Ein **Quiz** (Vorlage „Quiz“) entsteht mit Quizsachen. Mit „Quiz erstellen“ oder „Bearbeiten“ öffnet Lernsachen-Heft Quizsachen direkt im Heft; dein Browser lädt es dabei von GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)), wobei die IP-Adresse und übliche technische Angaben übermittelt werden. Bis das Quiz im Heft ist, speichert Quizsachen einen Entwurf in deinem Browser; das Quiz selbst gibt es nur an das Heft in deinem Browser weiter. Für Quizsachen gelten dessen eigene Datenschutzhinweise. Ein Quiz kannst du auch als Datei einfügen. Im Heft stehen nur die Quizdaten; gespielt wird mit dem Quiz-Player, der in Lernsachen-Heft enthalten ist – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert.
 
 ## 6. Kamera und Mikrofon
 
