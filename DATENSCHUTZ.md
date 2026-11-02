@@ -7,7 +7,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 - Lernsachen-Heft hat keinen Server. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
-- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder ein Quiz mit Quizsachen erstellst oder bearbeitest.
+- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder eine Übung mit Quizsachen oder Schiebesachen erstellst oder bearbeitest.
 
 ## 1. Alles läuft lokal
 
@@ -31,7 +31,7 @@ Nur wenn du im Bild-Dialog **selbst** suchst oder ein Ergebnis übernimmst, verb
 
 Die ARASAAC-Piktogramme der Vorlagen „Buchstaben üben“, „Ziffern üben“ und „Rechnen mit Geld“ sind in Lernsachen-Heft enthalten – dafür geht nichts ins Internet.
 
-## 5. Videos, Webseiten, Links und Quizze
+## 5. Videos, Webseiten, Links und interaktive Übungen
 
 Fügst du die Adresse eines Videos von **YouTube** oder **Vimeo** ein, holt dein Browser einmal den Titel und das Vorschaubild vom Anbieter (YouTube: Google Ireland Limited, [Datenschutz](https://policies.google.com/privacy?hl=de); Vimeo: Vimeo.com, Inc., USA, [Datenschutz](https://vimeo.com/privacy)). Das Vorschaubild wird im Heft gespeichert. Erst wenn jemand auf ▶ tippt, lädt der Browser den Player des Anbieters – bei YouTube über youtube-nocookie.com, bei Vimeo mit „Do Not Track“. Dabei werden die IP-Adresse und übliche technische Angaben des Browsers an den Anbieter übermittelt; der Anbieter kann außerdem eigene Daten speichern.
 
@@ -39,7 +39,7 @@ Bei Videos des **ZDF** (auch logo!) lädt der Browser den Player des ZDF (ngp.zd
 
 Eine eingebettete Webseite lädt der Browser direkt von dieser Webseite, sobald die Seite des Hefts angezeigt wird. Links öffnen die Webseite erst beim Antippen. Es gelten jeweils die Datenschutzerklärungen dieser Webseiten. Bette deshalb nur Webseiten ein, denen du vertraust.
 
-Ein **Quiz** (Vorlage „Quiz“) entsteht mit Quizsachen. Mit „Quiz erstellen“ oder „Bearbeiten“ öffnet Lernsachen-Heft Quizsachen direkt im Heft; dein Browser lädt es dabei von GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)), wobei die IP-Adresse und übliche technische Angaben übermittelt werden. Bis das Quiz im Heft ist, speichert Quizsachen einen Entwurf in deinem Browser; das Quiz selbst gibt es nur an das Heft in deinem Browser weiter. Für Quizsachen gelten dessen eigene Datenschutzhinweise. Ein Quiz kannst du auch als Datei einfügen. Im Heft stehen nur die Quizdaten; gespielt wird mit dem Quiz-Player, der in Lernsachen-Heft enthalten ist – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert.
+Ein **Quiz** (Vorlage „Quiz“) entsteht mit Quizsachen, eine **Zuordnung** (Vorlage „Zuordnungen“) mit Schiebesachen. Mit „… erstellen“ oder „Bearbeiten“ öffnet Lernsachen-Heft die App direkt im Heft; dein Browser lädt sie dabei von GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)), wobei die IP-Adresse und übliche technische Angaben übermittelt werden. Bis die Übung im Heft ist, speichert die App einen Entwurf in deinem Browser; die Übung selbst gibt sie nur an das Heft in deinem Browser weiter. Für Quizsachen und Schiebesachen gelten deren eigene Datenschutzhinweise. Eine Übung kannst du auch als Datei einfügen. Im Heft stehen nur die Übungsdaten; gespielt wird mit den Playern, die in Lernsachen-Heft enthalten sind – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert.
 
 ## 6. Kamera und Mikrofon
 
