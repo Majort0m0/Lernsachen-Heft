@@ -17,7 +17,7 @@ Rufst du Lernsachen-Heft von einer Webseite aus auf (z. B. über GitHub Pages), 
 
 ## 2. Speicherung auf deinem Gerät
 
-Damit nichts verloren geht, speichert Lernsachen-Heft deine Hefte – und deine eigenen Designs und Vorlagen und die Reihenfolge von Heften, Kategorien und Vorlagen – automatisch im Speicher deines Browsers (IndexedDB), nur auf diesem Gerät, nur in diesem Browser. Eine Sicherung (Seite → Einstellungen) ist eine Datei, die nur auf deinem Gerät entsteht. Du löschst ein Heft unter „Meine Hefte“ über das Menü des Hefts, alle Daten löschst du über die Website-Daten deines Browsers. Die Einstellungen des Stifts (Farbe, Dicke, „Nur Stift“) und der Arbeitsblätter (Mathe, Uhrzeiten, Buchstaben) merkt sich der Browser im lokalen Speicher (localStorage); dort stehen keine Inhalte.
+Damit nichts verloren geht, speichert Lernsachen-Heft deine Hefte – und deine eigenen Designs und Vorlagen und die Reihenfolge von Heften, Kategorien und Vorlagen – automatisch im Speicher deines Browsers (IndexedDB), nur auf diesem Gerät, nur in diesem Browser. Eine Sicherung (Seite → Einstellungen) ist eine Datei, die nur auf deinem Gerät entsteht. Du löschst ein Heft unter „Meine Hefte“ über das Menü des Hefts, alle Daten löschst du über die Website-Daten deines Browsers. Die Einstellungen des Stifts (Farbe, Dicke, „Nur Stift“) und der Arbeitsblätter (Mathe, Uhrzeiten, Buchstaben) und die zuletzt benutzten Vorlagen merkt sich der Browser im lokalen Speicher (localStorage); dort stehen keine Inhalte.
 
 Dateien (Heft zum Ansehen, Heft zum Weiterarbeiten, PDF, ePub) entstehen ebenfalls nur auf deinem Gerät. Wohin du sie speicherst oder schickst, entscheidest du.
 
