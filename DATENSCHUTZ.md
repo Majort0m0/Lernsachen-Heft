@@ -7,7 +7,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 - Lernsachen-Heft hat keinen Server. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
-- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder eine Übung mit Quizsachen oder Schiebesachen erstellst oder bearbeitest.
+- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt oder eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest.
 
 ## 1. Alles läuft lokal
 
@@ -39,7 +39,7 @@ Bei Videos des **ZDF** (auch logo!) lädt der Browser den Player des ZDF (ngp.zd
 
 Eine eingebettete Webseite lädt der Browser direkt von dieser Webseite, sobald die Seite des Hefts angezeigt wird. Links öffnen die Webseite erst beim Antippen. Es gelten jeweils die Datenschutzerklärungen dieser Webseiten. Bette deshalb nur Webseiten ein, denen du vertraust.
 
-Ein **Quiz** (Vorlage „Quiz“) entsteht mit Quizsachen, eine **Zuordnung** (Vorlage „Zuordnungen“) mit Schiebesachen. Mit „… erstellen“ oder „Bearbeiten“ öffnet Lernsachen-Heft die App direkt im Heft; dein Browser lädt sie dabei von GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)), wobei die IP-Adresse und übliche technische Angaben übermittelt werden. Bis die Übung im Heft ist, speichert die App einen Entwurf in deinem Browser; die Übung selbst gibt sie nur an das Heft in deinem Browser weiter. Für Quizsachen und Schiebesachen gelten deren eigene Datenschutzhinweise. Eine Übung kannst du auch als Datei einfügen. Im Heft stehen nur die Übungsdaten; gespielt wird mit den Playern, die in Lernsachen-Heft enthalten sind – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert.
+Ein **Quiz** (Vorlage „Quiz“) entsteht mit Quizsachen, eine **Zuordnung** (Vorlage „Zuordnungen“) mit Schiebesachen, eine Aufgabe zum **Lesen & Schreiben** mit Textsachen. Mit „… erstellen“ oder „Bearbeiten“ öffnet Lernsachen-Heft die App direkt im Heft; dein Browser lädt sie dabei von GitHub Pages (GitHub Inc., USA, [Datenschutz](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)), wobei die IP-Adresse und übliche technische Angaben übermittelt werden. Bis die Übung im Heft ist, speichert die App einen Entwurf in deinem Browser; die Übung selbst gibt sie nur an das Heft in deinem Browser weiter. Für Quizsachen, Schiebesachen und Textsachen gelten deren eigene Datenschutzhinweise. Eine Übung kannst du auch als Datei einfügen. Im Heft stehen nur die Übungsdaten; gespielt wird mit den Playern, die in Lernsachen-Heft enthalten sind – dafür geht nichts ins Internet, und die Antworten werden nicht gespeichert.
 
 ## 6. Kamera und Mikrofon
 
