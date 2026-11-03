@@ -7,7 +7,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 - Lernsachen-Heft hat keinen Server. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
-- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt, das Wetter im Element „Datum“ zeigst oder eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest.
+- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt, das Wetter im Element „Datum“ zeigst, eine Karte auswählst oder auf der Seite heranzoomst oder eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest.
 
 ## 1. Alles läuft lokal
 
@@ -38,6 +38,8 @@ Fügst du die Adresse eines Videos von **YouTube** oder **Vimeo** ein, holt dein
 Bei Videos des **ZDF** (auch logo!) lädt der Browser den Player des ZDF (ngp.zdf.de) – im Dialog schon beim Einfügen als Vorschau, im Heft erst beim Antippen von ▶ (ZDF, Mainz, [Datenschutz](https://www.zdf.de/datenschutz)). Auch dabei werden die IP-Adresse und übliche technische Angaben übermittelt.
 
 Eine eingebettete Webseite lädt der Browser direkt von dieser Webseite, sobald die Seite des Hefts angezeigt wird. Links öffnen die Webseite erst beim Antippen. Es gelten jeweils die Datenschutzerklärungen dieser Webseiten. Bette deshalb nur Webseiten ein, denen du vertraust.
+
+Die Vorlage **Karte** zeigt beim Auswählen des Ausschnitts eine Karte von **OpenStreetMap**: Dein Browser lädt dafür Kartenbilder (Kacheln) vom Server der deutschen OpenStreetMap (tile.openstreetmap.de, FOSSGIS e. V., Deutschland) – nur wenn dieser beim Speichern nicht erreichbar ist, von tile.openstreetmap.org der OpenStreetMap Foundation (Großbritannien). Die Adresssuche schickt den eingegebenen Suchtext an den Suchdienst Nominatim der OpenStreetMap Foundation (nominatim.openstreetmap.org) – nur wenn du auf „Suchen“ tippst. Dabei werden die IP-Adresse und übliche technische Angaben übermittelt ([Datenschutz der OpenStreetMap Foundation](https://osmfoundation.org/wiki/Privacy_Policy)). Im Heft wird danach nur ein Bild des Ausschnitts gespeichert, die Markierungen kommen von Lernsachen-Heft. Zoomst du die Karte auf der Seite näher heran (Knopf +), lädt dein Browser dafür schärfere Kartenbilder von tile.openstreetmap.de – ohne Internet wird das gespeicherte Bild vergrößert. Sonst geht beim Ansehen der Karte nichts ins Internet.
 
 Das Element **Datum** (Regal, „Zeit & Kalender“) kann das Wetter eines Orts zeigen. Dafür schickt dein Browser beim Einfügen den gesuchten Ortsnamen (oder die Postleitzahl) an die Ortssuche von **Open-Meteo** und danach, solange eine Seite mit dem Datum gezeigt wird, etwa alle 30 Minuten die Koordinaten des Orts an den Wetterdienst von Open-Meteo ([Bedingungen und Datenschutz](https://open-meteo.com/en/terms)); dabei werden die IP-Adresse und übliche technische Angaben übermittelt. Daten über dich oder die Kinder gehen nicht mit. Ohne Ort oder ohne Internet zeigt das Datum kein Wetter. Uhr und Timer brauchen kein Internet.
 
