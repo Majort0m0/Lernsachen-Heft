@@ -7,7 +7,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 - Lernsachen-Heft hat keinen Server. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
-- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt, das Wetter im Element „Datum“ zeigst, eine Karte auswählst oder auf der Seite heranzoomst, eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest oder Wörter mit einer KI über eine API-Schnittstelle suchen lässt.
+- Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, BildWort, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt, das Wetter im Element „Datum“ zeigst, eine Karte auswählst oder auf der Seite heranzoomst, eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest oder Wörter mit einer KI über eine API-Schnittstelle suchen lässt.
 
 ## 1. Alles läuft lokal
 
@@ -27,9 +27,9 @@ Lernsachen-Heft setzt keine Cookies und verwendet keine Analyse-, Statistik- ode
 
 ## 4. Bildersuche und Bildadressen
 
-Nur wenn du im Bild-Dialog **selbst** suchst oder ein Ergebnis übernimmst, verbindet sich dein Browser direkt mit dem Dienst: **ARASAAC** (Regierung von Aragón, Spanien; [Datenschutz](https://arasaac.org/privacy-policy)) oder **Wikimedia Commons** (Wikimedia Foundation, USA; [Datenschutz](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/de)). Dabei werden deine IP-Adresse, der Suchbegriff und übliche technische Angaben des Browsers übermittelt. Gib deshalb keine Namen oder andere persönliche Daten als Suchbegriff ein. Fügst du eine Bildadresse ein, lädt dein Browser das Bild von dieser Webseite.
+Nur wenn du im Bild-Dialog **selbst** suchst oder ein Ergebnis übernimmst, verbindet sich dein Browser direkt mit dem Dienst: **ARASAAC** (Regierung von Aragón, Spanien; [Datenschutz](https://arasaac.org/privacy-policy)), **BildWort** (symbole.urff.app, Christian Urff; [Datenschutz](https://symbole.urff.app/hilfe#datenschutz)) und **Wikimedia Commons** (Wikimedia Foundation, USA; [Datenschutz](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/de)) – welche davon, stellst du unter „Quellen“ im Bild-Dialog oder in den Einstellungen ein. Dabei werden deine IP-Adresse, der Suchbegriff und übliche technische Angaben des Browsers übermittelt. Gib deshalb keine Namen oder andere persönliche Daten als Suchbegriff ein. BildWort zählt die Suchwörter (ohne IP-Adresse, höchstens 90 Tage), damit seine Redaktion sieht, welche Bilder noch fehlen. Außerdem merkt sich dein Browser (localStorage), in welcher Reihenfolge die Bildquellen gefragt werden und welches Bild du zuletzt für ein Wort gewählt hast (Wort, Bildadresse, Bildnachweis) – das gilt für alle vier Lernsachen-Apps auf diesem Gerät. Fügst du eine Bildadresse ein, lädt dein Browser das Bild von dieser Webseite.
 
-Die ARASAAC-Piktogramme der Vorlagen „Buchstaben üben“, „Ziffern üben“, „Rechnen mit Geld“ und der fertigen Kommunikationstafeln sind in Lernsachen-Heft enthalten – dafür geht nichts ins Internet. Bei der Anlaut-Tastatur sind die Bilder der Tasten enthalten; die Bilder der Übungswörter lädt Lernsachen-Heft beim Übernehmen bei ARASAAC (die Wörter der Listen über ihre Nummer, eigene Wörter über eine Suche nach dem Wort). Beim Karaoke-Liedblatt schlägt Lernsachen-Heft Bilder für Wörter des Liedtexts vor: Dafür sucht es diese Wörter bei ARASAAC – nur wenn du ein Lied auswählst oder auf „Bilder vorschlagen“ tippst. Bei „Silben klatschen“ lädt Lernsachen-Heft das Bild eines Worts bei ARASAAC, sobald du das Wort hinzufügst (Wörter der Listen über ihre Nummer, eigene Wörter und Wörter der KI über eine Suche nach dem Wort) – nicht, wenn du „Bilder automatisch suchen“ ausschaltest.
+Die ARASAAC-Piktogramme der Vorlagen „Buchstaben üben“, „Ziffern üben“, „Rechnen mit Geld“ und der fertigen Kommunikationstafeln sind in Lernsachen-Heft enthalten – dafür geht nichts ins Internet. Bei der Anlaut-Tastatur sind die Bilder der Tasten enthalten; die Bilder der Übungswörter lädt Lernsachen-Heft beim Übernehmen bei ARASAAC bzw. BildWort (die Wörter der Listen über ihre Nummer, eigene Wörter über eine Suche nach dem Wort). Beim Karaoke-Liedblatt schlägt Lernsachen-Heft Bilder für Wörter des Liedtexts vor: Dafür sucht es diese Wörter bei ARASAAC bzw. BildWort – nur wenn du ein Lied auswählst oder auf „Bilder vorschlagen“ tippst. Bei „Silben klatschen“ lädt Lernsachen-Heft das Bild eines Worts bei ARASAAC bzw. BildWort, sobald du das Wort hinzufügst (Wörter der Listen über ihre Nummer, eigene Wörter und Wörter der KI über eine Suche nach dem Wort) – nicht, wenn du „Bilder automatisch suchen“ ausschaltest.
 
 ## 5. Videos, Webseiten, Links und interaktive Übungen
 
@@ -59,7 +59,7 @@ Die Vorlese-Funktion nutzt die Sprachausgabe deines Geräts. Lernsachen-Heft sch
 
 ## 8. Fotos und persönliche Daten in Heften
 
-Du entscheidest, was in einem Heft steht. Fotos und Tonaufnahmen von anderen Menschen gehören nur mit deren Einverständnis ins Heft – erst recht, wenn du das Heft weitergibst. Mit „Verpixeln“ im Bild-Editor kannst du Gesichter, Namen oder Autokennzeichen unkenntlich machen.
+Du entscheidest, was in einem Heft steht. Fotos und Tonaufnahmen von anderen Menschen gehören nur mit deren Einverständnis ins Heft – erst recht, wenn du das Heft weitergibst. Mit „Unkenntlich machen“ im Bild-Editor kannst du Gesichter, Namen oder Autokennzeichen verpixeln.
 
 ## 9. Verantwortlich
 
