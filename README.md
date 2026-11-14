@@ -6,7 +6,7 @@
 
 **⬇ Herunterladen:** [Lernsachen-Heft.html](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft.html) (eine einzige Datei, läuft offline – einfach im Browser öffnen)
 
-**⬇ Komplett:** [Lernsachen-Heft-komplett.html](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft-komplett.html) – dieselbe App, dazu die Editoren von Quizsachen, Schiebesachen und Textsachen eingebaut: Übungen erstellen und bearbeiten auch ohne Internet (eine Datei, etwa 22 MB)
+**⬇ Komplett:** [Lernsachen-Heft-komplett.html](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft-komplett.html) – dieselbe App, dazu die Editoren von Quizsachen, Schiebesachen und Textsachen eingebaut: Übungen erstellen und bearbeiten auch ohne Internet (eine Datei, etwa 23 MB)
 
 - **Text** direkt auf der Seite (WYSIWYG): zehn Schriften (u. a. Andika, Grundschrift, Druckschrift wie in Bayern, Schreibschrift VA und SAS, Handschrift, Comic), Größe, Farbe, fett, kursiv, unterstrichen, Ausrichtung je Absatz; Vorlesen des eigenen Textes, auf Wunsch schon beim Tippen (jedes Wort oder jeder Satz)
 - **Schreiben auf Linien:** Auf Lineatur-Seiten sitzt die Schrift genau auf den Linien
@@ -25,7 +25,7 @@
 - **Sichern und Wiederherstellen** von Heften (mit ihren Ordnern), eigenen Designs und eigenen Vorlagen als JSON-Datei – auf der Startseite und unter Seite → Einstellungen – mit Nachfrage vor dem Überschreiben
 - **Instrumente zum Spielen:** Klavier, Xylophon, Glockenspiel, Klangrohre und Synthesizer als Vorlagen unter „Musik“ (eigene Seite mit passendem Hintergrund) – neun eigene Klänge ohne Internet, Akkorde mit mehreren Fingern, Tonleitern (Dur, Moll, Pentatonik, Moll-Pentatonik, Blues) mit Grundton, Beschriftung C D E oder do re mi, farbige Töne; dazu Schlagzeug, Cajón, Bongos & Congas, Orff-Instrumente und Klang-Pads mit eigenen Aufnahmen; auf jeder Instrumentenseite ein Metronom (Tempo, Taktart, Klang) und ein Kassettenrekorder, der direkt aufnimmt, was gespielt wird, Tondateien öffnet und mit den Spulen vor- und zurückspult; dazu das Tonfolgen-Spiel „Hör zu – spiel nach“ und ein Sequenzer für Beats, Melodien und eigene Klänge
 - **Regal:** über 200 Elemente zum Hineinziehen – eigene Bilder und Zeichnungen unter „Persönlich“, eigene Figuren und sprechende Fotos unter „Selbst gemacht“, Uhr, Timer und Datum mit Wetter, Geräte (Lärmampel, Applausometer, Stimmgerät, Kassettenrekorder), Sprechblasen, Comic, Figuren, Emojis, Wetter, Zeit & Kalender, Stundenplan, Schule, Natur & Tiere, Wohnen, Küche, Formen
-- **Über 170 Seitenvorlagen** in Kategorien mit Symbolen und Suche (die Auswahl öffnet sich in der zuletzt benutzten Kategorie); einstellbare Arbeitsblätter und Übungen stehen jeweils oben: Lineaturen, Kariert, Notenlinien, Tagebuch, Zeitung, Schülerzeitung (Titelseite, Vorwort und Inhalt, Artikel in drei Spalten, großes Bild mit Überschrift, Interview, Kurz notiert, Umfrage, Rätsel und Witze, Termine und Impressum), Instagram-Post, Comics, Storyboard, Brief, Urkunde, Heute, Tages- und Stundenplan, Sudoku, Labyrinth, Schiffe versenken, Wortspiele (Memory, Maus & Käse, Kreuzworträtsel, Suchsel, Wordle), Silbenlesen, Video, Webseite, Zimmer zum Einrichten, Präsentationsfolien (Titelfolie, Gliederung, Vergleich, Zitat …) und viele mehr
+- **Über 230 Seitenvorlagen** in Kategorien mit Symbolen und Suche (die Auswahl öffnet sich in der zuletzt benutzten Kategorie); einstellbare Arbeitsblätter und Übungen stehen jeweils oben: Lineaturen, Kariert, Notenlinien, Tagebuch, Zeitung, Schülerzeitung (Titelseite, Vorwort und Inhalt, Artikel in drei Spalten, großes Bild mit Überschrift, Interview, Kurz notiert, Umfrage, Rätsel und Witze, Termine und Impressum), Instagram-Post, Comics, Storyboard, Brief, Urkunde, Heute, Tages- und Stundenplan, Sudoku, Labyrinth, Schiffe versenken, Wortspiele (Memory, Maus & Käse, Kreuzworträtsel, Suchsel, Wordle), Silbenlesen, Video, Webseite, Zimmer zum Einrichten, Präsentationsfolien (Titelfolie, Gliederung, Vergleich, Zitat …) und viele mehr
 - **Mathe-Aufgaben:** Arbeitsblätter im Zahlenraum bis 10, 20, 100, 1000, 10 000 oder 1 000 000 – Plus, Minus, Mal, Geteilt (gemischt, mit Ergänzungsaufgaben, mit/ohne Zehnerübergang), Nachbarzahlen, Vergleichen, Zahlenfolgen, Zahlenhäuser, Stellenwerte, Zahlenstrahl, Rechenschiffchen, Hunderterfeld, Zehnerübergang in Schritten, Rechenstrich, Rechentabellen, schriftlich rechnen, Rechenmauern, Rechendreiecke, magische Quadrate, Sudoku, Zahlen schreiben, Anzahl bestimmen, Mengen einkreisen, Muster nachzeichnen; mit Lösungsseiten und auf Wunsch mit Lösungskontrolle – ✓ oder ✗ gleich nach dem Eintippen oder ein Knopf „Prüfen“ für die ganze Seite (auch bei Uhrzeiten, Geld und Noten); Tab und Eingabe springen zum nächsten Kästchen
 - **Rechnen mit Geld:** Beträge bestimmen, Geld legen, Wechselgeld, Einkaufszettel, Euro und Cent umrechnen, Vergleichen, Rechnen – nur Cent, nur Euro oder beides, Münzen und/oder Scheine (ARASAAC-Piktogramme), mit Komma oder „3 € 50 ct“
 - **Geometrie: Formen zeichnen:** Strecken, Vierecke, Dreiecke und weitere Formen mit genauen Maßen auf Karopapier (5 mm) mit Lineal oder Geodreieck nachzeichnen – Aufgabe geschrieben und vorgelesen, roter Startpunkt, kurze Vorschau, „Überprüfen“ mit Toleranz und Hinweisen, Lösung nach zwei Versuchen, am Ende eine Auswertung; Schwierigkeit leicht bis schwer oder ansteigend, 1 bis 10 Aufgaben – im PDF als Arbeitsblatt für Papier und echtes Lineal (zwei Aufgaben je Seite, echte Größe mit 5-cm-Prüfstrecke, Lösungen mit Längen und Winkeln)
@@ -67,7 +67,12 @@
 - **Programmieren:** wie mit einem Bodenroboter – eine Figur (Biene, Roboter, Maus, Auto, Rakete …) auf einem Teppich von 5 × 5 bis 10 × 10 Feldern mit Tasten oder Pfeilkarten zum Ziel bringen. Lektionen: Hindernisse, Wörter abfahren, Rechnen und fahren, Zahlen der Reihe nach, Sterne sammeln, Programme lesen, Fehler finden, Schleifen, Zeichnen mit dem Stift, Musik-Teppich, Pfeile programmieren, Bedingungen (Farbweg, Labyrinth), Katze und Punkte zählen; Bausteine per Ziehen verschieben, „Weg zeigen“ mit dem Auge, Sterne fürs kürzeste Programm, Aufgaben selbst bauen, Auswertung am Ende; dazu Arbeitsblätter mit Lösungen und Pfeilkarten zum Ausschneiden
 - **Kachelansicht** aller Seiten (Knopf links in der Seitenleiste): Seiten auswählen, per Ziehen verschieben, speichern oder löschen
 - **Gruppen** lassen sich gemeinsam drehen und bekommen eine Beschreibung, die „Seite vorlesen“ statt ihrer einzelnen Bilder liest
-- **Anleitung** in der App mit Kapiteln als Kacheln, Suche und „Wie mache ich eigentlich …?“
+- **Für den Unterricht nach Lehrplan (Förderschwerpunkt geistige Entwicklung):** Ablaufplan mit Bildern (auch für Küche und Haushalt), Strichliste und Diagramm, Glücksrad und Würfel (zählt gleich in die Strichliste), Suchbild, Muster fortsetzen, Karopapier (Symmetrie, Bandornamente, Abzeichnen, Strecken messen und zeichnen), Arbeitsblatt „Laute hören“, Hör-Memory und „Was hörst du?“, Telefonieren und Notruf üben, Fußgängerampel, Gefühle („Wie geht es dir heute?“, Gefühle-Karten), „Rückmeldung zu meiner Arbeit“, „Ein Kunstwerk betrachten“; im Regal „Klasse“ und „Schilder“
+- **Beruf & Alltag (Berufsschulstufe):** Praktikumsmappe, Selbst- und Fremdeinschätzung, Stückzähler, Kassenbuch, Checklisten, Stressbarometer, Wochen- und Dienstplan, Sortieren und Bild-Quiz (Ernährungsampel, Mülltrennung, Vorräte, Wäsche, „Kann man das essen?“, Schilder, Werkzeuge …), Wo tut es weh?, Nähe und Distanz, Abstimmung und Wahl (auch geheim), Zeitleiste, Geld-Planer (auch zum Ausfüllen direkt auf der Seite), Fahrkarten-, Geld- und Getränkeautomat üben, Gespräche üben, Rechnen im Alltag (Lohn, Fahrplan), Mein Weg, Nachrichten in leichter Sprache; Kommunikationstafeln Arbeit, Werkzeuge, Wohnen, Beim Arzt, Kochen und Gesprächsrunde; im Regal „Arbeitsschutz“ und „Wäsche-Symbole“
+- **KI-Partner bauen:** Schritt für Schritt einen guten Auftrag für eine KI zusammenstellen (Person, Aufgabe, Ziel, Kontext, Ausgabeform) – mit Ideen zum Antippen; ausprobieren in Duck.ai, ChatGPT, Claude, Le Chat, Gemini oder einem AIS-Chat (auch direkt im Heft)
+- **Tage in Farbe:** Wochenplan und Stundenpläne zeigen die Wochentage in den Farben des sprechenden Kalenderblatts (abschaltbar), die Wochentag-Schilder im Regal ebenso
+- **Lineal und Geodreieck liegen bereit**, sobald man auf eine Seite mit Mess- oder Zeichenaufgaben kommt („Formen zeichnen“, Strecken messen und zeichnen)
+- **Anleitung** in der App mit Kapiteln als Kacheln, Suche, „Wie mache ich eigentlich …?“ und den **Lehrplanbezügen**: vom Lehrplaninhalt zur passenden Vorlage
 - Keine Anmeldung, kein Server, keine Cookies – siehe [Datenschutz](DATENSCHUTZ.md)
 
 ## Lizenz
@@ -116,7 +121,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Diese Anleitung steht auch in der App unter „?“ → „Anleitung“ – dort mit Kacheln für die Kapitel und einer Suche.
 
-**Kapitel:** [Hefte und Seiten](#hefte-und-seiten) · [Text, Bild, Ton und PDF](#text-bild-ton-und-pdf) · [Anordnen und bearbeiten](#anordnen-und-bearbeiten) · [Stift und Malen](#stift-und-malen) · [Im Unterricht](#im-unterricht) · [Mathe](#mathe) · [Lesen und Schreiben lernen](#lesen-und-schreiben-lernen) · [Interaktive Übungen](#interaktive-übungen) · [Programmieren](#programmieren) · [Musik](#musik) · [Figuren, Film und Theater](#figuren-film-und-theater) · [Kommunikation](#kommunikation) · [Speichern und teilen](#speichern-und-teilen) · [Tastatur, iPad und einfacher Modus](#tastatur-ipad-und-einfacher-modus) · [Wie mache ich eigentlich …?](#wie-mache-ich-eigentlich-)
+**Kapitel:** [Hefte und Seiten](#hefte-und-seiten) · [Text, Bild, Ton und PDF](#text-bild-ton-und-pdf) · [Anordnen und bearbeiten](#anordnen-und-bearbeiten) · [Stift und Malen](#stift-und-malen) · [Im Unterricht](#im-unterricht) · [Mathe](#mathe) · [Lesen und Schreiben lernen](#lesen-und-schreiben-lernen) · [Interaktive Übungen](#interaktive-übungen) · [Programmieren](#programmieren) · [Musik](#musik) · [Figuren, Film und Theater](#figuren-film-und-theater) · [Beruf und Alltag](#beruf-und-alltag) · [Kommunikation](#kommunikation) · [Speichern und teilen](#speichern-und-teilen) · [Tastatur, iPad und einfacher Modus](#tastatur-ipad-und-einfacher-modus) · [Lehrplanbezüge](#lehrplanbezüge) · [Wie mache ich eigentlich …?](#wie-mache-ich-eigentlich-)
 
 ## Wie mache ich eigentlich …?
 
@@ -131,6 +136,9 @@ Diese Anleitung steht auch in der App unter „?“ → „Anleitung“ – dort
 - **Wie lege ich den Stift wieder weg?** Unten in der Werkzeugspalte die grüne Hand „Fertig“ antippen (oder Esc drücken). Dann kannst du wieder antippen und verschieben. → [Stift weglegen, Finger oder Pencil](#stift-weglegen-finger-oder-pencil)
 - **Wie male ich eine Fläche aus?** Den Farbeimer wählen, in die Fläche drücken und vom Startpunkt wegziehen – die Farbe breitet sich aus, bis die Fläche voll ist. → [Farbeimer](#farbeimer)
 - **Wie mache ich etwas rückgängig?** Mit dem gebogenen Pfeil oben in der Leiste (oder ⌘Z bzw. Strg+Z). Der Pfeil daneben holt es wieder zurück. → [Mit der Tastatur arbeiten](#mit-der-tastatur-arbeiten)
+- **Wie mache ich einen Ablaufplan mit Bildern?** Neue Seite → Kategorie „Alltag“ → „Ablaufplan“: eine Vorlage wie „Hände waschen“ wählen oder eigene Schritte schreiben, dann „Fehlende Bilder suchen“. Auf der Seite hakt ein Tipp den Schritt ab und liest ihn vor. → [Ablaufplan](#ablaufplan)
+- **Wie übe ich Telefonieren oder den Notruf?** Neue Seite → Kategorie „Alltag“ → „Telefonieren üben“ (Kontakte mit Foto und Nummer) oder „Notruf üben“ (112 oder 110 mit den W-Fragen). Es wird nie wirklich jemand angerufen. → [Telefonieren und Notruf üben](#telefonieren-und-notruf-üben)
+- **Wie zähle ich etwas mit der Klasse?** Mit der Strichliste (Vorlage oder Regal → „Klasse“): „+“ macht einen Strich, daneben wächst das Diagramm. Ein Glücksrad oder Würfel auf derselben Seite zählt von selbst mit. → [Strichliste, Glücksrad und Würfel](#strichliste-glücksrad-und-würfel)
 - **Wie verhindere ich, dass Kinder etwas verschieben?** Das Element antippen und unter „…“ „festmachen“ wählen. Festgemachtes bleibt an seinem Platz. → [Antippen, ziehen, drehen](#antippen-ziehen-drehen)
 - **Wie erreiche ich ein Element, das verdeckt ist?** Oben „Elemente“ antippen: Dort stehen alle Elemente der Seite. Antippen wählt aus, das Auge blendet aus, Ziehen ändert, was vorne liegt. → [Elemente der Seite](#elemente-der-seite)
 - **Wie zeige ich das Heft an der Tafel?** „Tafel“ oben rechts (oder Taste F): Die Seite füllt den Bildschirm, mit Stift, Lampe und Laser. Zum Beenden den Knopf unten rechts 2 Sekunden gedrückt halten oder Esc. → [Digitale Tafel](#digitale-tafel)
@@ -141,6 +149,7 @@ Diese Anleitung steht auch in der App unter „?“ → „Anleitung“ – dort
 - **Wie mache ich ein Quiz oder eine andere Übung?** Neue Seite → „Interaktive Übungen“: Quiz, Zuordnungen, Lesen & Schreiben, Wortspiele und mehr. Sie öffnen gleich den passenden Editor. → [Quiz](#quiz)
 - **Wie ändere ich Farben und Rahmen einer Seite?** Links unten „Seite“ → „Design“ oder „Rahmen“ – mit einem Knopf auch für alle Seiten. → [Design, Rahmen und Einstellungen](#design-rahmen-und-einstellungen)
 - **Wie ordne ich meine Hefte?** „Neuer Ordner“ auf der Startseite – oder ein Heft auf ein anderes ziehen und kurz halten, dann entsteht ein Ordner mit beiden. → [Ordner](#ordner)
+- **Wie finde ich Vorlagen zu meinem Lehrplan?** Im Kapitel „Lehrplanbezüge“ stehen zu jedem Fach und Lernbereich passende Vorlagen – Deutsch, Mathematik, Sachunterricht, Fachunterricht, Berufsschulstufe, entwicklungsbezogene Kompetenzen, Medienbildung. → [So nutzt du die Lehrplanbezüge](#so-nutzt-du-die-lehrplanbezüge)
 - **Wie gebe ich Kindern eine einfache Oberfläche?** Die Adresse mit **?mode=simple** öffnen: nur ein Heft, einfache Vorlagen, Übungen lassen sich spielen, aber nicht verändern. → [Einfacher Modus für Schülerinnen und Schüler](#einfacher-modus-für-schülerinnen-und-schüler)
 
 ## Hefte und Seiten
@@ -167,7 +176,7 @@ Der Knopf ganz links in der Seitenleiste öffnet die **Kachelansicht**: alle Sei
 
 ### Design, Rahmen und Einstellungen
 
-Unter „Seite“ gibt es vier Abschnitte, von denen immer nur einer offen ist: **Vorlage** (mit „Andere Vorlage wählen …“ die Vorlage dieser Seite ändern, mit „Neue Seite mit Vorlage …“ eine neue Seite anlegen oder die Seite als eigene Vorlage speichern – mit Name und Kategorie, auch einer neuen; auf einer leeren Seite steht unten außerdem „Vorlage wählen“), **Design** (fertige Designs wie Kreidetafel, Whiteboard, Notizzettel oder Nachthimmel – Hintergrund und Standardschrift passen zueinander; änderst du etwas, heißt es „Angepasst“ und du kannst es als eigenes Design speichern), **Rahmen** (von schlicht bis verspielt; „Name und Datum“ hat oben die beiden Felder wie auf einem Arbeitsblatt – Texte ziehst du auf die Linien oder tippst dort zweimal; reicht die Vorlage unter den Rahmen, wird sie ein wenig verkleinert) und **Einstellungen** (für das Heft, dazu Vorlesestimme, Tastaturkürzel sowie Sichern und Wiederherstellen von Heften, eigenen Designs und eigenen Vorlagen als Datei – das geht auch auf der Startseite unter „Sicherung“; alle Einstellungen findest du auch im „?“-Menü oben rechts unter „Einstellungen …“). Design und Rahmen gibt es mit einem Knopf auch für alle Seiten.
+Unter „Seite“ gibt es vier Abschnitte, von denen immer nur einer offen ist: **Vorlage** (mit „Andere Vorlage wählen …“ die Vorlage dieser Seite ändern, mit „Neue Seite mit Vorlage …“ eine neue Seite anlegen oder die Seite als eigene Vorlage speichern – mit Name und Kategorie, auch einer neuen; auf einer leeren Seite steht unten außerdem „Vorlage wählen“),  **Design** (fertige Designs wie Kreidetafel, Whiteboard, Notizzettel oder Nachthimmel – Hintergrund und Standardschrift passen zueinander; änderst du etwas, heißt es „Angepasst“ und du kannst es als eigenes Design speichern), **Rahmen** (von schlicht bis verspielt; „Name und Datum“ hat oben die beiden Felder wie auf einem Arbeitsblatt – Texte ziehst du auf die Linien oder tippst dort zweimal; reicht die Vorlage unter den Rahmen, wird sie ein wenig verkleinert) und  **Einstellungen** (für das Heft, dazu Vorlesestimme, Tastaturkürzel sowie Sichern und Wiederherstellen von Heften, eigenen Designs und eigenen Vorlagen als Datei – das geht auch auf der Startseite unter „Sicherung“; alle Einstellungen findest du auch im „?“-Menü oben rechts unter „Einstellungen …“). Design und Rahmen gibt es mit einem Knopf auch für alle Seiten.
 
 ## Text, Bild, Ton und PDF
 
@@ -219,7 +228,7 @@ Die Vorlage „Linksammlung“ (Kategorie Video & Web) sammelt bis zu 12 Links m
 
 ### Regal
 
-Sprechblasen, Comic-Wörter, Figuren, Emojis, Wetter, Zeit und Kalender, Schule, Wohnen, Küche und mehr – alles in einer Liste, rechts springst du zu einer Kategorie, oben suchst du (z. B. „Pfeil“). Antippen setzt ein Element auf die Seite; zum Hinziehen ziehst du es mit dem Finger zur Seite (oder hältst es kurz fest) – nach oben und unten wischen blättert durch das Regal. In Sprechblasen kannst du schreiben; die Spitze der Sprechblase ziehst du an dem gelben Punkt dorthin, wo jemand spricht. Ganz oben stehen **Persönlich** und **Selbst gemacht** (eigene Figuren und sprechende Fotos). Persönlich: Tippe auf der Seite ein Bild, eine Zeichnung oder einen Sticker an (oder markiere mehrere) und dann „Ablegen“ – oder wähle in der Leiste „Ins Regal legen“. Danach liegt es in jedem Heft bereit; mit „…“ benennst du es um oder löschst es. Es wird nur in diesem Browser gespeichert und kann verloren gehen, wenn die Browserdaten gelöscht werden – „Sichern“ (Seite → Einstellungen) nimmt es mit.
+Sprechblasen, Comic-Wörter, Figuren, Emojis, Wetter, Zeit und Kalender, Klasse (Strichliste, Glücksrad, Würfel, Gefühle, Ampel, Ablaufplan), Schilder, Schule, Wohnen, Küche und mehr – alles in einer Liste, rechts springst du zu einer Kategorie, oben suchst du (z. B. „Pfeil“). Antippen setzt ein Element auf die Seite; zum Hinziehen ziehst du es mit dem Finger zur Seite (oder hältst es kurz fest) – nach oben und unten wischen blättert durch das Regal. In Sprechblasen kannst du schreiben; die Spitze der Sprechblase ziehst du an dem gelben Punkt dorthin, wo jemand spricht. Ganz oben stehen **Persönlich** und **Selbst gemacht** (eigene Figuren und sprechende Fotos). Persönlich: Tippe auf der Seite ein Bild, eine Zeichnung oder einen Sticker an (oder markiere mehrere) und dann „Ablegen“ – oder wähle in der Leiste „Ins Regal legen“. Danach liegt es in jedem Heft bereit; mit „…“ benennst du es um oder löschst es. Es wird nur in diesem Browser gespeichert und kann verloren gehen, wenn die Browserdaten gelöscht werden – „Sichern“ (Seite → Einstellungen) nimmt es mit.
 
 ## Anordnen und bearbeiten
 
@@ -263,6 +272,8 @@ Der Radierer hat zwei Arten: „Ganze Striche“ löscht jeden Strich, den du be
 
 Unter „Lineal“ in der Werkzeugspalte legst du ein Lineal (20 cm) oder ein Geodreieck auf die Seite; noch einmal antippen oder das × auf dem Lineal nimmt es wieder weg, ebenso „Fertig“. Mit einem Finger (oder der Maus) verschiebst du es – auch ein gutes Stück über den Seitenrand hinaus. Gedreht wird mit zwei Fingern oder mit dem blauen Anfasser am Rand (wie bei anderen Elementen: beim Lineal unten in der Mitte, beim Geodreieck hinter dem rechten Winkel); liegt die Null auf einem Punkt, dreht es sich um diesen Punkt. Dabei steht der Winkel daneben (in ganzen Grad, bei 0°, 45° und 90° rastet es leicht ein). Setzt du den Stift, Füller, Buntstift oder Marker an einer Kante an (der Apple Pencil darf auch auf dem Lineal aufsetzen), läuft die Linie genau an der Kante entlang; an der Skala in ganzen Millimetern, und nahe der Null beginnt sie genau bei 0. Die Linie reicht immer vom Ansatzpunkt bis zum Stift – ziehst du ohne Absetzen zurück, wird sie wieder kürzer. Wie lang sie ist, steht daneben (z. B. „73 mm = 7,3 cm“), bis du das Lineal bewegst.
 
+Auf Seiten, deren Aufgaben ein Lineal brauchen („Geometrie: Formen zeichnen“, auf Karopapier „Strecken messen“ und „Strecken zeichnen“), ist der Stift schon an, und das Lineal liegt unten links bereit – bei Aufgaben mit Winkeln das Geodreieck. Das gilt im Heft und an der Tafel. Blätterst du auf eine Seite ohne solche Aufgaben, verschwindet es wieder (und der Stift geht aus, wenn er nur dafür an war).
+
 Die Maße gelten für die ausgedruckte Seite (A4).
 
 ### Farbeimer
@@ -279,7 +290,7 @@ Die grüne Hand „Fertig“ unten in der Werkzeugspalte legt den Stift weg (ode
 
 ## Im Unterricht
 
-*Tafel, Vorlesen, Timer, Stundenplan, Karte*
+*Tafel, Vorlesen, Ablaufplan, Telefon, Gefühle, KI-Partner*
 
 ### Digitale Tafel
 
@@ -311,7 +322,7 @@ Die Vorlage „Applausometer“ (Kategorie Schule) ist ein lustiger Apparat, der
 
 Die einstellbare Vorlage „Bilder-Stundenplan“ (Kategorie Schule) macht einen Stundenplan mit Bildern. Im Reiter „Plan“ wählst du ein Fach aus der Liste an der Seite (mit Suchfeld) und tippst auf die Stunden; mit „Geteilte Stunde“ kommt ein zweites Fach dazu, wenn die Klasse geteilt wird (z. B. Kochen | Werken), „Leeren“ macht eine Stunde frei. „Tage & Zeiten“: Montag bis Freitag, bis Samstag oder die ganze Woche, wie viele Stunden, Beginn (Standard 8:00 Uhr), Länge einer Stunde (Standard 45 Minuten), Pausen nach einer beliebigen Stunde mit eigener Länge, eigenem Namen und Bild (Standard: 30 Minuten nach der 3. Stunde) und ob die Zeitleiste mit den Uhrzeiten zu sehen ist. „Fächer“: über 30 Fächer mit Piktogrammen sind vorgegeben; Namen, Farben und Bilder änderst du, eigene Fächer kommen dazu (ein Tipp auf das Bild sucht ein Piktogramm, ein Foto oder die Kamera). „Nach der Schule“: eine Zeile unter den Stunden mit eigener Liste (Tagesstätte, Hort, Mittagsbetreuung, Bus, Taxi, Abholung, Nach Hause – anpassbar).
 
-„Aussehen“: Überschrift, fünf Designs (Sachlich, Klar, Bunt, Verspielt, Tafel), in den Stunden Bild und Text, nur Bild oder nur Text, die Schrift und ob der heutige Tag hervorgehoben wird. „Als Datei speichern“ gibt den ganzen Stundenplan als Datei mit den Bildern (als kleine eingebettete Bilder); „Datei laden …“ liest eine solche Datei – nur die Fächer oder alles. Neue Stundenpläne beginnen mit der zuletzt benutzten Fächerliste. Auf der Seite liest ein Tipp auf eine Stunde sie vor („Montag, zweite Stunde, 8:45 Uhr: Mathe“); „Stundenplan einstellen“ in der Leiste öffnet alles wieder.
+„Aussehen“: Überschrift, fünf Designs (Sachlich, Klar, Bunt, Verspielt, Tafel), in den Stunden Bild und Text, nur Bild oder nur Text, die Schrift, „Tage farbig“ (jeder Tag in seiner Farbe wie im Kalenderblatt: Montag gelb, Dienstag grün, Mittwoch blau, Donnerstag rot, Freitag orange, Samstag weiß, Sonntag rosa – von Anfang an an) und ob der heutige Tag hervorgehoben wird. Der einfache „Stundenplan“ zum Ausfüllen hat die Tagesfarben ebenfalls, „Stundenplan (schlicht)“ ist derselbe ohne Farben. „Als Datei speichern“ gibt den ganzen Stundenplan als Datei mit den Bildern (als kleine eingebettete Bilder); „Datei laden …“ liest eine solche Datei – nur die Fächer oder alles. Neue Stundenpläne beginnen mit der zuletzt benutzten Fächerliste. Auf der Seite liest ein Tipp auf eine Stunde sie vor („Montag, zweite Stunde, 8:45 Uhr: Mathe“); „Stundenplan einstellen“ in der Leiste öffnet alles wieder.
 
 ### Karte
 
@@ -325,9 +336,41 @@ Mit Internet kommen dabei schärfere Kartenbilder, ohne wird das gespeicherte Bi
 
 Die einstellbare Vorlage „Etiketten“ (Kategorie Schule) macht Wortkarten mit Bild zum Ausdrucken und Ausschneiden – für Kisten, Fächer und Regale. Wörter schreibst du mit Komma oder je Zeile eines, liest sie aus einer CSV- oder Textdatei (jede Zelle ein Etikett) oder nimmst eine ganze Wortliste. Die Bilder sucht das Heft bei ARASAAC; ein Tipp auf ein Bild wählt ein anderes (Suche, Foto, Kamera), das Kreuz lässt es weg (dann steht nur das Wort groß auf dem Etikett). Größe: 1, 4, 12, 20 oder 48 Etiketten je Seite (bis zu 96 Etiketten, weitere Seiten kommen von selbst). Dazu die Schrift (auch Druck- und Schreibschrift), wie eingegeben, GROSS oder klein, das Wort unten, oben oder nur das Bild, Farbe des Rahmens, runde Ecken und die Linie zwischen Bild und Wort. Mit „Vorlesen beim Antippen“ werden die Etiketten Sprechtasten: ein Tipp sagt das Wort. Jedes Etikett ist eine Gruppe – Wort und Bild kannst du danach auf der Seite noch ändern. Gedruckt wird über „Speichern“ → PDF.
 
+### Ablaufplan
+
+Die Vorlage „Ablaufplan“ (Kategorie Alltag) zeigt die Schritte einer Handlung mit Bildern – zum Beispiel Hände waschen, Zähne putzen, Anziehen, Toilette, Obstsalat oder den Schultag – und für Küche und Haushalt: Tisch decken, Vor dem Kochen, Nach dem Kochen, Von Hand spülen, Spülmaschine, Wäsche waschen. Im Dialog wählst du eine dieser Vorlagen oder schreibst eigene Schritte (bis zu 12). Ein Tipp auf das Bildfeld eines Schritts sucht ein Bild; „Fehlende Bilder suchen“ holt für alle Schritte ohne Bild eins aus der Bildersuche (dafür braucht es Internet). Dazu: Karten mit Pfeilen oder eine Liste, Nummern, Farbe.
+
+Auf der Seite liest ein Tipp den Schritt vor und hakt ihn ab (grüner Haken), der nächste Schritt ist mit „Jetzt“ markiert. Sind alle Schritte erledigt, erscheint „Geschafft!“. Der runde Pfeil oben rechts fängt von vorn an. Ausgedruckt (PDF) haken die Kinder mit dem Stift ab. Einen kleinen Ablaufplan gibt es auch im Regal unter „Klasse“.
+
+### Telefonieren und Notruf üben
+
+Die Vorlage „Telefonieren üben“ (Kategorie Alltag) zeigt ein Telefon mit Tasten, die ihre Ziffer sagen. Grün ruft an: Es klingelt, dann meldet sich der Kontakt („Hallo, hier ist Oma!“) – eine unbekannte Nummer hat „keinen Anschluss“. Im Dialog stellst du bis zu sechs Kontakte mit Name, Nummer und Foto ein und wählst die Übung: „Ruf … an!“ (eine Aufgabe mit Foto, die Nummer auf Wunsch dazu, „Andere Aufgabe“ wechselt) oder das Telefonbuch (ein Tipp auf einen Kontakt sagt Name und Nummer). Es wird nie wirklich jemand angerufen.
+
+Die Vorlage „Notruf üben“ übt die 112 (Feuerwehr und Rettungsdienst) oder die 110 (Polizei): Nach dem Wählen stellt die Stimme der Leitstelle nacheinander die W-Fragen (Wo? Was? Wie viele? Wer? Warten!). Das Kind antwortet laut und tippt auf „Weiter“. Am Gerät steht immer groß „Nur zum Üben“. In den anderen Übungen sagt das Telefon bei 112 oder 110 nur, dass man diese Nummer im echten Notfall wählt.
+
+### KI-Partner bauen
+
+Die Vorlage „KI-Partner bauen“ (Kategorie Medien & KI) zeigt Kindern Schritt für Schritt, wie man einer KI eine gute Anweisung gibt – nach den fünf Teilen P Person (Wer soll die KI sein?), A Aufgabe (Was soll sie mit dir machen?), Z Ziel (Was willst du am Ende können?), K Kontext (Was soll sie über dich wissen?) und O Form (Wie soll sie antworten?). Zuerst wählen die Kinder ein Thema (Mathe, Lesen und Schreiben, Sachunterricht, Englisch, Alltag, Gefühle und Miteinander, Beruf und Praktikum, Freizeit und Hobby) – oder du legst es fest. In jedem Schritt stehen drei Ideen zum Antippen (sie werden vorgelesen), „Andere Ideen“ zeigt weitere, „Selbst schreiben“ öffnet ein Textfeld (auch zum Ändern einer Idee, mit dem Mikrofon der Tastatur geht auch Sprechen). Oben zeigen fünf Punkte, wie weit man ist; ein Tipp auf einen Punkt springt zurück.
+
+Am Ende steht der ganze KI-Partner als Karte da: Vorlesen, einen Teil antippen und ändern, „Neu anfangen“ (zweimal tippen) oder „Ausprobieren“. Dann wird der Text kopiert und ein Fenster erklärt, was zu tun ist: die KI öffnen, ins Eingabefeld einsetzen, senden. Vor den Text der Kinder kommt eine Vorgabe, die sie nicht sehen: Als **Lernpartner** (Standard) verrät die KI keine Lösungen, sondern fragt, gibt kleine Tipps und lobt; als **freier Helfer** erklärt sie auch und schreibt Texte – dann gibt es mehr Ideen. Beide sprechen einfaches Deutsch, fragen nicht nach persönlichen Daten und schicken bei Sorgen zu einer Lehrkraft. Die Vorgabe kannst du unter „Einstellen“ ändern.
+
+Welche KI: Duck.ai (Standard, ohne Konto), ChatGPT, Claude oder Le Chat (dort steht der Text gleich im Eingabefeld), Gemini oder eine eigene Adresse. Für **AIS-Chat** trägst du den Link und den Zugangscode eines geteilten Dialogpartners ein: Daraus wird ein Link, der die Kinder direkt in den vorbereiteten Dialog führt; ihr KI-Partner ist schon kopiert und wird dort als erste Nachricht eingefügt. Mit „Im Heft öffnen“ (Standard) erscheint der Chat auf der Heftseite an der Stelle des KI-Partners – im Editor, auf der Tafel und im Heft zum Ansehen; die Kinder verlassen die App nicht, „Zurück“ zeigt wieder den KI-Partner. Das geht nur mit AIS-Chat – Duck.ai, ChatGPT und die anderen lassen sich nicht in eine andere Seite einbetten. Bitte prüfe die Regeln der KI-Seite (Mindestalter, Konto) und eurer Schule. Im Heft bleibt der fertige KI-Partner gespeichert; gedruckt ist er eine Karte mit den fünf Teilen (leere Teile mit Linien zum Schreiben).
+
+### Fußgängerampel und Schilder
+
+Die Vorlage „Fußgängerampel“ (Kategorie Alltag) zeigt eine Straße, auf der Autos in beide Richtungen fahren, und ein Kind am Straßenrand neben der Fußgängerampel. Ein Tipp auf den gelben Kasten: „Signal kommt“ leuchtet, die Autos halten an, das grüne Männchen leuchtet, das Kind schaut nach links und rechts, und die Stimme sagt „Schau auf beide Seiten, ob die Autos stehen.“ Dann schickt man das Kind los – mit „Los!“ oder einem Tipp auf das Kind. Bei Grün geht es über die Straße (Lob), bei Rot bleibt es stehen („Halt! Die Ampel ist rot.“). Grün bleibt, bis das Kind drüben ist; „Nochmal“ holt es zurück. Einstellbar: wie lange Grün und Warten dauern, die Ansagen, das Ticken wie an echten Ampeln. Ein Tipp auf die Ampel sagt, was sie gerade zeigt.
+
+Im Regal unter „Schilder“ liegen selbst gezeichnete Verkehrszeichen (Zebrastreifen, Gehweg, Radweg, Stopp, Vorfahrt achten, Achtung Kinder, Bushaltestelle …) und Schilder aus dem Schulhaus (WC, Notausgang, Erste Hilfe, Feuerlöscher, Sammelstelle, Rauchen verboten, Handy aus, Bitte leise, Rollstuhl, Aufzug, Hände waschen). Beim Vorlesen sagt jedes Schild seinen Namen.
+
+### Gefühle
+
+Die Vorlage „Wie geht es dir heute?“ (Kategorie Schule) zeigt Gesichter für Gefühle – fröhlich, ruhig, müde, traurig, wütend, ängstlich, überrascht, krank. Ein Tipp sagt zum Beispiel „Ich bin müde.“ Mit „Zählen“ zählt jeder Tipp – so sieht man im Morgenkreis, wie es allen geht; der runde Pfeil fängt von vorn an. Im Dialog wählst du die Gefühle (mindestens zwei) und die Frage. Auch im Regal unter „Klasse“.
+
+Die Vorlage „Gefühle-Karten“ zeigt sechs Figuren mit Gefühlen und dem Wort darunter; ein Tipp auf eine Figur sagt das Gefühl. Jede Figur aus dem Figuren-Baukasten kann ein Gefühl zeigen: „Figur bearbeiten“ → Gesicht → Gefühl.
+
 ## Mathe
 
-*Arbeitsblätter, Geld, Uhr, Geometrie, Kasse*
+*Arbeitsblätter, Strichliste, Suchbild, Karopapier*
 
 ### Mathe-Aufgaben
 
@@ -345,7 +388,7 @@ Die Vorlage „Uhrzeiten üben“ macht Arbeitsblätter zur Uhr: Uhrzeit ablesen
 
 ### Geometrie: Formen zeichnen
 
-Die Vorlage „Geometrie: Formen zeichnen“ (Kategorie Mathe) macht die Seite zu Karopapier (5 mm). Oben steht die Aufgabe, z. B. „Zeichne ein Rechteck: 6 cm lang und 3 cm hoch“, ein roter Punkt zeigt, wo die Form beginnt. „Start“ liest die Aufgabe vor, schaltet den Stift ein und legt das Lineal hin – bei Aufgaben mit Winkeln das Geodreieck. Der Nullpunkt des Lineals rastet am roten Punkt und an den Enden schon gezeichneter Linien ein, so treffen sich die Ecken genau. „Vorlesen“ liest die Aufgabe noch einmal, „Vorschau“ zeigt die Form kurz auf dem Papier. Mit „Überprüfen“ wird die Zeichnung verglichen: richtige Linien leuchten grün, falsche rot, darunter steht, was nicht stimmt (z. B. „Die untere Seite ist 4 mm zu kurz“). Verbessern geht mit dem Radierer oder „Rückgängig“; nach zwei Versuchen kann man sich die Lösung zeigen lassen. „Weiter“ macht das Papier für die nächste Aufgabe frei, am Ende kommt eine Auswertung (richtig gezeichnet, gleich beim ersten Prüfen, Vorschau, Zeit, jede Aufgabe mit einem kleinen Bild).
+Die Vorlage „Geometrie: Formen zeichnen“ (Kategorie Mathe) macht die Seite zu Karopapier (5 mm). Oben steht die Aufgabe, z. B. „Zeichne ein Rechteck: 6 cm lang und 3 cm hoch“, ein roter Punkt zeigt, wo die Form beginnt. Kommt man auf die Seite, ist der Stift schon an und das Lineal liegt unten links bereit – bei Aufgaben mit Winkeln das Geodreieck. „Start“ liest die Aufgabe vor. Der Nullpunkt des Lineals rastet am roten Punkt und an den Enden schon gezeichneter Linien ein, so treffen sich die Ecken genau. „Vorlesen“ liest die Aufgabe noch einmal, „Vorschau“ zeigt die Form kurz auf dem Papier. Mit „Überprüfen“ wird die Zeichnung verglichen: richtige Linien leuchten grün, falsche rot, darunter steht, was nicht stimmt (z. B. „Die untere Seite ist 4 mm zu kurz“). Verbessern geht mit dem Radierer oder „Rückgängig“; nach zwei Versuchen kann man sich die Lösung zeigen lassen. „Weiter“ macht das Papier für die nächste Aufgabe frei, am Ende kommt eine Auswertung (richtig gezeichnet, gleich beim ersten Prüfen, Vorschau, Zeit, jede Aufgabe mit einem kleinen Bild).
 
 Einstellbar: Schwierigkeit (leicht: ganze Zentimeter an den Karolinien; mittel: Millimeter, rechtwinklige Dreiecke, Treppen; schwer: Winkel, gleichseitige und gleichschenklige Dreiecke, Parallelogramme, ein Haus; oder ansteigend), wie viele Aufgaben (1 bis 10), welche Formen, wie genau (großzügig, normal, genau) und wie lange die Vorschau zu sehen ist. Gezeichnet wird im Editor, auf der Tafel und im „Heft zum Weiterarbeiten“ – im „Heft zum Ansehen“ gibt es keinen Stift.
 
@@ -369,9 +412,25 @@ Die Vorlage „Labyrinth“ (Kategorie Mathe) macht Irrgärten zum Lösen mit de
 
 Im Regal unter „Mathe“ liegt Material zum Anschauen und Ausprobieren: Das Rechenschiffchen (5, 10 oder 20 Plätze) füllt sich beim Antippen immer der Reihe nach von links nach rechts – ein Tipp legt ein blaues Plättchen auf den nächsten freien Platz, ein Tipp auf das letzte Plättchen macht es rot, noch einmal nimmt es weg; neue Plättchen bekommen die Farbe des vorigen, so entstehen Zerlegungen wie 4 + 3. Beim Rechenrahmen (20 oder 100) schiebt ein Tipp auf eine Kugel sie und die Kugeln daneben auf die andere Seite. Das Lineal (15 oder 30 cm) hat beim Ausdrucken die echte Größe und lässt sich wie ein Bild verschieben und drehen. Der Taschenrechner rechnet plus, minus, mal und geteilt (auch mit Komma), zeigt die Aufgabe über der Zahl und liest das Ergebnis vor. Die Geräte reagieren beim Bearbeiten nach dem zweiten Antippen, auf der Tafel und im „Heft zum Ansehen“ sofort; „Zurücksetzen“ in der Leiste oder ↺ am Gerät fängt neu an.
 
+### Strichliste, Glücksrad und Würfel
+
+Die Vorlage „Strichliste und Diagramm“ zählt bis zu zwölf Dinge (Wort, Farbe, auf Wunsch ein Bild): „+“ macht einen Strich, „−“ nimmt einen weg, jeder fünfte Strich geht quer über die vier davor. Daneben wachsen die Balken eines Diagramms. Der runde Vorlese-Knopf oben rechts sagt das Ergebnis („Am meisten: Apfel“). Im Heft bleiben die Striche gespeichert; „Alle Striche löschen“ fängt neu an.
+
+Die Vorlage „Glücksrad und Würfel“ dreht ein Glücksrad mit 2 bis 12 Feldern oder würfelt mit einem oder zwei Würfeln (Punkte oder Zahlen). Das Ergebnis wird gesagt. Die Felder des Rads schreibst du in ein Textfeld (eins pro Zeile oder mit Komma), nimmst ein Beispiel (Obst, Farben, Zahlen, Wochentage, Bewegung) oder lässt sechs Wörter aus einer Wortliste einsetzen; die Farben kommen von selbst. Mit „Strichliste daneben“ steht rechts eine Strichliste mit denselben Feldern (beim Würfel: die Augenzahlen, bei zwei Würfeln die Summen 2 bis 12), so wird daraus eine kleine Statistik. Die Striche kommen von selbst (jedes Drehen oder Würfeln macht beim Ergebnis einen Strich) – oder die Kinder machen sie selbst: Sie tippen nach jedem Mal beim Ergebnis auf +, die Stimme erinnert sie daran („Mach einen Strich!“). Ohne Strichliste steht das Rad groß in der Mitte. Ändert man später die Felder, zieht die Strichliste mit (Striche gleicher Felder bleiben). „Ohne Wiederholung“ lässt jedes Feld erst wieder kommen, wenn alle dran waren (z. B. „Wer ist dran?“ mit den Namen der Klasse). Würfel und Glücksrad gibt es auch im Regal unter „Klasse“.
+
+### Suchbild und Muster fortsetzen
+
+Die Vorlage „Suchbild“ verteilt Formen in vielen Farben – die Kinder finden zum Beispiel alle roten Sterne. Ein Tipp auf eine richtige Form kreist sie ein und zählt mit, eine falsche wackelt. Einstellbar: was gesucht wird (Form, Farbe oder beides – auch „Zufällig“: jedes neue Bild sucht etwas anderes), wie viele (fest oder zufällig, z. B. 3 bis 6), und wie schwer (leicht: die anderen sehen ganz anders aus; mittel: gleiche Form oder gleiche Farbe; schwer: mehr und kleiner). „Neues Bild“ mischt neu. Ausgedruckt kreist man die Formen ein.
+
+Die Vorlage „Muster fortsetzen“ zeigt eine Perlenkette (oder Formen) nach einer Regel – AB, AAB, ABB, ABC, AABB, ABCD oder gemischt – und leere Plätze dahinter. Unten liegen die Perlen zur Auswahl; die richtige rutscht auf den nächsten Platz, eine falsche wackelt. Nach jeder Reihe kommt das nächste Muster, am Ende steht, wie viele ohne Fehler gelangen.
+
+### Karopapier: Symmetrie, Muster, Messen
+
+Die Vorlage „Karopapier: Symmetrie, Muster, Messen“ macht Arbeitsblätter auf 5-mm-Kästchen in echter Größe: Kästchen an der roten Linie spiegeln, Bandornamente fortsetzen, eine Figur ins leere Feld abzeichnen, Strecken messen (die Länge in ein Kästchen tippen – „7“, „7 cm“ und „70 mm“ zählen gleich) und Strecken vom roten Punkt aus zeichnen. Leicht oder schwer (größere Figuren, halbe Zentimeter), Lösungsseiten und Lösungskontrolle wie bei den Mathe-Aufgaben. Im Heft misst man mit dem Lineal aus der Stiftspalte; ein Tipp auf ein Kästchen öffnet es zum Tippen, ohne dass Stift und Lineal weggehen. Beim Drucken „Tatsächliche Größe“ bzw. 100 % wählen, damit die Zentimeter stimmen.
+
 ## Lesen und Schreiben lernen
 
-*Buchstaben, Anlaute, Silben, Kalenderblatt*
+*Buchstaben, Anlaute, Laute hören, Silben*
 
 ### Buchstaben üben
 
@@ -402,6 +461,10 @@ Die Silben selbst sind fertig eingesprochen dabei; hast du unter „Aussprache v
 Die Vorlage **Silben klatschen** („Interaktive Übungen“) zeigt ein Bild nach dem anderen: Das Kind spricht das Wort und klatscht dabei die Silben. „Hören“ neben dem Bild sagt das Wort, „Silben zeigen“ spricht es und klatscht es vor – Silbe für Silbe leuchtet das Wort in Blau und Rot auf, mit Silbenbogen und Punkt. „Weiter“ bringt das nächste Bild, am Ende kommt eine Urkunde mit allen Bildern. Von Anfang an können als Hilfe Punkte (einer je Silbe) oder das Wort in Silbenschrift zu sehen sein. Die Wörter (bis 16) wählst du aus einer Wortliste (auch nur Wörter aus den gelernten Buchstaben oder mit einer bestimmten Silbenzahl), schreibst eigene oder lässt eine KI welche vorschlagen („Wörter mit KI finden …“: der Prompt für einen KI-Chat, z. B. den deiner Schule, oder direkt über eine API-Schnittstelle mit eigenem Schlüssel). Die Silben trennt das Heft selbst; stimmt eine Trennung nicht, schreibst du das Wort mit Bindestrichen („Ba-na-ne“). Die Bilder sucht das Heft bei ARASAAC, du kannst jedes auch selbst wählen oder weglassen (dann steht das Wort im Bildfeld).
 
 Auf Wunsch zählt das Mikrofon mit: „Klatschen“ hört zu, bis eine kurze Stille kommt, und sagt dann, ob die Zahl passt – in einer lauten Klasse nur ungefähr; aufgenommen wird nichts. Einmal erlaubt, bleibt das Mikrofon an (der Browser fragt nicht bei jedem Bild neu), bis du links neben dem Bild auf „Mikrofon aus“ tippst oder umblätterst.
+
+### Laute hören
+
+Die Vorlage „Laute hören“ (Kategorie Schreiben) macht Arbeitsblätter zur Lautwahrnehmung: Anlaute schreiben (den ersten Buchstaben ins Kästchen tippen), Anlaute finden (den richtigen von drei Buchstaben einkreisen), „Wo hörst du …?“ (M, L, N, F, Sch, T oder K am Anfang, in der Mitte oder am Ende – ein Kreuz in das richtige Feld), Silben zählen (Zahl ins Kästchen) und Reime finden (Bilder verbinden). Die Bilder der Anlaute und Silben sind eingebaut; für „Wo hörst du …?“ und die Reime sucht das Heft sie in der Bildersuche (dafür braucht es Internet – ohne Bild steht das Wort da). Lösungsseiten und Lösungskontrolle wie bei den Mathe-Aufgaben.
 
 ### Das sprechende Kalenderblatt
 
@@ -515,9 +578,13 @@ Die Vorlage „Stimmgerät“ (Kategorie Musik) hört über das Mikrofon zu und 
 
 ### Hörspiel-Studio
 
-Die Vorlage „Hörspiel-Studio“ (Kategorie Musik) hat drei Spuren, von unten nach oben: **Musik**, **Sprache** und **Geräusche**. „+ Geräusch“ fügt eines von 14 Geräuschen ein (Regen, Wind, Donner, Meer, Vögel, Schritte, Klopfen, Tür, Glocke, Uhr, Herzschlag, Zauber, Applaus, Feuer) – oder mit „Eigenes Geräusch …“ eine eigene Aufnahme oder Tondatei; du kannst auch erst einen Platzhalter mit Namen anlegen (gestrichelt) und ihn später antippen und aufnehmen. Eigene Geräusche stehen danach in der Auswahl unter „Eigene Geräusche“ – zum Wiederverwenden in diesem Hörspiel (nicht benutzte nimmst du dort mit × heraus). Geräusche zeigen auf der Zeitleiste ein Bild, wenn sie breit genug sind – die eingebauten haben eines, eigene wählst du im Geräusch aus (oder „Kein Bild“). „+ Sprache“ nimmt deine Stimme auf (oder lädt eine Tondatei), „+ Musik“ bringt eine Stimmung (fröhlich, ruhig, spannend, gruselig) oder eigene Musik. Alles kommt an die rote Linie; ein Tipp auf die Zeitleiste setzt sie. − und + vergrößern die Zeitleiste (bis 16-fach), der Balken darunter verschiebt sie.
+Die Vorlage „Hörspiel-Studio“ (Kategorie Musik) hat drei Spuren, von unten nach oben: **Musik**, **Sprache** und  **Geräusche**. „+ Geräusch“ fügt eines von 14 Geräuschen ein (Regen, Wind, Donner, Meer, Vögel, Schritte, Klopfen, Tür, Glocke, Uhr, Herzschlag, Zauber, Applaus, Feuer) – oder mit „Eigenes Geräusch …“ eine eigene Aufnahme oder Tondatei; du kannst auch erst einen Platzhalter mit Namen anlegen (gestrichelt) und ihn später antippen und aufnehmen. Eigene Geräusche stehen danach in der Auswahl unter „Eigene Geräusche“ – zum Wiederverwenden in diesem Hörspiel (nicht benutzte nimmst du dort mit × heraus). Geräusche zeigen auf der Zeitleiste ein Bild, wenn sie breit genug sind – die eingebauten haben eines, eigene wählst du im Geräusch aus (oder „Kein Bild“). „+ Sprache“ nimmt deine Stimme auf (oder lädt eine Tondatei), „+ Musik“ bringt eine Stimmung (fröhlich, ruhig, spannend, gruselig) oder eigene Musik. Alles kommt an die rote Linie; ein Tipp auf die Zeitleiste setzt sie. − und + vergrößern die Zeitleiste (bis 16-fach), der Balken darunter verschiebt sie.
 
 Schiebe die Teile mit dem Finger an die richtige Stelle, tippe sie an für Name, Lautstärke (bis 200 %), Länge, Löschen oder „Duplizieren“ (dieselbe Aufnahme gleich noch einmal dahinter). Aufnahmen kannst du dort **bearbeiten**: die Wellenform antippen (rote Linie) oder über einen Teil ziehen, dann „Nur Auswahl behalten“, „Auswahl löschen“ (ein Stück aus der Mitte), „Pausen kürzen“ (lange Pausen werden von selbst kurz) oder „An der roten Linie teilen“ – dann werden es zwei Teile, die du einzeln verschieben und lauter oder leiser stellen kannst. ▶ spielt alles zusammen ab. Die Sprache wird von selbst deutlich gemacht (leise Aufnahmen lauter, Brummen weg), und die Musik geht zurück, solange gesprochen wird (wie weit, stellst du ein) – beides lässt sich in der Leiste ausschalten, dort stellst du auch die Länge ein (30 Sekunden bis 3 Minuten). „Herunterladen“ speichert das ganze Hörspiel als Tondatei. Geräusche und Musik macht das Gerät selbst, ohne Internet.
+
+### Hör-Memory und Was hörst du?
+
+Die Vorlage „Hör-Memory“ legt Karten mit einem Ohr verdeckt hin: Ein Tipp spielt das Geräusch, zwei Karten mit gleichem Geräusch sind ein Paar und zeigen ihr Bild. Bei „Was hörst du?“ tippt man auf das Ohr, hört ein Geräusch und tippt auf das richtige von drei oder vier Bildern. Geräusche: Alltag und Natur (Regen, Donner, Vögel, Klopfen, Glocke …), Instrumente (Klavier, Trommel, Triangel, Flöte …) – beides eingebaut, ohne Internet – oder eigene Aufnahmen mit Foto (z. B. die Pausenglocke der Schule). Im Dialog wählst du bis zu acht Geräusche; ein Tipp spielt sie vor.
 
 ## Figuren, Film und Theater
 
@@ -555,13 +622,65 @@ Auf der Seite steht dann das erste Foto mit dem Knopf „Diaschau ansehen“: Di
 
 Die Vorlage „Elevator Pitch“ (Kategorie Präsentation) ist eine Theaterbühne mit Vorhang, Scheinwerfern und einem Fahrstuhl in der Mitte: Wer vorträgt, soll ein Thema in der Zeit einer Fahrstuhlfahrt überzeugend vorstellen. „Los!“ startet die Zeit – 60, 90, 120 oder 180 Sekunden, direkt an der Bühne umschaltbar –, und der Fahrstuhl fährt in genau dieser Zeit vom Erdgeschoss nach oben; die Anzeige zählt rückwärts, die letzten 10 Sekunden blinken rot. „Pause“ hält an, der runde Pfeil fängt von vorn an. Oben angekommen: „Pling“, die Türen gehen auf, jemand winkt, dazu Fanfare, Applaus und Konfetti. In der Leiste stellst du unter „Einstellen“ die Zeit, den Text auf dem Vorhang (z. B. das Thema) und ob Fanfare und Applaus erklingen ein.
 
+## Beruf und Alltag
+
+*Praktikum, Geld, Automaten, Gespräche, Sortieren*
+
+### Praktikum: Mappe, Einschätzung, Stückzähler
+
+Die Vorlagen der Kategorie **Beruf & Praktikum** sind für die Berufsschulstufe gemacht – schlicht gestaltet, ohne kindliche Bilder. Die **Praktikumsmappe** gibt es als einzelne Seiten (Deckblatt, Mein Betrieb, Mein Arbeitsplatz, Tagesbericht, Wochenrückblick, Einschätzung, Dankschreiben) oder als „Praktikumsmappe (alle Seiten)“ mit fünf Tagesberichten. Jede Überschrift liest sich beim Antippen vor; geschrieben wird auf den Linien (tippen oder mit dem Stift), Fotos kommen in die Bildfelder, im Tagesbericht gibt es einen Ton-Knopf für einen gesprochenen Bericht.
+
+Die **Selbst- und Fremdeinschätzung** zeigt Punkte wie „Ich bin pünktlich.“ mit drei Gesichtern (klappt gut, teilweise, noch nicht) – in einer Spalte „Ich“ oder in zwei Spalten „Ich“ und „Betreuer/in“. Wo beide verschieden einschätzen, steht ≠, unten die Zahl der gleichen Antworten. Fertige Listen: Arbeitsverhalten, Sozialverhalten, Praxistag, Wohnen. Die Gesichter bleiben im Heft gespeichert.
+
+Für alle Fächer gibt es die Vorlage **Rückmeldung zu meiner Arbeit** (Kategorie Schule): dieselbe Einschätzung mit „Ich“ und „Mitschüler/in“ und fertigen Punkten für Meine Arbeit, Speise, Werkstück oder Bild; darunter schreibt die Mitschülerin oder der Mitschüler „Das gefällt mir gut“ und „Mein Tipp für dich“. In der Kategorie Gestalten hilft **Ein Kunstwerk betrachten**: links Platz für das Bild mit Titel, Künstler/in, Jahr und drei Gesichtern („Gefällt mir das Bild?“), rechts Fragen mit Vorlese-Knopf und Linien (Was sehe ich? Welche Farben und Formen? Wie wirkt es? Was will das Bild erzählen?).
+
+Der **Stückzähler** zählt bei Serienarbeit mit „+1 fertig“ bis zum Ziel (z. B. 40 Weihnachtskarten) und zeigt nach ein paar Stücken, wie lange eins dauert und wie lange es noch dauert. Das **Kassenbuch** (für Schülerfirma oder Schülercafé) zeigt Buchungen mit Einnahme, Ausgabe und dem Kassenstand nach jeder Zeile.
+
+### Checkliste, Wochenplan, Dienstplan, Mein Weg
+
+Die **Checkliste** beantwortet jeden Punkt mit ✓ ja, ✗ nein oder ? weiß nicht – oder hakt nur ab. Fertige Listen: Barriereanalyse (vor einem Praktikum oder einem Ausflug), Fahrrad-Check, Wohnung verlassen, Packliste Ausflug, Hygiene in der Küche, Arbeitsbeginn. „Fehlende Bilder suchen“ holt Bilder zu den Punkten. Die Antworten bleiben im Heft gespeichert.
+
+Der **Wochenplan** zeigt die Tage mit Bildern und Uhrzeiten, heute ist markiert; ein Tipp liest vor, was geplant ist. Die Tage haben die Farben des Kalenderblatts (unter „Einstellen“ abschaltbar). Der **Dienstplan** hat Dienste und Namen – jede Kalenderwoche rücken die Namen einen Dienst weiter, mit ◀ ▶ sieht man die Wochen davor und danach, unten steht, wer frei hat.
+
+**Mein Weg** ist ein Wegeplan: die Schritte mit Uhrzeiten (Haus verlassen, Bus, aussteigen …) als Ablaufplan zum Abhaken, daneben „Was tue ich, wenn …“ (der Bus nicht kommt, ich falsch eingestiegen bin) und eine wichtige Telefonnummer.
+
+### Geld-Planer, Automaten, Rechnen im Alltag
+
+Der **Geld-Planer** zeigt Einnahmen (Lohn, Grundsicherung …), feste Ausgaben (Miete, Strom, Handy …) und Wünsche. Tippt man Wünsche an, steht unten sofort, was übrig bleibt – oder was fehlt. Die Beträge gibst du unter „Einstellen“ ein. Mit „Auf der Heftseite ausfüllen“ (oder der Vorlage „Geld-Planer zum Ausfüllen“) tragen die Schülerinnen und Schüler selbst ein: „+“ in einer Spalte fügt eine Zeile hinzu (Name, Betrag, im Editor auf Wunsch ein Bild), der Stift an einer Zeile ändert oder löscht sie; Summen und Rest rechnet der Planer von selbst. Im Heft wird alles gespeichert, im „Heft zum Ansehen“ gilt es nur bis zum Schließen. Das Kassenbuch kann es genauso (+ Buchung, Anfangsbestand mit dem Stift). Gedruckt hat ein leerer Planer Zeilen zum Hineinschreiben.
+
+Die **Automaten** sind zum gefahrlosen Üben: Am **Fahrkartenautomat** wählt man eine Fahrkarte, zahlt mit Münzen, Scheinen oder Karte aus dem Geldbeutel und nimmt Fahrkarte und Rückgeld. Am **Geldautomat** steckt man die Karte ein, tippt die Übungs-PIN (der Automat erinnert: Tasten verdecken), wählt den Betrag, nimmt zuerst die Karte, dann das Geld – dreimal falsch, und die Karte bleibt im Automaten. Am **Getränkeautomat** wählt man ein Getränk und zahlt. Namen und Preise stellst du ein.
+
+Die Arbeitsblätter **Rechnen im Alltag** haben fünf Übungsformen: Lohn ausrechnen, Lohnzettel lesen, Fahrplan lesen (nächster Bus, Wartezeit), Fahrzeit und „Was bleibt übrig?“ – leicht oder schwer, mit Lösungsseiten und Lösungskontrolle (Uhrzeiten mit Punkt oder Doppelpunkt, Geld mit oder ohne €).
+
+### Gespräche üben, Nähe und Distanz, Abstimmung
+
+**Gespräche üben** ist ein Rollenspiel Satz für Satz: Das Gegenüber spricht (eine Figur oder ein Telefon), dann steht „Du bist dran“ mit einem Hilfe-Satz (gleich sichtbar oder hinter „Tipp zeigen“). Man spricht laut, kann sich aufnehmen und anhören – die Aufnahme wird nie gespeichert. Fertige Gespräche: Krank melden, Arzttermin, Fahrdienst bestellen, Vorstellungsgespräch, Im Café bestellen, Um Hilfe bitten. Alle Sätze kannst du ändern.
+
+Die **Nähe-und-Distanz-Kreise** haben „Ich“ in der Mitte und Kreise wie Familie und Partner, Freunde, Bekannte, Fremde – jeder mit dem, was passt (umarmen, Hand geben, winken). Tippe einen Namen an und dann einen Kreis; ein Tipp auf einen Kreis liest vor, was dort passt. Echte Namen und Fotos nur, wenn das Heft nicht weitergegeben wird.
+
+Die **Abstimmung** ist offen (jeder Tipp eine Stimme, die Balken wachsen) oder eine geheime Wahl: „Ich wähle“, eine Möglichkeit antippen, der Bildschirm ist wieder verdeckt; „Auszählen“ zeigt Mehrheit oder Gleichstand. Gedruckt ist sie ein Stimmzettel zum Ankreuzen.
+
+### Wo tut es weh?, Stressbarometer, Zeitleiste
+
+**Wo tut es weh?** zeigt einen Körper von vorn und hinten. Ein Tipp auf eine Stelle sagt „Mein linkes Knie tut weh.“ (links und rechts so, wie die Person es selbst sieht), dazu wie stark (sechs Gesichter) und seit wann. „Vorlesen“ sagt alles zusammen – zum Beispiel beim Arzt. Nichts wird gespeichert.
+
+Das **Stressbarometer** hat fünf Stufen von „ruhig“ bis „zu viel“; ab „angespannt“ leuchten die eigenen Ideen „Was hilft mir?“ (Pause, tief atmen, Kopfhörer, Bescheid sagen …). Am besten sucht jede Person ihre Ideen selbst aus.
+
+Die **Zeitleiste** zeigt Stationen mit Jahr, Text und Foto – für den Lebenslauf, ein Ich-Buch oder Geschichte. Eine Station ist „heute“, was danach kommt, ist gestrichelt: Wünsche und Ziele.
+
+### Sortieren, Bild-Quiz, Schilder, Fachwörter
+
+**Sortieren**: Eine Karte nach der anderen kommt in den richtigen Kasten – fertige Sets: Ernährungsampel, Mülltrennung, Vorräte lagern (Kühlschrank, Gefrierfach, Vorratsschrank), Wäsche sortieren, „Sie oder du?“, „Kann man das essen?“, „Glück haben oder glücklich sein?“, „Kann man das kaufen?“ (Wünsche), Schilder sortieren. Nach zwei Fehlern wird der richtige Kasten gezeigt; am Ende steht, wie viele gleich richtig waren. Als **Bild-Quiz** zeigt es ein Bild und drei Antworten: Was bedeutet das Schild? Was bedeutet das Wäschezeichen? Wie heißt das Werkzeug? Die Bilder der Sets sind eingebaut (ohne Internet).
+
+Im Regal gibt es neu **Arbeitsschutz** (blaue Gebotszeichen, rote Verbotszeichen, gelbe Warnzeichen, Gefahrstoff-Zeichen) und **Wäsche-Symbole**. Unter „Kommunikationsbuch“ stehen die Tafeln Arbeit und Praktikum, Werkzeuge, Wohnen und Haushalt, Beim Arzt; die Wortliste „Beruf und Haushalt“ hat Fachwörter (Werkzeuge, Küche, Putzen und Wäsche, Büro und Lager) – auch für Etiketten. Im Figuren-Baukasten gibt es Arbeitskleidung (Schutzhelm, Kochmütze, Schutzbrille, Warnweste, Schürze, Arbeitsjacke) und die Figuren Handwerkerin, Koch, Chefin und Kollege. Die Linksammlung **Nachrichten in leichter Sprache** steht unter Medien & KI.
+
 ## Kommunikation
 
 *Kommunikationsbuch mit Sprechtasten*
 
 ### Kommunikationsbuch
 
-In der Kategorie **Kommunikationsbuch** stehen Tafeln für die Unterstützte Kommunikation: leere Raster mit 2 bis 20 Sprechtasten, „Kommunikationstafel“ mit eigener Spalten- und Zeilenzahl und fertige Tafeln mit Piktogrammen (Erste Wörter, Ich brauche …, Gefühle, In der Schule, Zuhause und Familie, Freizeit und Hobbys, Essen und Trinken, Kernwörter, Gespräch und Fragen, Orte). Eine Sprechtaste sagt beim Antippen ihr Wort oder ihren Satz – oder spielt eine eigene Aufnahme. Leere Tasten füllst du durch Antippen: Bild (auch aus der Bildersuche), Wort, Satz, Aufnahme und Wortart. Die Farbe zeigt die Wortart (Personen gelb, Tun-Wörter grün, Wie-Wörter blau, Dinge und Orte orange, Soziales rosa, Fragen lila, kleine Wörter grau). Mit Satzleiste sammelt die Tafel die angetippten Wörter: Der Lautsprecher liest den Satz vor, ⌫ nimmt das letzte Wort weg, × leert die Leiste. Die Tasten sind festgemacht, damit sie gleich beim ersten Antippen sprechen; zum Verschieben löst du sie im Menü „Mehr“.
+In der Kategorie **Kommunikationsbuch** stehen Tafeln für die Unterstützte Kommunikation: leere Raster mit 2 bis 20 Sprechtasten, „Kommunikationstafel“ mit eigener Spalten- und Zeilenzahl und fertige Tafeln mit Piktogrammen (Erste Wörter, Ich brauche …, Gefühle, In der Schule, Zuhause und Familie, Freizeit und Hobbys, Essen und Trinken, Kernwörter, Gespräch und Fragen, Orte, Arbeit, Werkzeug, Wohnen, Beim Arzt, Kochen, Gesprächsrunde – Satzanfänge wie „Ich glaube …“, „Aber …“, „Was ist, wenn …?“ fürs gemeinsame Nachdenken). „Kommunikationsbuch mit allen Tafeln“ legt eine Übersicht an, von der jede Tafel zu erreichen ist. Eine Sprechtaste sagt beim Antippen ihr Wort oder ihren Satz – oder spielt eine eigene Aufnahme. Leere Tasten füllst du durch Antippen: Bild (auch aus der Bildersuche), Wort, Satz, Aufnahme und Wortart. Die Farbe zeigt die Wortart (Personen gelb, Tun-Wörter grün, Wie-Wörter blau, Dinge und Orte orange, Soziales rosa, Fragen lila, kleine Wörter grau). Mit Satzleiste sammelt die Tafel die angetippten Wörter: Der Lautsprecher liest den Satz vor, ⌫ nimmt das letzte Wort weg, × leert die Leiste. Die Tasten sind festgemacht, damit sie gleich beim ersten Antippen sprechen; zum Verschieben löst du sie im Menü „Mehr“.
 
 Tafeln lassen sich verlinken wie Ordner: Gib einer Sprechtaste über „Link“ eine andere Seite – beim Antippen sagt sie ihr Wort und blättert dann dorthin (ein Pfeil oben links zeigt das). Die **Zurück-Taste** führt zur Tafel, von der man kam. Die Satzleiste behält den Satz auch auf der nächsten Tafel. „Kommunikationsbuch mit allen Tafeln“ legt alles fertig verlinkt an: eine Übersicht, die jede Tafel öffnet, und auf jeder Tafel Zurück-Taste und Satzleiste. Einzelne Sprechtasten, die Satzleiste und die Zurück-Taste findest du auch im Regal unter „Kommunikation“.
 
@@ -592,5 +711,102 @@ Tippst du auf dem iPad in einer Übung (Bilddiktat, Kreuzworträtsel …), bleib
 ### Einfacher Modus für Schülerinnen und Schüler
 
 Hängst du an die Adresse **?mode=simple** an (z. B. majort0m0.github.io/Lernsachen-Heft/?mode=simple), startet Lernsachen-Heft in einer einfachen Oberfläche: Es gibt nur ein Heft (es öffnet sich sofort, „Meine Hefte“ fehlt), keine Internet-Elemente und nur einfache Vorlagen – keine einstellbaren Vorlagen, keine interaktiven Übungen, keine Musikgeräte und keine Kommunikationsbücher. Oben links unter „Heft“ öffnest du eine Heft-Datei oder beginnst ein neues Heft; es nimmt den Platz des bisherigen ein. In geöffneten Heften funktioniert alles: Quiz, Zuordnungen, Übungen, Instrumente und Sprechtasten lassen sich spielen, aber nicht bearbeiten, verschieben oder löschen.
+
+## Lehrplanbezüge
+
+*Vom Lehrplan zur passenden Vorlage*
+
+### So nutzt du die Lehrplanbezüge
+
+Die folgenden Abschnitte gehen von den Inhalten des Lehrplans aus und nennen Vorlagen, die dazu passen – als Anregung, nicht als vollständige Liste. Grundlage ist der LehrplanPLUS der Förderschule mit dem Förderschwerpunkt geistige Entwicklung (Bayern): Grund- und Mittelstufe, Fachunterricht und Berufsschulstufe. Vieles passt ebenso zur Grundschule.
+
+Jede genannte Vorlage findest du unter „+ Seite“ mit der Suche in der Vorlagen-Auswahl (den Namen eintippen). Was mit „Regal“ beginnt, liegt im Regal links in der Werkzeugleiste. Vorlagen mit dem Abzeichen „Einstellbar“ fragen beim Einfügen nach Inhalt und Schwierigkeit – so passt du sie an die Lerngruppe an.
+
+### Deutsch
+
+- **Sprechen und Zuhören:** „Gespräch und Fragen“, „Gesprächsrunde“ (Kommunikationsbuch), „Telefonieren üben“, „Gespräche üben“, „Hör-Memory“, „Was hörst du?“, „Puppentheater“, „Hörspiel-Studio“
+- **Laute und Buchstaben:** „Laute hören“ (Anlaut, Wo hörst du …?, Silben zählen, Reime), „Anlaut-Tastatur“, „Buchstaben üben“, „Buchstabenzeilen“, die Lineaturen
+- **Lesen lernen:** „Silben verbinden“, „Silbenlesen“, „Monsternamen lesen“, „Silben klatschen“, Texte mit rot-blauen Silben, „Seite vorlesen“ (Lautsprecher oben rechts)
+- **Mit Texten umgehen:** „Lesen & Schreiben“ (Lesen, Lückentext, Diktat, Abtippen), „Erklärbär“, „Quiz“, „Zuordnungen“, „Bilderbuch“, „Comic: 4 Bilder“
+- **Schreiben:** „Wörter üben mit Bildern“, „Bild und Linien“, „4 Bilder und Linien“, „Tagebuch“, „Brief“, „Postkarte“, „Einladung“, „Steckbrief“, „Schülerzeitung: …“
+- **Rechtschreiben und Wortschatz:** „Memory“, „Kreuzworträtsel“, „Suchsel“, „Wordle“, „Maus & Käse“, „Etiketten“
+
+### Mathematik
+
+- **Zahlen und Operationen:** „Mathe-Aufgaben“ (mit Lösungskontrolle), „Ziffern üben“, „Rechenkästchen“, „Rechnen mit dem Taschenrechner“, Regal „Mathe“ (Rechenschiffchen, Rechenrahmen, Taschenrechner)
+- **Raum und Form:** „Geometrie: Formen zeichnen“ (Lineal und Geodreieck liegen bereit), „Karopapier: Symmetrie, Muster, Messen“, „Muster fortsetzen“, „Suchbild“, „Labyrinth“, „Sudoku 4×4“
+- **Größen und Messen:** „Rechnen mit Geld“, „Einkaufen an der Kasse“, „Uhrzeiten üben“, „Karopapier“ (Strecken messen und zeichnen), Regal „Zeit & Kalender“ (Uhr, Timer), Regal „Mathe“ (Lineal in echter Größe)
+- **Daten und Zufall:** „Strichliste und Diagramm“, „Glücksrad und Würfel“, „Abstimmung und Wahl“
+- **Mathematik im Alltag:** „Rechnen im Alltag: Lohn, Fahrplan, Geld“, „Geld-Planer: Mein Monat“, „Geld-Planer zum Ausfüllen“, „Kassenbuch“
+
+### Sachunterricht und Lebenspraxis
+
+- **Zeit und Tagesstruktur:** „Das sprechende Kalenderblatt“, „Wochenplan“, „Stundenplan“, „Bilder-Stundenplan“ (Tage in den Farben des Kalenderblatts), „Tagesplan“, „Heute“, „Multi-Timer“
+- **Ich und meine Geschichte:** „Steckbrief“, „Zeitleiste (Lebenslauf)“, „Bildersammlung“
+- **Körper, Gesundheit, Hygiene:** „Ablaufplan“ (Hände waschen, Zähne putzen, Toilette, Anziehen), „Wo tut es weh?“, „Sortieren“ (Ernährungsampel)
+- **Verkehr und Sicherheit:** „Fußgängerampel“, Regal „Schilder“, „Mein Weg (Wegeplan)“, „Karte“, „Notruf üben“
+- **Natur und Technik erkunden:** „Experiment“, „Mindmap“, „Plakat“, „Linksammlung“
+
+### Ernährung und Soziales
+
+- **Mahlzeiten gemeinsam einnehmen, Tisch decken:** „Ablaufplan“ (Tisch decken), „Speisekarte“, „Einladung“
+- **Im Team arbeiten:** „Dienstplan“ (Ämterplan), „Rückmeldung zu meiner Arbeit“ (Speise)
+- **Lebensmittel erkunden, sich gesund ernähren:** „Sortieren“ (Kann man das essen?, Ernährungsampel), Kommunikationstafel „Essen und Trinken“
+- **Mit Lebensmitteln umgehen, einkaufen:** „Sortieren“ (Vorräte lagern), „Checkliste“ (Einkaufszettel mit Bildern), „Einkaufen an der Kasse“, „Geld-Planer“
+- **Auf Umweltschutz achten:** „Sortieren“ (Mülltrennung)
+- **Die Schulküche nutzen, hauspflegerische Arbeiten:** „Ablaufplan“ (Vor dem Kochen, Nach dem Kochen, Von Hand spülen, Spülmaschine, Wäsche waschen), „Sortieren“ (Wäsche sortieren), „Bild-Quiz: Was bedeutet das?“ (Wäsche-Symbole), Regal „Wäsche-Symbole“
+- **Rezepte lesen, Speisen zubereiten:** „Rezept“, „Ablaufplan“ (Obstsalat), Regal „Zeit & Kalender“ (Timer), Kommunikationstafel „Kochen“
+
+### Ethik und Religionslehre
+
+- **Fragen stellen und philosophieren:** Kommunikationstafel „Gesprächsrunde“ (Satzanfänge), „Mindmap“, „Abstimmung und Wahl“
+- **Die eigene Einmaligkeit, Stärken und Schwächen:** „Steckbrief“, „Zeitleiste (Lebenslauf)“, „Selbst- und Fremdeinschätzung“, „Urkunde“
+- **Umgang mit Gefühlen:** „Wie geht es dir heute?“, „Gefühle-Karten“, „Stressbarometer: Was hilft mir?“, Kommunikationstafel „Gefühle“
+- **Glück und Unglück, Wünsche und Ängste:** „Sortieren“ (Glück haben oder glücklich sein?, Kann man das kaufen?)
+- **Familie, Freundschaft, Nähe und Distanz:** „Nähe und Distanz: Kreise“, „Gespräche üben“
+- **Regeln, Frieden und Konflikte:** „Plakat“ (Klassenregeln), „Abstimmung und Wahl“, „Puppentheater“ (Konflikte nachspielen)
+- **Rituale und Feste, Kirchenjahr:** „Das sprechende Kalenderblatt“, „Einladung“, „Veranstaltungsprogramm“, „Diaschau“
+- **Biblische und andere Geschichten erzählen:** „Erklärbär“, „Comic: 4 Bilder“, „Bilderbuch“, „Hörspiel-Studio“, „Puppentheater“, „Storyboard“
+- **Konsum und Medienkonsum:** „Strichliste und Diagramm“ (Medientagebuch), „Geld-Planer“, „KI-Partner bauen“, „Nachrichten in leichter Sprache“
+
+### Kunst, Werken und Gestalten
+
+- **Farben, Malen und Zeichnen:** der Stift (Buntstift, Aquarell, Füller, Marker), Farbeimer, Vorlage „Leer“ oder „Kariert“, Bild-Editor (Effekte zum Verfremden)
+- **Fotografieren und Collagieren:** Kamera im Bild-Dialog, „Bildersammlung“, „Plakat“, „Instagram-Post“, „Diaschau“ (mit Musik und Übergängen)
+- **Filmen und mit dem Computer gestalten:** „Animation“ (auch als GIF), „Puppentheater“ (als Video), „Storyboard“, „Drehbuch“, „Comic: 6 Bilder“, „Einladung“, „Urkunde“
+- **Kunstwerke und Bauwerke betrachten:** „Ein Kunstwerk betrachten“, „Karte“ (Unterrichtsgang)
+- **Eigene Arbeiten reflektieren und präsentieren:** „Rückmeldung zu meiner Arbeit“ (Bild, Werkstück), „QR-Plakat“, „Diaschau“, Kategorie „Präsentation“
+- **Werken – Arbeitsabläufe und Werkzeuge:** „Ablaufplan“ (als Bauplan), „Bild-Quiz: Was bedeutet das?“ (Werkzeuge), Kommunikationstafel „Werkzeuge“, Regal „Arbeitsschutz“, „Karopapier“ (Strecken messen und zeichnen)
+
+### Musik, Sport und Bewegung
+
+- **Die eigene Stimme, Lieder singen:** „Karaoke-Liedblatt“, „Kassettenrekorder“, „Hörspiel-Studio“, „Klanggeschichte“
+- **Musikinstrumente spielen, begleiten, improvisieren:** „Klavier“, „Xylophon“, „Glockenspiel“, „Klangrohre“, „Orff-Instrumente“, „Schlagzeug“, „Cajón“, „Klang-Pads“, „Beat-Baukasten“, „Melodie-Baukasten“, „Metronom“
+- **Hören, Stille, Geräusche:** „Hör-Memory“, „Was hörst du?“, „Tonfolgen: Klavier“ (Hör zu – spiel nach), „Lärmampel“
+- **Notation, Instrumente benennen:** „Noten lernen“, „Noten-Trainer: Namen“, „Notenregen: Klavier“, die Baukästen als grafische Notation, „Stimmgerät“
+- **Sport und Bewegung:** „Multi-Timer“ (Stationen, Pausen), „Glücksrad und Würfel“ (Bewegungsaufgaben), „Strichliste und Diagramm“ (Runden, Treffer), „Ablaufplan“ (Bewegungsfolge), „Applausometer“, „Urkunde“
+
+### Berufsschulstufe
+
+- **Beruf und Arbeit:** „Praktikumsmappe (alle Seiten)“, „Selbst- und Fremdeinschätzung“, „Stückzähler (Serienfertigung)“, „Kassenbuch“, „Bild-Quiz: Was bedeutet das?“ (Schilder, Werkzeuge), Regal „Arbeitsschutz“, Kommunikationstafeln „Arbeit und Praktikum“, „Werkzeuge“
+- **Wohnen:** „Checkliste“, „Wochenplan“, „Dienstplan“, „Zimmer einrichten“, „Küche einrichten“, „Sortieren“ (Wäsche, Vorräte), Kommunikationstafel „Wohnen und Haushalt“
+- **Freizeit:** „Wochenplan“, „Linksammlung“, „Veranstaltungsprogramm“, „Einladung“, „Playlist“
+- **Mobilität:** „Mein Weg (Wegeplan)“, „Fahrkartenautomat üben“, „Karte“, „Rechnen im Alltag: Lohn, Fahrplan, Geld“, „Fußgängerampel“
+- **Leben in der Gesellschaft:** „Abstimmung und Wahl“, „Nachrichten in leichter Sprache“, „Geld-Planer: Mein Monat“, „Geldautomat üben“, „Getränkeautomat üben“, „Telefonieren üben“, „Gespräche üben“ (Krankmeldung, Arzttermin), „Wo tut es weh?“, Kommunikationstafel „Beim Arzt“
+- **Persönlichkeit und Selbstbestimmung:** „Zeitleiste (Lebenslauf)“, „Lebenslauf“, „Stressbarometer: Was hilft mir?“, „Nähe und Distanz: Kreise“, „Selbst- und Fremdeinschätzung“
+
+### Entwicklungsbezogene Kompetenzen
+
+- **Kommunikation und Sprache (auch Unterstützte Kommunikation):** „Kommunikationsbuch mit allen Tafeln“, „Kommunikationstafel“ (eigenes Raster), „Satzleiste + 15 Felder“, Regal „Kommunikation“ (Sprechtasten)
+- **Emotionen und soziales Handeln:** „Wie geht es dir heute?“, „Gefühle-Karten“, „Stressbarometer: Was hilft mir?“, „Nähe und Distanz: Kreise“, „Rückmeldung zu meiner Arbeit“
+- **Denken und Lernstrategien (Struktur und Orientierung):** „Ablaufplan“, „Bilder-Stundenplan“, „Wochenplan“, „Checkliste“, „Multi-Timer“, Regal „Zeit & Kalender“ (Timer), „Lerntagebuch“
+- **Motorik und Wahrnehmung:** „Buchstaben üben“ (Schwungübungen, Nachspuren), „Labyrinth“, „Suchbild“, „Muster fortsetzen“, „Was hörst du?“, der Stift mit Lineal
+
+### Medienbildung und Informatik
+
+- **Algorithmen und Programmieren:** Kategorie „Programmieren“ – von „Wie ein Bodenroboter: Tasten“ über „Schleifen: wiederhole“ und „Bedingungen: Farbweg“ bis „Programmieren: Arbeitsblatt“
+- **Künstliche Intelligenz verstehen und nutzen:** „KI-Partner bauen“
+- **Informieren und recherchieren:** „Linksammlung“, „Nachrichten in leichter Sprache“, „QR-Plakat“, „Webseite“, „Video“
+- **Eigene Medien produzieren und präsentieren:** „Erklärbär“ (als Video), „Animation“, „Puppentheater“, „Hörspiel-Studio“, „Diaschau“, „Elevator Pitch“, Kategorie „Präsentation“
 
 > **Tipp für das iPad:** Öffne Lernsachen-Heft in Safari und wähle „Teilen → Zum Home-Bildschirm“. Dann startet es wie eine App und der Speicher bleibt länger erhalten. Speichere wichtige Hefte trotzdem ab und zu als Datei.
