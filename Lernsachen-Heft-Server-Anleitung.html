@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Lernsachen-Heft-Server – Anleitung</title>
+<style>
+  :root {
+    --bg: #f6f3ec; --card: #ffffff; --ink: #23303b; --muted: #5b6670; --accent: #2f7d6d; --accent-ink: #ffffff;
+    --line: #dcd5c8; --tip: #eaf4f1; --tip-line: #9fcbbf; --warn: #fdf3e2; --warn-line: #e6bf7a;
+    --code: #f1ede4; --orange: #c8641e; --th: #f3efe6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1d2328; --card: #262e35; --ink: #eef1f3; --muted: #a9b3bb; --accent: #5cc0a8; --accent-ink: #10201c;
+      --line: #3a444d; --tip: #22352f; --tip-line: #3f6e61; --warn: #3a3222; --warn-line: #7a6236;
+      --code: #2f3840; --orange: #f0a05c; --th: #2c353d; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 16px 48px; }
+  header { margin-bottom: 24px; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 12px; }
+  .lead { font-size: 1.05rem; }
+  nav { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 20px; margin: 0 0 28px; }
+  nav h2 { margin: 4px 0 8px; font-size: 1.1rem; color: var(--ink); }
+  nav ol { margin: 0; padding-left: 1.6em; columns: 2; column-gap: 32px; }
+  nav li { break-inside: avoid; }
+  a { color: var(--accent); }
+  nav a { text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px 24px 18px; margin: 0 0 18px; }
+  h2 { font-size: 1.4rem; line-height: 1.3; margin: 18px 0 10px; color: var(--accent); }
+  h2 .nr { display: inline-block; min-width: 1.6em; }
+  h3 { font-size: 1.1rem; margin: 22px 0 6px; }
+  h4 { font-size: 1rem; margin: 16px 0 4px; }
+  p, ul, ol, table { margin: 0 0 12px; }
+  li { margin-bottom: 5px; }
+  li > ul, li > ol { margin: 4px 0 4px; }
+  code, .path { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em;
+    background: var(--code); padding: 1px 6px; border-radius: 6px; overflow-wrap: anywhere; }
+  .ui { font-weight: 600; white-space: normal; }
+  kbd { font-family: inherit; font-size: .9em; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px;
+    padding: 0 5px; background: var(--code); }
+  pre { background: var(--code); border-radius: 10px; padding: 12px 14px; overflow-x: auto; font-size: .85em; line-height: 1.45;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .box { border-radius: 10px; padding: 10px 14px 10px 16px; margin: 14px 0; border-left: 5px solid; }
+  .box > :last-child { margin-bottom: 0; }
+  .box .label { display: block; font-weight: 700; margin-bottom: 2px; }
+  .tip { background: var(--tip); border-color: var(--tip-line); }
+  .warn { background: var(--warn); border-color: var(--warn-line); }
+  .tip .label::before { content: "Tipp: "; }
+  .warn .label::before { content: "Achtung: "; }
+  ol.steps { list-style: none; counter-reset: step; padding-left: 0; }
+  ol.steps > li { counter-increment: step; position: relative; padding-left: 2.6em; margin-bottom: 10px; min-height: 1.9em; }
+  ol.steps > li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 1.85em; height: 1.85em;
+    border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 700; text-align: center;
+    line-height: 1.85em; font-size: .95em; }
+  table { border-collapse: collapse; width: 100%; font-size: .95em; }
+  th, td { text-align: left; vertical-align: top; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  th { background: var(--th); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  .sketch { border: 2px dashed var(--line); border-radius: 14px; padding: 14px; margin: 14px 0; text-align: center; }
+  .sketch .node { display: inline-block; border: 2px solid var(--accent); border-radius: 12px; padding: 8px 12px; margin: 4px;
+    background: var(--card); min-width: 150px; vertical-align: top; }
+  .sketch .node small { display: block; color: var(--muted); font-size: .8em; line-height: 1.35; }
+  .sketch .node.kid { border-color: var(--orange); }
+  .sketch .wire { color: var(--muted); font-size: .9em; margin: 6px 0; }
+  .sketch .wire::before, .sketch .wire::after { content: "│"; display: block; line-height: 1; }
+  .stamp-list { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .stamp-list li { border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; margin: 0; background: var(--code); }
+  .tag { display: inline-block; border: 1px solid var(--orange); color: var(--orange); border-radius: 999px; padding: 0 9px;
+    font-size: .85em; font-weight: 600; }
+  .mustertext { background: var(--code); border-radius: 10px; padding: 12px 16px; margin: 12px 0; font-size: .95em; }
+  .mustertext p:last-child { margin-bottom: 0; }
+  .fill { display: inline-block; min-width: 14em; border-bottom: 1.5px solid var(--ink); }
+  .quick ol.steps > li { margin-bottom: 14px; }
+  .quick ol.steps > li strong:first-child { display: block; font-size: 1.05em; }
+  .faq h3 { color: var(--ink); }
+  footer { color: var(--muted); font-size: .9rem; text-align: center; margin-top: 28px; }
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    nav ol { columns: 1; }
+    h1 { font-size: 1.7rem; }
+    section { padding: 4px 16px 14px; }
+    th, td { padding: 6px 6px; }
+    .sketch .node { min-width: 0; display: block; }
+  }
+  @media print {
+    :root { --bg: #fff; --card: #fff; --ink: #000; --muted: #444; --accent: #1f5c50; --accent-ink: #fff; --line: #bbb;
+      --tip: #eef6f3; --tip-line: #7fb5a6; --warn: #fbf1df; --warn-line: #d9a64e; --code: #f2f2f2; --orange: #a64e10; --th: #eee; }
+    @page { margin: 16mm 15mm; }
+    body { font-size: 10.5pt; line-height: 1.45; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    main { max-width: none; padding: 0; }
+    nav { border: 0; padding: 0; break-after: page; }
+    section { border: 0; border-radius: 0; padding: 0; margin: 0 0 10px; }
+    section.chapter { break-before: page; }
+    h2, h3, h4 { break-after: avoid; }
+    .box, ol.steps > li, tr, .sketch, .mustertext, pre { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+    pre { white-space: pre-wrap; }
+    .noprint { display: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Lernsachen-Heft-Server</h1>
+  <p class="sub">Installations- und Nutzungsanleitung für Lehrkräfte · Version 1.1.0</p>
+  <p class="lead">Mit dem Lernsachen-Heft-Server teilst du Hefte im WLAN deiner Schule an die iPads deiner Klasse aus, bekommst
+    die Hefte der Kinder zurück, korrigierst sie, schreibst eine Rückmeldung und gibst sie wieder zurück – ganz ohne
+    Internet und ohne Anmeldung.</p>
+  <p>Diese Anleitung liegt als <span class="path">LIESMICH.html</span> im Ordner des Servers. Solange der Server läuft, findest
+    du sie auch in Lernsachen-Heft unter <span class="ui">„Server“ → „Anleitung zum Server“</span> und auf jedem Gerät im Netz
+    unter <code>http://&lt;Adresse des Servers&gt;:8765/anleitung</code>.</p>
+</header>
+
+<nav aria-label="Inhalt">
+  <h2>Inhalt</h2>
+  <ol>
+    <li><a href="#was">Was ist der Lernsachen-Heft-Server?</a></li>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#starten">Starten, Beenden, Einstellungen</a></li>
+    <li><a href="#lehrerversion">Lehrerversion auf dem Computer und dem Lehrer-iPad</a></li>
+    <li><a href="#austeilen">Hefte austeilen</a></li>
+    <li><a href="#kinder">Was die Kinder machen</a></li>
+    <li><a href="#schuelerhefte">Schülerhefte: Klassenordner, Korrigieren, Rückmeldung, Zurückgeben</a></li>
+    <li><a href="#ton-kamera">Ton und Kamera im Schulnetz – das Problem und die Lösungen</a></li>
+    <li><a href="#datenschutz">Datenschutz</a></li>
+    <li><a href="#aktualisieren">Aktualisieren und Sichern</a></li>
+    <li><a href="#fragen">Häufige Fragen und Probleme</a></li>
+    <li><a href="#kurzanleitung">Kurzanleitung zum Ausdrucken</a></li>
+  </ol>
+</nav>
+
+<!-- ============================================================ 1 -->
+<section id="was" class="chapter">
+  <h2><span class="nr">1</span> Was ist der Lernsachen-Heft-Server?</h2>
+  <p>Der Lernsachen-Heft-Server ist ein kleines Programm. Du startest es auf einem Computer in deiner Schule (Mac, Windows
+    oder Linux). Dieser Computer – wir nennen ihn in dieser Anleitung den <strong>Server-Computer</strong> – stellt
+    Lernsachen-Heft dann für alle Geräte im selben WLAN bereit. Ein „Server“ ist einfach ein Computer, der anderen Geräten
+    etwas zur Verfügung stellt – hier: Hefte.</p>
+
+  <h3>Das Wichtigste in fünf Sätzen</h3>
+  <ol class="steps">
+    <li>Der Server läuft auf einem Computer im Schulnetz, zum Beispiel auf dem Lehrerrechner im Klassenzimmer.</li>
+    <li>Auf diesem Computer und auf deinem Lehrer-iPad benutzt du die <strong>Lehrerversion</strong> von Lernsachen-Heft –
+      Quizsachen, Schiebesachen und Textsachen sind eingebaut, Übungen erstellen geht ohne Internet.</li>
+    <li>Ein Heft teilst du mit einem QR-Code aus; die Kinder öffnen es auf den Klassen-iPads im Browser – ohne Installation
+      und ohne Anmeldung.</li>
+    <li>Was die Kinder speichern, landet als Datei auf dem Server-Computer und erscheint bei dir in „Meine Hefte“ unter
+      <span class="ui">„Schülerhefte“</span>.</li>
+    <li>Dort korrigierst du die Hefte, schreibst eine Rückmeldung und gibst sie an die Kinder zurück.</li>
+  </ol>
+
+  <h3>So hängt alles zusammen</h3>
+  <div class="sketch" role="img" aria-label="Skizze: Server-Computer, darunter im selben WLAN das Lehrer-iPad und die Schüler-iPads">
+    <div class="node"><strong>Server-Computer</strong><small>Programm läuft · Lehrerversion im App-Fenster<br>Ordner „Schülerhefte“</small></div>
+    <div class="wire">dasselbe WLAN / Schulnetz – Internet wird nicht gebraucht</div>
+    <div class="node"><strong>Lehrer-iPad</strong><small>Lehrerversion<br>(verbunden per QR-Code)</small></div>
+    <div class="node kid"><strong>Schüler-iPad</strong><small>Schülerversion<br>eines Hefts</small></div>
+    <div class="node kid"><strong>Schüler-iPad …</strong><small>so viele, wie du<br>brauchst</small></div>
+  </div>
+
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Gerät</th><th>Was es macht</th><th>Adresse (Beispiel)</th></tr></thead>
+    <tbody>
+      <tr><td>Server-Computer</td><td>Das Programm läuft hier. Die Lehrerversion öffnet sich in einem eigenen Fenster. Die
+        Hefte der Kinder liegen hier im Ordner <span class="path">Schülerhefte</span>.</td><td><code>http://localhost:8765</code></td></tr>
+      <tr><td>Lehrer-iPad</td><td>Die Lehrerversion – du kannst austeilen, korrigieren und zurückgeben wie am Computer.</td>
+        <td>Lehrer-Link (geheim, per QR-Code)</td></tr>
+      <tr><td>Schüler-iPads</td><td>Die Schülerversion: genau ein Heft, einfache Bedienung, Knopf „Speichern“.</td>
+        <td><code>http://192.168.1.20:8765/h/K7MP</code></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Was bleibt wo gespeichert?</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Was</th><th>Wo</th></tr></thead>
+    <tbody>
+      <tr><td>Deine eigenen Hefte („Meine Hefte“)</td><td>Im Browser des jeweiligen Geräts – auf dem Server-Computer und auf
+        dem Lehrer-iPad getrennt (mehr dazu in <a href="#lehrerversion">Kapitel 5</a>).</td></tr>
+      <tr><td>Ausgeteilte Hefte</td><td>Auf dem Server-Computer im Ordner <span class="path">Daten/ausgeteilt</span>.</td></tr>
+      <tr><td>Gespeicherte Hefte der Kinder</td><td>Auf dem Server-Computer im Ordner <span class="path">Schülerhefte</span> –
+        ein Ordner pro Kind, auf Wunsch in Klassenordnern.</td></tr>
+      <tr><td>Arbeitsstand der Kinder zwischen zwei Mal Speichern</td><td>Im Browser des Schüler-iPads.</td></tr>
+      <tr><td>Rückgaben, Einstellungen, Lehrer-Schlüssel, Zertifikat</td><td>Auf dem Server-Computer im Ordner
+        <span class="path">Daten</span>.</td></tr>
+      <tr><td>Gelöschtes</td><td>Zuerst im Ordner <span class="path">Daten/papierkorb</span>.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Nichts davon geht ins Internet. Der Server-Computer muss nur eingeschaltet sein und das Programm laufen, solange die
+    Kinder arbeiten.</p>
+</section>
+
+<!-- ============================================================ 2 -->
+<section id="voraussetzungen" class="chapter">
+  <h2><span class="nr">2</span> Voraussetzungen</h2>
+
+  <h3>Ein Computer für den Server</h3>
+  <ul>
+    <li><strong>Mac</strong> mit macOS 12 oder neuer (Apple-Chip oder Intel),</li>
+    <li><strong>Windows</strong> 10 oder 11 (64 Bit, auch Windows auf ARM),</li>
+    <li><strong>Linux</strong> (64 Bit oder 32 Bit ARM) – auch ein <strong>Raspberry Pi</strong> ab Modell 2 oder ein Pi Zero 2 reicht (nicht Pi 1 oder der erste Pi Zero).</li>
+  </ul>
+  <p>Der Computer muss eingeschaltet bleiben, solange die Kinder arbeiten. Stell den Ruhezustand während des Unterrichts ab
+    oder auf eine lange Zeit (Mac: <em>Systemeinstellungen → Energie</em> bzw. beim MacBook <em>→ Batterie → Optionen …</em>, außerdem
+    <em>Sperrbildschirm</em>; ein MacBook nicht zuklappen; Windows:
+    <em>Einstellungen → System → Netzbetrieb und Akku</em>). Der Ordner braucht etwa 100 MB, dazu kommen die Hefte der
+    Kinder (je Heft meist ein paar MB).</p>
+
+  <h3>Ein Browser auf dem Server-Computer</h3>
+  <p>Am schönsten öffnet sich die Lehrerversion mit <strong>Chrome</strong>, <strong>Edge</strong> oder <strong>Brave</strong>
+    (auch Chromium oder Vivaldi): Dann erscheint sie als eigenes <strong>App-Fenster</strong> ohne Adress- und Lesezeichenleiste.
+    Mit Safari oder Firefox geht es auch – dann als normaler Browser-Tab. Unter Windows ist Edge immer vorhanden.</p>
+
+  <h3>iPads</h3>
+  <p>Die Kinder brauchen nur Safari – nichts installieren, kein Konto. Auch andere Tablets und Computer mit einem aktuellen
+    Browser funktionieren.</p>
+
+  <h3>Ein gemeinsames Netzwerk</h3>
+  <p>Server-Computer, Lehrer-iPad und Schüler-iPads müssen im <strong>selben Netzwerk</strong> sein, also zum Beispiel alle
+    im WLAN der Schule. Internet wird nicht gebraucht.</p>
+  <div class="warn"><span class="label">Client-Isolation</span>
+    Manche Schul-WLANs – besonders Gäste-WLANs – lassen die Geräte absichtlich nicht miteinander sprechen. Das heißt
+    <strong>Client-Isolation</strong>: Jedes Gerät darf nur ins Internet, aber nicht zu einem anderen Gerät im WLAN. Dann
+    erreicht kein iPad den Server, obwohl alles richtig eingestellt ist. Frag in dem Fall die IT-Betreuung, ob sie für die
+    Klassen-iPads und den Server-Computer eine Ausnahme oder ein eigenes Netz einrichten kann.</div>
+  <div class="tip"><span class="label">Ein eigenes kleines WLAN</span>
+    Geht es im Schul-WLAN nicht, hilft ein <strong>eigener einfacher Router</strong> im Klassenzimmer: Er braucht keinen
+    Internetanschluss, nur Strom. Server-Computer und iPads verbinden sich mit diesem WLAN. Für wenige Geräte reicht zum
+    Ausprobieren auch der <strong>persönliche Hotspot</strong> eines Smartphones. Achtung: Ein iPad, das in einem anderen
+    WLAN ist, findet den Server nicht.</div>
+
+  <h3>Eine feste IP-Adresse für den Server-Computer (empfohlen)</h3>
+  <p>Jedes Gerät im Netz hat eine Nummer, die <strong>IP-Adresse</strong> (z. B. <code>192.168.1.20</code>). Der Router
+    vergibt sie – und manchmal vergibt er nach einem Neustart eine andere. Das stört aus drei Gründen:</p>
+  <ul>
+    <li>Die QR-Codes und Lesezeichen enthalten die Adresse. Ändert sie sich, führen sie ins Leere.</li>
+    <li>Die Hefte in „Meine Hefte“ auf deinem Lehrer-iPad gehören im Browser zu genau dieser Adresse. Mit einer neuen Adresse
+      ist „Meine Hefte“ dort zuerst leer (die Hefte sind nicht weg – nur unter der alten Adresse).</li>
+    <li>Ein Symbol auf dem Home-Bildschirm der iPads funktioniert nicht mehr.</li>
+  </ul>
+  <p>Deshalb: Lass dem Server-Computer im Router eine <strong>feste IP-Adresse</strong> geben. In vielen Routern heißt das
+    „Diesem Gerät immer dieselbe IP-Adresse zuweisen“ oder „DHCP-Reservierung“. In der Schule macht das die IT-Betreuung.</p>
+  <div class="tip"><span class="label">Name im Netz</span>
+    Das Fenster des Servers zeigt neben der IP-Adresse oft auch einen <strong>Namen im Netz</strong>, z. B.
+    <code>http://lehrer-mac.local:8765</code>. Dieser Name bleibt gleich, auch wenn sich die IP-Adresse ändert. Er klappt aber
+    nicht in jedem Netz – probier ihn auf einem iPad aus, bevor du dich darauf verlässt.</div>
+</section>
+
+<!-- ============================================================ 3 -->
+<section id="installation" class="chapter">
+  <h2><span class="nr">3</span> Installation</h2>
+  <p>Eine richtige Installation gibt es nicht: Du lädst einen Ordner herunter, legst ihn an einen festen Ort und startest
+    eine Datei darin.</p>
+
+  <h3>3.1 Herunterladen und entpacken</h3>
+  <ol class="steps">
+    <li>Öffne die Seite der Veröffentlichungen von Lernsachen-Heft:
+      <a href="https://github.com/Majort0m0/Lernsachen-Heft/releases/latest">github.com/Majort0m0/Lernsachen-Heft/releases/latest</a>.
+      Lade dort unter „Assets“ die Datei <strong>Lernsachen-Heft-Server.zip</strong> herunter (etwa 40 MB).</li>
+    <li>Entpacke die zip-Datei:
+      <ul>
+        <li><strong>Mac:</strong> Doppelklick auf die zip-Datei.</li>
+        <li><strong>Windows:</strong> Rechtsklick auf die zip-Datei → <em>„Alle extrahieren …“</em> → <em>„Extrahieren“</em>.
+          Starte den Server nicht direkt aus der zip-Datei heraus – das klappt nicht.</li>
+        <li><strong>Linux:</strong> im Dateimanager „Hier entpacken“ oder im Terminal <code>unzip Lernsachen-Heft-Server.zip</code>.</li>
+      </ul></li>
+    <li>Verschiebe den Ordner <strong>„Lernsachen-Heft-Server“</strong> an einen festen Ort, an dem er bleiben kann, z. B. in
+      deinen Benutzerordner (Mac) oder nach <code>C:\Lernsachen-Heft-Server</code> (Windows). Wenn du ihn später verschiebst,
+      ist das kein Problem – der ganze Ordner muss nur zusammenbleiben.</li>
+  </ol>
+  <div class="warn"><span class="label">Nicht in einen Cloud-Ordner</span>
+    Lege den Ordner nicht in einen Ordner, der mit einer Cloud abgeglichen wird (iCloud Drive, OneDrive, Dropbox …). Dort
+    können Dateien ausgelagert werden, während der Server sie braucht – und die Hefte der Kinder sollen das Schulnetz nicht
+    verlassen (siehe <a href="#datenschutz">Datenschutz</a>). Auf dem Mac ist auch der Ordner „Dokumente“ oft in iCloud.</div>
+
+  <h3>3.2 Was ist in dem Ordner?</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Datei oder Ordner</th><th>Wofür</th></tr></thead>
+    <tbody>
+      <tr><td><span class="path">Lernsachen-Heft-Server starten (Mac).command</span></td><td>Startdatei für den Mac</td></tr>
+      <tr><td><span class="path">Lernsachen-Heft-Server starten (Windows).bat</span></td><td>Startdatei für Windows</td></tr>
+      <tr><td><span class="path">Lernsachen-Heft-Server starten (Linux).sh</span></td><td>Startdatei für Linux und Raspberry Pi</td></tr>
+      <tr><td><span class="path">LIESMICH.html</span></td><td>Diese Anleitung</td></tr>
+      <tr><td><span class="path">programm/</span></td><td>Das Programm für alle Systeme (<code>mac</code>, <code>windows-x64</code>,
+        <code>windows-arm64</code>, <code>linux-x64</code>, <code>linux-arm64</code>, <code>linux-arm</code>) und die
+        Lehrerversion <span class="path">Lernsachen-Heft-komplett.html</span>. Die Startdatei wählt das passende Programm von
+        selbst.</td></tr>
+      <tr><td><span class="path">Schülerhefte/</span></td><td>Entsteht beim ersten Start. Hier landen die Hefte der Kinder.</td></tr>
+      <tr><td><span class="path">Daten/</span></td><td>Entsteht beim ersten Start: <span class="path">einstellungen.json</span>,
+        <span class="path">ausgeteilt/</span> (ausgeteilte Hefte), <span class="path">rueckgabe/</span> (Rückgaben),
+        <span class="path">papierkorb/</span> (Gelöschtes) und – nur wenn du https einschaltest –
+        <span class="path">zertifikat/</span>.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>3.3 Erster Start auf dem Mac</h3>
+  <ol class="steps">
+    <li>Doppelklick auf <strong>„Lernsachen-Heft-Server starten (Mac).command“</strong>.</li>
+    <li>Beim ersten Mal meldet macOS: <em>„Apple konnte nicht überprüfen, ob … frei von Schadsoftware ist“</em>. Das liegt
+      daran, dass das Programm nicht bei Apple beglaubigt („notarisiert“) ist – das ist bei kleinen, kostenlosen Programmen oft
+      so. Klicke auf <em>„Fertig“</em> (nicht „In den Papierkorb legen“).</li>
+    <li>Öffne <em>Systemeinstellungen → Datenschutz &amp; Sicherheit</em> und scrolle nach unten zum Abschnitt
+      <em>„Sicherheit“</em>. Dort steht, dass die Startdatei blockiert wurde. Klicke auf <em>„Dennoch öffnen“</em> und bestätige
+      mit deinem Kennwort oder Touch ID, dann noch einmal <em>„Dennoch öffnen“</em>. Dafür brauchst du ein Administrator-Konto; auf Schul-Macs macht das sonst
+      die IT-Betreuung.</li>
+    <li>Ein Terminal-Fenster öffnet sich – das ist das <strong>Fenster des Servers</strong>. Kurz danach öffnet sich die
+      Lehrerversion.</li>
+    <li>Fragt macOS: <em>„Soll das Programm „lernsachen-heft-server“ eingehende Netzwerkverbindungen akzeptieren?“</em>, klicke
+      auf <em>„Erlauben“</em>. Ohne diese Erlaubnis erreichen die iPads den Server nicht.</li>
+  </ol>
+  <div class="tip"><span class="label">Ältere macOS-Versionen</span>
+    Dort geht es auch so: Rechtsklick (oder ctrl-Klick) auf die Startdatei → <em>„Öffnen“</em> → <em>„Öffnen“</em>. Kommt die
+    Meldung ein zweites Mal, wiederhole den Schritt. Danach startet der Server ohne Nachfrage.</div>
+  <div class="tip"><span class="label">Aus Versehen „Ablehnen“ geklickt?</span>
+    <em>Systemeinstellungen → Netzwerk → Firewall → Optionen …</em> → beim Eintrag „lernsachen-heft-server“
+    <em>„Eingehende Verbindungen erlauben“</em> wählen. Fragt macOS, ob „Terminal“ Geräte im lokalen Netzwerk finden darf,
+    wähle ebenfalls <em>„Erlauben“</em>.</div>
+
+  <h3>3.4 Erster Start unter Windows</h3>
+  <ol class="steps">
+    <li>Doppelklick auf <strong>„Lernsachen-Heft-Server starten (Windows).bat“</strong>.</li>
+    <li>Erscheint ein blaues Fenster <em>„Der Computer wurde durch Windows geschützt“</em> (SmartScreen): Klicke auf
+      <em>„Weitere Informationen“</em> und dann auf <em>„Trotzdem ausführen“</em>. Fragt Windows <em>„Datei öffnen –
+      Sicherheitswarnung“</em>, wähle <em>„Ausführen“</em>.</li>
+    <li>Ein schwarzes Fenster öffnet sich – das ist das <strong>Fenster des Servers</strong>. Kurz danach öffnet sich die
+      Lehrerversion.</li>
+    <li>Windows meldet <em>„Die Windows Defender Firewall hat einige Features dieser App blockiert“</em>: Setze das Häkchen bei
+      <em>„Private Netzwerke“</em> (auf Schulrechnern ggf. auch bei <em>„Domänennetzwerke“</em>) und klicke auf <em>„Zugriff zulassen“</em>. Dafür braucht es eventuell einmal ein
+      Administrator-Kennwort.</li>
+  </ol>
+  <div class="tip"><span class="label">SmartScreen von vornherein vermeiden</span>
+    Vor dem Entpacken: Rechtsklick auf die zip-Datei → <em>„Eigenschaften“</em> → unten bei „Sicherheit“ das Häkchen
+    <em>„Zulassen“</em> setzen → <em>„OK“</em>. Dann fragt Windows beim Start nicht mehr.</div>
+  <div class="warn"><span class="label">Schulnetz als „öffentliches Netzwerk“</span>
+    Ist das Schul-WLAN in Windows als <em>öffentliches</em> Netzwerk eingestellt, gilt die Freigabe für private Netzwerke
+    dort nicht. Dann entweder das Netzwerk auf <em>„Privat“</em> stellen (<em>Einstellungen → Netzwerk und Internet → WLAN →
+    Eigenschaften</em>) oder die IT-Betreuung fragen.</div>
+  <div class="warn"><span class="label">Virenschutz</span>
+    Manche Virenschutz-Programme halten unbekannte Programme zunächst fest oder verschieben sie in die Quarantäne. Das
+    Programm des Servers ist nicht gefährlich, aber neu und selten. Lässt es sich nicht starten, bitte die IT-Betreuung, den
+    Ordner „Lernsachen-Heft-Server“ als Ausnahme einzutragen.</div>
+
+  <h3>3.5 Erster Start unter Linux</h3>
+  <p>Im Terminal im Ordner des Servers:</p>
+  <pre>sh "Lernsachen-Heft-Server starten (Linux).sh"</pre>
+  <p>Oder im Dateimanager: Rechtsklick auf die Startdatei → <em>„Als Programm ausführen“</em> (je nach Dateimanager vorher
+    unter <em>„Eigenschaften“</em> das Ausführen erlauben). Ist eine Firewall aktiv, gib den Port frei, z. B. mit
+    <code>sudo ufw allow 8765/tcp</code> (und <code>8766/tcp</code>, wenn du https benutzt).</p>
+  <div class="tip"><span class="label">Raspberry Pi</span>
+    Der Server läuft auch auf einem Raspberry Pi (Raspberry Pi OS mit 64 Bit oder 32 Bit). Die Startdatei erkennt das von
+    selbst. Für die Lehrerversion auf dem Pi selbst ist der vorinstallierte Chromium-Browser gut geeignet; meist benutzt man
+    den Pi aber nur als Server und arbeitet am Lehrer-iPad.</div>
+</section>
+
+<!-- ============================================================ 4 -->
+<section id="starten" class="chapter">
+  <h2><span class="nr">4</span> Starten, Beenden, Einstellungen</h2>
+
+  <h3>4.1 Das Fenster des Servers</h3>
+  <p>Nach dem Start zeigt das Fenster des Servers die Adressen an, zum Beispiel:</p>
+  <pre>──────────────────────────────────────────────────────
+  Lernsachen-Heft-Server 1.1.0 läuft
+──────────────────────────────────────────────────────
+  Auf diesem Computer:  http://localhost:8765
+  Im Netzwerk:          http://192.168.1.20:8765  (en0)
+                        http://lehrer-mac.local:8765  (Name im Netz)
+  Schülerhefte:         …/Lernsachen-Heft-Server/Schülerhefte
+  App:                  Lernsachen-Heft-komplett.html
+
+  Lehrer-iPad verbinden: in Lernsachen-Heft oben auf „Server“ tippen.
+  Beenden: dieses Fenster schließen oder Strg+C drücken.
+──────────────────────────────────────────────────────</pre>
+  <ul>
+    <li><strong>Auf diesem Computer</strong> – die Adresse für den Server-Computer selbst.</li>
+    <li><strong>Im Netzwerk</strong> – die Adresse für die iPads. Die meisten brauchst du nie abzutippen: Lernsachen-Heft zeigt
+      sie als QR-Code.</li>
+    <li>Ist https eingeschaltet (<a href="#ton-kamera">Kapitel 9</a>), stehen dort nach dem Start zusätzlich
+      <code>Sicher (https): https://192.168.1.20:8766</code> und
+      <code>Zertifikat für iPads: http://192.168.1.20:8765/zertifikat</code>.</li>
+    <li>Darunter erscheinen während des Unterrichts kurze Meldungen, z. B. wenn ein Kind gespeichert hat.</li>
+  </ul>
+  <div class="warn"><span class="label">Fenster offen lassen</span>
+    Solange das Fenster offen ist, läuft der Server. Du kannst es verkleinern (ins Dock bzw. in die Taskleiste), aber nicht
+    schließen – sonst können die Kinder nicht mehr speichern.</div>
+
+  <h3>4.2 Das App-Fenster der Lehrerversion</h3>
+  <p>Kurz nach dem Start öffnet sich Lernsachen-Heft als eigenes Fenster ohne Leisten – mit Chrome, Edge oder Brave. Ist keiner
+    davon installiert, öffnet sich ein normaler Tab im Standardbrowser. Du kannst die Lehrerversion jederzeit auch selbst
+    öffnen:</p>
+  <pre>http://localhost:8765</pre>
+  <p>Benutze immer genau diese Adresse (nicht <code>127.0.0.1</code>) und immer denselben Browser: Die Hefte in „Meine Hefte“
+    gehören zur Adresse und zum Browser.</p>
+  <p>Ein zweiter Doppelklick auf die Startdatei, während der Server schon läuft, startet keinen zweiten Server – er öffnet nur
+    die Lehrerversion noch einmal.</p>
+
+  <h3>4.3 Die Ports 8765 und 8766</h3>
+  <p>Ein <strong>Port</strong> ist so etwas wie eine Zimmernummer im Computer: Die IP-Adresse ist das Haus, der Port die Tür, an
+    der der Server wartet. Der Lernsachen-Heft-Server benutzt <strong>8765</strong> (und <strong>8766</strong> für https). Darum
+    steht hinter jeder Adresse <code>:8765</code>.</p>
+
+  <h3>4.4 Die Einstellungen: Daten/einstellungen.json</h3>
+  <p>Beim ersten Start legt der Server die Datei <span class="path">Daten/einstellungen.json</span> an. <strong>Normalerweise
+    musst du sie nie ändern.</strong> Falls doch:</p>
+  <ol class="steps">
+    <li>Beende den Server.</li>
+    <li>Öffne die Datei mit einem einfachen Texteditor (Mac: TextEdit – vorher unter <em>„Bearbeiten“ → „Ersetzungen“</em> die
+      <em>„Intelligenten Anführungszeichen“</em> ausschalten; Windows: Editor/Notepad; Linux: Texteditor).</li>
+    <li>Ändere nur den Wert hinter dem Doppelpunkt. Anführungszeichen und Kommas müssen bleiben – und zwar gerade
+      Anführungszeichen <code>"</code>, keine „schrägen“.</li>
+    <li>Speichern, Server wieder starten. Ist die Datei fehlerhaft, sagt der Server das beim Start und startet nicht – dann den
+      Fehler korrigieren oder die Datei löschen (siehe Hinweis unten).</li>
+  </ol>
+  <pre>{
+  "port": 8765,
+  "lehrerSchluessel": "k7m2p…",
+  "browserOeffnen": true,
+  "browser": "",
+  "appDatei": "",
+  "erlaubteNamen": [],
+  "https": false,
+  "httpsPort": 8766
+}</pre>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Eintrag</th><th>Bedeutung</th></tr></thead>
+    <tbody>
+      <tr><td><code>port</code></td><td>Der Port für http (Standard <code>8765</code>). Nur ändern, wenn ein anderes Programm ihn
+        belegt. Achtung: Mit einem neuen Port ist „Meine Hefte“ auf allen Geräten zuerst leer, und alle QR-Codes ändern sich.</td></tr>
+      <tr><td><code>browserOeffnen</code></td><td><code>true</code> = beim Start die Lehrerversion öffnen, <code>false</code> =
+        nicht (z. B. auf einem Raspberry Pi ohne Bildschirm).</td></tr>
+      <tr><td><code>browser</code></td><td>Leer = automatisch (Chrome, Edge, Brave …). <code>"standard"</code> = immer der
+        Standardbrowser. Oder ein bestimmter Browser: Mac der Name, z. B. <code>"Microsoft Edge"</code>; Windows der ganze Pfad mit
+        doppelten Schrägstrichen, z. B.
+        <code>"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"</code>; Linux der Befehl, z. B.
+        <code>"chromium"</code>.</td></tr>
+      <tr><td><code>https</code></td><td><code>true</code> = die sichere Verbindung ist eingeschaltet. Das schaltest du besser in
+        der App um (<span class="ui">„Server“ → „Sichere Verbindung (https) …“</span>).</td></tr>
+      <tr><td><code>httpsPort</code></td><td>Der Port für https (Standard <code>8766</code>).</td></tr>
+      <tr><td><code>erlaubteNamen</code></td><td>Zusätzliche Namen, unter denen der Server erreichbar sein soll, wenn die
+        IT-Betreuung ihm einen eigenen Namen im Schulnetz gegeben hat, z. B. <code>["heftserver.schule.intern"]</code>. Adressen
+        mit Zahlen und Namen auf <code>.local</code>/<code>.lan</code> gehen auch ohne Eintrag. Für https gelten nur Namen auf
+        <code>.local</code>, <code>.lan</code>, <code>.internal</code>, <code>.home.arpa</code>, <code>.localdomain</code> und
+        <code>.fritz.box</code> (z. B. <code>"heftserver.schule.lan"</code>) und keine Namen mit Umlauten – andere Namen gehen
+        nur über http, für https nehmen die iPads dann die Adresse mit Zahlen (<a href="#ton-kamera">Kapitel 9.3</a>).
+        So kann das Zertifikat nie für einen Namen im Internet gelten, auch nicht für die Internet-Adresse der Schule.</td></tr>
+      <tr><td><code>lehrerSchluessel</code></td><td>Der geheime Teil des Lehrer-Links (<a href="#lehrerversion">Kapitel 5</a>).
+        Löschst du ihn (<code>""</code>), entsteht beim nächsten Start ein neuer; änderst du ihn, gilt dein Wert. In beiden
+        Fällen müssen sich alle Lehrer-iPads neu verbinden – das ist gewollt, wenn der Lehrer-Link in falsche Hände geraten ist.</td></tr>
+      <tr><td><code>appDatei</code></td><td>Leer = die Lehrerversion aus dem Ordner <span class="path">programm</span>. Nur für
+        Sonderfälle.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="warn"><span class="label">Datei löschen</span>
+    Löschst du <span class="path">einstellungen.json</span>, legt der Server sie neu an – mit allen Standardwerten und einem
+    <strong>neuen Lehrer-Schlüssel</strong>. Dein Lehrer-iPad muss sich dann neu verbinden.</div>
+
+  <h3>4.5 Automatisch beim Anmelden starten (optional)</h3>
+  <ul>
+    <li><strong>Mac:</strong> <em>Systemeinstellungen → Allgemein → Anmeldeobjekte</em> → bei „Beim Anmelden öffnen“ auf
+      <em>„+“</em> → die Startdatei (.command) wählen.</li>
+    <li><strong>Windows:</strong> <kbd>Windows</kbd>+<kbd>R</kbd> → <code>shell:startup</code> eingeben → in den Ordner, der sich
+      öffnet, eine Verknüpfung zur Startdatei (.bat) legen (Rechtsklick auf die .bat → „Verknüpfung erstellen“, dann
+      hineinziehen).</li>
+    <li><strong>Linux:</strong> in den Autostart-Einstellungen der Arbeitsoberfläche die Startdatei eintragen.</li>
+  </ul>
+
+  <h3>4.6 Beenden</h3>
+  <ul>
+    <li>In der Lehrerversion auf dem Server-Computer: <span class="ui">„Server“ → „Server beenden“</span> (diesen Punkt gibt es
+      nur auf dem Server-Computer selbst),</li>
+    <li>oder das Fenster des Servers schließen,</li>
+    <li>oder im Fenster des Servers <kbd>Strg</kbd>+<kbd>C</kbd> drücken (Mac: <kbd>ctrl</kbd>+<kbd>C</kbd>).</li>
+  </ul>
+  <p>Sag den Kindern vorher Bescheid: Ohne Server können sie nicht speichern. Ihr Arbeitsstand bleibt aber auf dem iPad – beim
+    nächsten Mal, wenn der Server läuft, geht es weiter.</p>
+  <div class="tip"><span class="label">Für Fortgeschrittene</span>
+    Das Programm kennt beim Start die Angaben <code>-port</code>, <code>-ordner</code>, <code>-app</code>,
+    <code>-ohne-browser</code> und <code>-version</code>. Die Startdateien reichen sie weiter, z. B.
+    <code>sh "Lernsachen-Heft-Server starten (Linux).sh" -ohne-browser</code>.</div>
+</section>
+
+<!-- ============================================================ 5 -->
+<section id="lehrerversion" class="chapter">
+  <h2><span class="nr">5</span> Lehrerversion auf dem Computer und dem Lehrer-iPad</h2>
+  <p>Die Lehrerversion ist das ganze Lernsachen-Heft mit allen Vorlagen, Werkzeugen und den eingebauten Editoren von
+    Quizsachen, Schiebesachen und Textsachen. Neu ist oben in „Meine Hefte“ der Knopf <span class="ui">„Server“</span> mit:</p>
+  <ul>
+    <li><span class="ui">„Lehrer-iPad verbinden …“</span></li>
+    <li><span class="ui">„Ausgeteilte Schülerhefte …“</span></li>
+    <li><span class="ui">„Sichere Verbindung (https) …“</span></li>
+    <li><span class="ui">„Anleitung zum Server“</span></li>
+    <li>nur auf dem Server-Computer: <span class="ui">„Ordner „Schülerhefte“ öffnen“</span> und <span class="ui">„Server
+      beenden“</span></li>
+  </ul>
+
+  <h3>5.1 Wo liegen meine eigenen Hefte?</h3>
+  <p>Deine Hefte in „Meine Hefte“ speichert der <strong>Browser des Geräts</strong> – und zwar getrennt für jede Adresse. Das
+    bedeutet:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Gerät und Adresse</th><th>Eigenes „Meine Hefte“</th></tr></thead>
+    <tbody>
+      <tr><td>Server-Computer, <code>http://localhost:8765</code></td><td>ja</td></tr>
+      <tr><td>Lehrer-iPad, <code>http://192.168.1.20:8765</code></td><td>ja, ein anderes</td></tr>
+      <tr><td>Dasselbe iPad, aber Symbol auf dem Home-Bildschirm statt Safari</td><td>ja, noch ein anderes</td></tr>
+      <tr><td>Dasselbe iPad mit https (<code>https://192.168.1.20:8766</code>)</td><td>ja, wieder ein anderes</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Die <strong>Schülerhefte</strong> dagegen liegen auf dem Server und sind auf allen deinen Geräten dieselben.</p>
+  <div class="tip"><span class="label">Hefte von einem Gerät aufs andere bringen</span>
+    In „Meine Hefte“ <span class="ui">„Sicherung“ → „Sichern …“</span> wählen und die Datei auf dem anderen Gerät mit
+    <span class="ui">„Sicherung“ → „Wiederherstellen …“</span> öffnen. Einzelne Hefte gehen auch als „Heft zum
+    Weiterarbeiten“.</div>
+
+  <h3>5.2 Lehrer-iPad verbinden</h3>
+  <ol class="steps">
+    <li>Öffne auf dem Server-Computer in „Meine Hefte“ <span class="ui">„Server“ → „Lehrer-iPad verbinden …“</span>. Ein
+      QR-Code erscheint.</li>
+    <li>Öffne auf deinem iPad die Kamera-App und halte sie auf den QR-Code. Tippe auf den gelben Link, der erscheint.</li>
+    <li>Safari öffnet die Lehrerversion. Dein iPad darf jetzt austeilen, Schülerhefte öffnen, korrigieren und zurückgeben.</li>
+    <li>Hat der Server-Computer mehrere Adressen (z. B. WLAN und Kabel), kannst du im Dialog eine andere wählen. Ist https
+      eingeschaltet, wählst du dort zwischen <span class="ui">„https (mit Zertifikat)“</span> und
+      <span class="ui">„http (ohne Zertifikat)“</span> – https nur, wenn das iPad das Zertifikat schon kennt
+      (<a href="#ton-kamera">Kapitel 9</a>).</li>
+  </ol>
+
+  <h3>5.3 Wie eine App: Symbol auf dem Home-Bildschirm</h3>
+  <ol class="steps">
+    <li>In Safari auf das Teilen-Symbol tippen (Quadrat mit Pfeil nach oben).</li>
+    <li><em>„Zum Home-Bildschirm“</em> → <em>„Hinzufügen“</em>.</li>
+    <li>Ab jetzt die Lehrerversion <strong>immer über dieses Symbol</strong> öffnen.</li>
+  </ol>
+  <div class="warn"><span class="label">Getrennte Speicher</span>
+    Safari und das Symbol auf dem Home-Bildschirm haben getrennte „Meine Hefte“. Entscheide dich für einen Weg – am besten das
+    Symbol. Safari löscht außerdem die Daten einer Seite, die sieben Tage lang nicht besucht wurde; beim Symbol passiert das
+    nicht. Das Symbol behält auch den Lehrer-Link.</div>
+
+  <h3>5.4 Der Lehrer-Link ist geheim</h3>
+  <p>Der QR-Code „Lehrer-iPad verbinden“ enthält einen geheimen Schlüssel. Wer diesen Link hat, darf alles, was du darfst –
+    auch alle Schülerhefte ansehen und löschen.</p>
+  <div class="warn"><span class="label">Nicht an der Tafel zeigen</span>
+    Öffne „Lehrer-iPad verbinden“ nicht, während dein Bildschirm am Beamer oder an der Tafel zu sehen ist (auch nicht bei
+    Bildschirmübertragung). Schick den Link nicht per Mail oder Messenger an andere. Die Tafelseite beim Austeilen ist
+    dagegen ungefährlich – sie zeigt nur den Code für die Kinder.</div>
+  <p>Ist der Link doch in falsche Hände geraten: Server beenden, in <span class="path">Daten/einstellungen.json</span> den
+    Wert von <code>lehrerSchluessel</code> löschen (leer lassen: <code>""</code>), Server starten und deine iPads neu
+    verbinden. Der alte Link gilt dann nicht mehr.</p>
+
+  <h3>5.5 Sicherung</h3>
+  <p>Deine eigenen Hefte liegen <strong>nicht</strong> im Ordner des Servers, sondern im Browser jedes Geräts. Sichere sie
+    regelmäßig mit <span class="ui">„Sicherung“ → „Sichern …“</span> – auf dem Server-Computer und auf dem Lehrer-iPad. Wie du
+    die Schülerhefte sicherst, steht in <a href="#aktualisieren">Kapitel 11</a>.</p>
+</section>
+
+<!-- ============================================================ 6 -->
+<section id="austeilen" class="chapter">
+  <h2><span class="nr">6</span> Hefte austeilen</h2>
+  <p>„Austeilen“ heißt: Die Kinder bekommen eine Kopie deines Hefts auf ihr iPad, arbeiten darin und speichern es zurück zu
+    dir. Dein eigenes Heft bleibt unverändert.</p>
+
+  <h3>6.1 Ein Heft austeilen</h3>
+  <ol class="steps">
+    <li>Öffne „Meine Hefte“ und tippe beim gewünschten Heft auf das Menü <span class="ui">„…“</span>.</li>
+    <li>Wähle <span class="ui">„Schülerheft öffnen“</span>. Das Heft wird vorbereitet und auf den Server gelegt – das dauert ein
+      paar Sekunden.</li>
+    <li>Es erscheint die Seite für die Tafel <span class="ui">„Schülerheft „&lt;Titel&gt;““</span> mit einem großen QR-Code,
+      der Adresse, dem <strong>Code</strong> aus vier Zeichen (z. B. <code>K7MP</code>) und drei Schritten für die Kinder.</li>
+    <li>Zeig diese Seite an der Tafel oder am Beamer.</li>
+    <li>Die Kinder scannen den QR-Code mit der Kamera ihres iPads und tippen auf den Link – das Heft öffnet sich.</li>
+  </ol>
+
+  <h3>6.2 Ohne QR-Code: Code eintippen</h3>
+  <ol class="steps">
+    <li>Safari öffnen und die Adresse des Servers eintippen, z. B. <code>http://192.168.1.20:8765</code> (mit
+      <code>http://</code> und <code>:8765</code>).</li>
+    <li>Die Startseite sagt: „Scanne den QR-Code, den deine Lehrkraft zeigt – oder gib hier den Code ein“.</li>
+    <li>Code eintippen (Groß- und Kleinschreibung ist egal) → <span class="ui">„Heft öffnen“</span>.</li>
+  </ol>
+  <div class="tip"><span class="label">Startseite auf die Klassen-iPads legen</span>
+    Lege die Startseite (<code>http://&lt;Adresse des Servers&gt;:8765</code>) einmal als Symbol auf den Home-Bildschirm
+    jedes Klassen-iPads. Dann müssen die Kinder nur noch das Symbol antippen und den Code eingeben.</div>
+
+  <h3>6.3 Wer hat schon gespeichert?</h3>
+  <p>Auf der Tafelseite wächst die Liste <span class="ui">„… Kinder haben gespeichert“</span> von selbst mit. Tippst du einen
+    Namen an, öffnet sich das Heft dieses Kindes – auf dem Beamer sehen das dann alle. Frag das Kind vorher, oder schalte den
+    Beamer kurz stumm.</p>
+  <p>Die Knöpfe der Tafelseite:</p>
+  <ul>
+    <li><span class="ui">„Neue Fassung austeilen“</span> – siehe 6.4,</li>
+    <li><span class="ui">„Zurückgeben …“</span> – Hefte an die Kinder zurückgeben (<a href="#schuelerhefte">Kapitel 8</a>),</li>
+    <li><span class="ui">„Austeilen beenden“</span> – siehe 6.5,</li>
+    <li><span class="ui">„Schließen“</span> – schließt nur die Tafelseite. Das Heft bleibt ausgeteilt.</li>
+  </ul>
+  <p>Alle laufenden Austeilungen findest du später wieder unter <span class="ui">„Server“ → „Ausgeteilte Schülerhefte
+    …“</span> oder in der Karte „Schülerhefte“ im Abschnitt <span class="ui">„Gerade ausgeteilt“</span>. Auch ein erneutes
+    „Schülerheft öffnen“ beim selben Heft zeigt nur seine Tafelseite mit demselben Code – es teilt nichts neu aus. Hast du
+    dein Heft seitdem geändert (zum Beispiel Lösungen eingetragen), sagt dir ein Hinweis das; die Kinder bekommen deine Änderungen
+    erst, wenn du auf <span class="ui">„Neue Fassung austeilen“</span> tippst.</p>
+
+  <h3>6.4 Neue Fassung austeilen</h3>
+  <p>Du hast im Heft noch einen Fehler entdeckt oder eine Seite ergänzt? Ändere dein Heft, öffne die Tafelseite wieder und tippe
+    auf <span class="ui">„Neue Fassung austeilen“</span>.</p>
+  <ul>
+    <li>Der Code bleibt gleich.</li>
+    <li>Kinder, die noch nichts verändert haben, bekommen beim nächsten Öffnen die neue Fassung.</li>
+    <li>Kinder, die schon gearbeitet haben, behalten ihren Stand – es geht nichts verloren.</li>
+  </ul>
+  <p>Das geht nur auf dem Gerät, auf dem dein Heft in „Meine Hefte“ liegt (Server-Computer oder Lehrer-iPad).</p>
+
+  <h3>6.5 Austeilen beenden</h3>
+  <p><span class="ui">„Austeilen beenden“</span> schaltet den Code ab. Wer ihn danach öffnet, sieht „Kein Heft – Kein Heft mit dem
+    Code … Schau noch einmal genau hin – oder frag deine Lehrkraft.“ Kinder, die das Heft noch offen haben, können danach nicht
+    mehr speichern – beende das Austeilen also erst, wenn alle gespeichert haben. Die gespeicherten Hefte der Kinder bleiben in
+    „Schülerhefte“.</p>
+  <div class="warn"><span class="label">Erst zurückgeben, dann beenden</span>
+    Zurückgeben geht nur, solange das Heft ausgeteilt ist. Beende das Austeilen also erst, wenn alle Kinder ihr korrigiertes
+    Heft und deine Rückmeldung gesehen haben. Mit dem Beenden werden auch die Rückgabe-Codes ungültig.</div>
+</section>
+
+<!-- ============================================================ 7 -->
+<section id="kinder" class="chapter">
+  <h2><span class="nr">7</span> Was die Kinder machen</h2>
+
+  <h3>7.1 Die Schülerversion</h3>
+  <p>Die Kinder sehen Lernsachen-Heft im <strong>einfachen Modus</strong> mit genau diesem einen Heft – keine anderen Hefte,
+    kein „Neues Heft“, kein Menü zum Öffnen von Dateien. Oben links zeigt ein kleines Schild den Stand:</p>
+  <ul>
+    <li><span class="ui">„Schülerheft“</span> – noch nicht gespeichert,</li>
+    <li><span class="ui">„Gespeichert 10:42“</span> – um 10:42 Uhr zu dir geschickt, seitdem nichts geändert,</li>
+    <li><span class="ui">„Nicht gespeichert“</span> – seit dem letzten Speichern hat sich etwas geändert,</li>
+    <li><span class="ui">„Zurückgegeben“</span> – du hast dem Kind sein Heft zurückgegeben; seitdem hat es nichts geändert.</li>
+  </ul>
+  <p>Während die Kinder arbeiten, merkt sich das iPad den Stand von selbst – auch wenn Safari geschlossen wird. Bei dir kommt das
+    Heft aber erst an, wenn das Kind auf <span class="ui">„Speichern“</span> tippt.</p>
+  <div class="warn"><span class="label">Regelmäßig speichern</span>
+    Safari löscht die Daten einer Seite, die sieben Tage lang nicht geöffnet wurde. Lass die Kinder deshalb am Ende jeder
+    Stunde – und unbedingt vor den Ferien – auf „Speichern“ tippen. Was beim Server gespeichert ist, bleibt immer erhalten.</div>
+
+  <h3>7.2 Speichern mit Namen</h3>
+  <ol class="steps">
+    <li>Auf <span class="ui">„Speichern“</span> tippen. Es erscheinen zwei große Bild-Knöpfe: <span class="ui">„Speichern“</span>
+      und <span class="ui">„PDF“</span>.</li>
+    <li><span class="ui">„Speichern“</span> wählen. Das Namensfeld ist schon ausgefüllt – mit dem Namen, unter dem dieses Heft
+      schon einmal gespeichert wurde, oder mit dem Namen des iPads (z. B. „iPad von Max“ oder „Gerät 23“). Den zuletzt
+      benutzten Namen gibt es außerdem als Knopf zum Antippen.</li>
+    <li>Den eigenen Namen prüfen oder eintippen und speichern. Oben links steht danach „Gespeichert“ mit der Uhrzeit.</li>
+  </ol>
+  <p>Speichert ein Kind später noch einmal, ersetzt das die vorige Fassung <strong>seines</strong> Hefts. Du siehst also immer
+    den neuesten Stand.</p>
+
+  <h3>7.3 PDF zum Ausdrucken</h3>
+  <ol class="steps">
+    <li><span class="ui">„Speichern“</span> → <span class="ui">„PDF“</span> tippen und kurz warten.</li>
+    <li><span class="ui">„PDF öffnen“</span> tippen – das PDF erscheint in einem neuen Tab.</li>
+    <li>Teilen-Symbol → <em>„Drucken“</em>.</li>
+  </ol>
+  <p>Öffnet sich kein neuer Tab, liegt das PDF in den Downloads (Safari: Pfeil-Symbol oben; oder Dateien-App → „Downloads“).</p>
+
+  <h3>7.4 Weiterarbeiten auf demselben iPad</h3>
+  <p>Öffnet das Kind denselben Code wieder, fragt das iPad <span class="ui">„Weiterarbeiten?“</span> (auch auf dem eigenen iPad).
+    Auf seinem eigenen iPad tippt das Kind immer auf <span class="ui">„Ich bin &lt;Name&gt;“</span> – dann geht es genau dort
+    weiter, wo es aufgehört hat. Am Ende einfach wieder speichern.</p>
+
+  <h3>7.5 Geteilte iPads: „Weiterarbeiten?“</h3>
+  <p>Auf einem geteilten iPad entscheidet die Frage <span class="ui">„Weiterarbeiten?“</span>, wem das Heft gehört – mit
+    Bildern der ersten Seiten:</p>
+  <ul>
+    <li><span class="ui">„Ich bin &lt;Name&gt;“</span> – das Kind von vorhin arbeitet weiter,</li>
+    <li><span class="ui">„Neu anfangen“</span> – das nächste Kind bekommt ein frisches Heft ohne Namen.</li>
+  </ul>
+  <p><strong>Warum nie etwas überschrieben wird:</strong> Jedes neu angefangene Heft bekommt eine eigene, geheime Kennung. Der
+    Server ersetzt beim Speichern nur eine Datei mit genau derselben Kennung. Speichert ein anderes Kind unter demselben Namen
+    (oder alle unter dem Namen des iPads), entsteht eine neue Datei, z. B. <span class="path">Mein Heft (2).html</span>. So geht
+    nie die Arbeit eines anderen Kindes verloren.</p>
+
+  <h3>7.6 Gleiche Namen</h3>
+  <p>Gleicher Name = gleicher Ordner. „Max“ und „max“ landen im selben Ordner. Gibt es zwei Kinder mit demselben Vornamen,
+    vereinbart einen Zusatz, z. B. <strong>„Max S.“</strong> und <strong>„Max T.“</strong>. Am einfachsten ist eine feste
+    Regel für die ganze Klasse (Vorname und erster Buchstabe des Nachnamens) – vielleicht als Liste an der Tafel.</p>
+
+  <h3>7.7 Was über den Server nicht geht</h3>
+  <p>Auf den iPads – auch auf deinem Lehrer-iPad – gehen Tonaufnahmen und die Kamera-Vorschau über das Schulnetz zunächst nicht. Warum, und was du
+    dagegen tun kannst, steht in <a href="#ton-kamera">Kapitel 9</a>. Alles andere – Schreiben, Malen, Übungen, Vorlesen,
+    Töne abspielen – funktioniert.</p>
+</section>
+
+<!-- ============================================================ 8 -->
+<section id="schuelerhefte" class="chapter">
+  <h2><span class="nr">8</span> Schülerhefte: Klassenordner, Korrigieren, Rückmeldung, Zurückgeben</h2>
+
+  <h3>8.1 Wo finde ich die Hefte der Kinder?</h3>
+  <p>In „Meine Hefte“ steht oben die orange Karte <span class="ui">„Schülerhefte“</span> – auf dem Server-Computer und auf dem
+    Lehrer-iPad. Darin findest du:</p>
+  <ul>
+    <li><strong>Klassenordner</strong> (z. B. „3a“), wenn du welche angelegt hast,</li>
+    <li>einen <strong>Ordner für jedes Kind</strong> (benannt nach dem Namen, unter dem es gespeichert hat),</li>
+    <li>den Abschnitt <span class="ui">„Gerade ausgeteilt“</span> mit allen laufenden Austeilungen.</li>
+  </ul>
+  <p>Die Karte aktualisiert sich von selbst, während die Kinder speichern.</p>
+
+  <h3>8.2 Klassenordner anlegen und Kinder einsortieren</h3>
+  <ol class="steps">
+    <li>In „Schülerhefte“ auf <span class="ui">„Neuer Klassenordner“</span> tippen und einen Namen eingeben, z. B. „3a“.</li>
+    <li>Einen Kinderordner <strong>kurz festhalten, dann ziehen</strong> und auf den Klassenordner fallen lassen. Oder im Menü
+      <span class="ui">„…“</span> des Kindes <span class="ui">„Verschieben nach …“</span> wählen.</li>
+    <li>Fertig: Speichert dieses Kind das nächste Mal, landet sein Heft von selbst wieder im Klassenordner.</li>
+  </ol>
+  <p>Zum Herausnehmen ziehst du den Kinderordner oben im Pfad auf „Schülerhefte“ oder wählst „Verschieben nach …“. Im Menü
+    <span class="ui">„…“</span> eines Klassenordners gibt es <span class="ui">„Umbenennen“</span> und
+    <span class="ui">„Klassenordner auflösen“</span> – beim Auflösen bleiben alle Kinderordner erhalten und stehen wieder direkt
+    unter „Schülerhefte“.</p>
+
+  <h3>8.3 Einen Namen korrigieren</h3>
+  <p>Hat sich ein Kind vertippt („Mxa“)? Menü <span class="ui">„…“</span> des Kindes → <span class="ui">„Umbenennen“</span>.
+    Gibst du einen Namen ein, den es schon gibt, werden die beiden Ordner <strong>zusammengelegt</strong> – praktisch, wenn ein
+    Kind einmal als „Max“ und einmal als „Max S.“ gespeichert hat. (Groß- und Kleinschreibung spielt keine Rolle: „max“ und
+    „Max“ sind ohnehin derselbe Ordner.)</p>
+
+  <h3>8.4 Die Karte eines Schülerhefts</h3>
+  <p>Im Ordner eines Kindes zeigt jede Heftkarte auf einen Blick:</p>
+  <ul>
+    <li><span class="tag">korrigiert</span> – du hast im Heft etwas geändert,</li>
+    <li><span class="tag">Rückmeldung</span> – du hast eine Rückmeldung geschrieben,</li>
+    <li><span class="tag">zurückgegeben</span> – das Heft ist an das Kind zurückgegeben,</li>
+    <li>die Ergebnisse der Übungen, z. B. „3 Übungen: Ø 80 %“.</li>
+  </ul>
+  <p>Das Menü <span class="ui">„…“</span> einer Heftkarte:</p>
+  <div class="table-wrap">
+  <table>
+    <tbody>
+      <tr><td class="ui">„Rückmeldung …“</td><td>Eine Rückmeldung schreiben (8.6).</td></tr>
+      <tr><td class="ui">„Zurückgeben …“</td><td>Das Heft an das Kind zurückgeben (8.7).</td></tr>
+      <tr><td class="ui">„An der Tafel zeigen“</td><td>Das Heft groß an der Tafel zeigen, z. B. um eine Arbeit vorzustellen – am
+        besten nur, wenn das Kind einverstanden ist.</td></tr>
+      <tr><td class="ui">„Als Datei speichern“</td><td>Eine Kopie als Datei, z. B. für ein Portfolio oder ein Elterngespräch.</td></tr>
+      <tr><td class="ui">„In „Meine Hefte“ kopieren“</td><td>Eine eigene Kopie in deinen Heften, z. B. als Vorlage für das
+        nächste Mal.</td></tr>
+      <tr><td class="ui">„Löschen“</td><td>Verschiebt das Heft in den Papierkorb des Servers (<span class="path">Daten/papierkorb</span>).</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>8.5 Korrigieren</h3>
+  <ol class="steps">
+    <li>Tippe auf die Heftkarte. Das Heft öffnet sich wie jedes andere Heft – mit allen Werkzeugen.</li>
+    <li>Korrigiere direkt im Heft: mit dem Stift (z. B. in Rot), mit Textfeldern, Stickern, Häkchen …</li>
+    <li>Deine Änderungen werden <strong>von selbst</strong> in die Datei des Kindes auf dem Server geschrieben (nach ein paar
+      Sekunden Pause). Du musst nichts extra speichern.</li>
+    <li>Zurück zu „Meine Hefte“ – fertig. Schlägt das Speichern einmal fehl (z. B. WLAN weg), fragt Lernsachen-Heft nach, bevor
+      das Heft geschlossen wird.</li>
+  </ol>
+  <h4>Was bedeuten „(korrigiert)“ und „(neu)“?</h4>
+  <ul>
+    <li><span class="path">&lt;Titel&gt; (korrigiert).html</span> – Hat das Kind noch einmal gespeichert, <em>während</em> du
+      sein Heft offen hattest, bleibt die Datei des Kindes unverändert, und deine Korrektur kommt als eigene Datei daneben. Du
+      bekommst einen Hinweis und arbeitest danach in dieser Datei weiter. So überschreibt ihr euch nie gegenseitig.</li>
+    <li><span class="path">&lt;Titel&gt; (neu).html</span> – Speichert das Kind <em>nach</em> deiner Korrektur (z. B. nachdem es
+      verbessert hat), entsteht eine neue Datei. Deine Korrektur bleibt in der alten Datei erhalten.</li>
+  </ul>
+
+  <h3>8.6 Rückmeldung schreiben</h3>
+  <p>Im geöffneten Heft eines Kindes gibt es oben in der Leiste den Knopf <span class="ui">„Rückmeldung“</span>; im Menü
+    <span class="ui">„…“</span> der Heftkarte heißt er <span class="ui">„Rückmeldung …“</span>. Es öffnet sich der Dialog
+    <span class="ui">„Rückmeldung an &lt;Name&gt;“</span>:</p>
+  <ol class="steps">
+    <li>Wähle einen Bild-Stempel:
+      <ul class="stamp-list">
+        <li>⭐ Super!</li><li>👍 Gut gemacht!</li><li>🙂 Schön!</li><li>💪 Weiter üben!</li><li>✏️ Bitte verbessern!</li>
+      </ul></li>
+    <li>Schreib in das Feld <span class="ui">„Was möchtest du &lt;Name&gt; sagen?“</span> ein paar Sätze. Kurze, einfache Sätze
+      sind am besten – die Kinder können sie sich vorlesen lassen.</li>
+    <li>Mit <span class="ui">„Vorlesen“</span> hörst du, wie es für das Kind klingt.</li>
+    <li><span class="ui">„Speichern“</span> – die Rückmeldung steht im Heft, das Kind sieht sie aber erst nach dem
+      Zurückgeben. Oder gleich <span class="ui">„Speichern und zurückgeben“</span>.</li>
+  </ol>
+
+  <h3>8.7 Ein Heft zurückgeben</h3>
+  <ol class="steps">
+    <li>Menü <span class="ui">„…“</span> der Heftkarte → <span class="ui">„Zurückgeben …“</span> (oder in der Rückmeldung
+      <span class="ui">„Speichern und zurückgeben“</span>).</li>
+    <li>Der Dialog <span class="ui">„Zurück an &lt;Name&gt;“</span> zeigt einen QR-Code und einen <strong>persönlichen Code</strong>
+      aus sechs Zeichen (länger als der Klassen-Code, damit ihn niemand durch Ausprobieren findet).</li>
+    <li><strong>Auf dem eigenen iPad des Kindes</strong> musst du nichts weiter tun: Öffnet das Kind den Klassen-Code (den
+      QR-Code der Austeilung) wieder, kommt sein Heft von selbst zurück.</li>
+    <li><strong>Auf einem anderen iPad</strong> scannt das Kind den QR-Code aus dem Dialog oder tippt den persönlichen Code auf
+      der Startseite des Servers ein.</li>
+  </ol>
+  <p>Mit <span class="ui">„Zurücknehmen“</span> machst du die Rückgabe rückgängig – der persönliche Code gilt dann nicht mehr.
+    Korrigierst du nach dem Zurückgeben noch etwas und gibst wieder zurück, bleibt der Code gleich.</p>
+
+  <h3>8.8 Alle Hefte auf einmal zurückgeben</h3>
+  <ol class="steps">
+    <li>Öffne die Tafelseite des ausgeteilten Hefts (über <span class="ui">„Gerade ausgeteilt“</span> oder
+      <span class="ui">„Server“ → „Ausgeteilte Schülerhefte …“</span>) und tippe auf <span class="ui">„Zurückgeben …“</span>.</li>
+    <li>Der Dialog <span class="ui">„Hefte zurückgeben“</span> listet alle Kinder mit ihrem Stand.</li>
+    <li><span class="ui">„Alle zurückgeben“</span> gibt jedem Kind sein neuestes Heft zurück (das von dir korrigierte, wenn es
+      eins gibt).</li>
+    <li>Für geteilte iPads: <span class="ui">„Rückgabe-Karten drucken“</span> druckt ein Blatt mit einer Karte pro Kind – Name,
+      QR-Code und persönlicher Code. Ausschneiden und austeilen.</li>
+  </ol>
+  <div class="warn"><span class="label">Persönliche Codes persönlich</span>
+    Wer einen persönlichen Code kennt, kann dieses eine Heft mit deiner Rückmeldung öffnen. Gib die Rückgabe-Karten deshalb
+    direkt dem Kind und zeig persönliche Codes nicht an der Tafel.</div>
+
+  <h3>8.9 So sieht das Kind die Rückgabe</h3>
+  <ol class="steps">
+    <li>Auf seinem eigenen iPad öffnet das Kind den Klassen-Code und sieht <span class="ui">„Dein Heft ist zurück!“</span> mit
+      den Knöpfen <span class="ui">„Ansehen“</span> und <span class="ui">„Später“</span> (dann fragt der Klassen-Code nicht
+      wieder – der persönliche Code bringt das Heft trotzdem). Mit dem persönlichen Code (Rückgabe-Karte) öffnet sich das
+      korrigierte Heft gleich.</li>
+    <li>Hat das Kind auf diesem iPad noch etwas geändert und nicht gespeichert, fragt das Heft vorher mit Bildern beider
+      Fassungen: <span class="ui">„Mit Korrektur“</span> oder <span class="ui">„Mein Heft“</span>. Liegt dort noch nicht
+      gespeicherte Arbeit eines anderen Kindes (geteiltes iPad), warnt es zuerst – nichts wird still überschrieben.</li>
+    <li>Hast du eine Rückmeldung geschrieben, erscheint dann <span class="ui">„Rückmeldung von deiner Lehrkraft“</span> mit dem
+      Stempel, deinem Text und <span class="ui">„Vorlesen 🔊“</span>.</li>
+    <li>Später zeigt das Schild <span class="ui">„Rückmeldung“</span> oben in der Leiste die Rückmeldung noch einmal.</li>
+    <li>Das Kind kann verbessern und wieder speichern. Bei dir entsteht dann <span class="path">&lt;Titel&gt; (neu).html</span>
+      neben dem korrigierten Heft – so siehst du beides.</li>
+  </ol>
+
+  <h3>8.10 Der Ordner „Schülerhefte“ auf dem Server-Computer</h3>
+  <p>Auf dem Server-Computer öffnet <span class="ui">„Server“ → „Ordner „Schülerhefte“ öffnen“</span> den Ordner im Finder bzw.
+    Explorer. Der Aufbau ist einfach:</p>
+  <pre>Schülerhefte/
+  3a/
+    Anna/
+      Mein Heft.html
+      Mein Heft (neu).html
+    Max S./
+      Mein Heft.html
+  Lea/
+    Mein Heft.html</pre>
+  <ul>
+    <li>Jede Datei öffnet sich mit einem <strong>Doppelklick</strong> im Browser – zum Ansehen oder Ausdrucken, auch ohne
+      Server. Du kannst sie z. B. auf einen USB-Stick kopieren.</li>
+    <li>Verschiebst oder benennst du hier Ordner um, sieht Lernsachen-Heft das nach wenigen Sekunden. Der Ordner auf dem
+      Server ist immer der aktuelle Stand.</li>
+    <li>Bearbeite die Dateien nicht von Hand in einem Texteditor.</li>
+  </ul>
+
+  <h3>8.11 Papierkorb</h3>
+  <p>Gelöschte Schülerhefte, Reste aufgelöster Klassenordner und beendete Austeilungen landen zuerst in
+    <span class="path">Daten/papierkorb</span> – mit Datum und Uhrzeit vorne im Namen, z. B.
+    <span class="path">2026-11-17 10-55-03 Max – Mein Heft.html</span>. Aus Versehen gelöscht? Die Datei von dort zurück in
+    den Ordner des Kindes unter <span class="path">Schülerhefte</span> schieben (den Namen darfst du dabei wieder kürzen). Leere den Papierkorb ab und zu von Hand (spätestens am Schuljahresende).</p>
+</section>
+
+<!-- ============================================================ 9 -->
+<section id="ton-kamera" class="chapter">
+  <h2><span class="nr">9</span> Ton und Kamera im Schulnetz – das Problem und die Lösungen</h2>
+
+  <h3>9.1 Das Problem</h3>
+  <p>Browser schützen Mikrofon und Kamera besonders gut: Sie erlauben sie nur auf <strong>sicheren Seiten</strong>. Sicher heißt
+    für den Browser:</p>
+  <ul>
+    <li>die Seite kommt über eine verschlüsselte Verbindung (<strong>https</strong>, in Safari mit Schloss-Symbol) – dafür braucht
+      es ein <strong>Zertifikat</strong>, eine Art Ausweis, mit dem der Server beweist, dass er echt ist,</li>
+    <li>oder die Seite läuft auf <strong>demselben Computer</strong> (<code>localhost</code>).</li>
+  </ul>
+  <p>Im Schulnetz erreichen die iPads den Server über <code>http://192.168.…:8765</code> – also ohne Verschlüsselung. Für Safari
+    ist das keine sichere Seite, und es sperrt Mikrofon und Kamera. Das ist kein Fehler von Lernsachen-Heft – es gilt für jede
+    Web-App. <strong>Auf dem Server-Computer selbst geht alles</strong>, denn dort ist es <code>localhost</code>.</p>
+
+  <h4>Was ist über http auf den iPads betroffen?</h4>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Funktion</th><th>Einfacher Ausweg</th></tr></thead>
+    <tbody>
+      <tr><td>Tonaufnahmen (Ton-Dialog „Aufnehmen“)</td><td>Sprachmemos-App → „Hochladen“ (9.2 b)</td></tr>
+      <tr><td>Kassettenrekorder</td><td>Sprachmemos-App oder am Server-Computer</td></tr>
+      <tr><td>Puppentheater-Aufnahme</td><td>am Server-Computer aufnehmen</td></tr>
+      <tr><td>Karaoke-Aufnahme</td><td>am Server-Computer aufnehmen</td></tr>
+      <tr><td>Silben klatschen</td><td>am Server-Computer</td></tr>
+      <tr><td>Stimmgerät</td><td>am Server-Computer</td></tr>
+      <tr><td>Lärmampel und Applausometer</td><td>am Server-Computer (an der Tafel)</td></tr>
+      <tr><td>Kamera-Vorschau (Bild-Dialog „Kamera“, Kamera-Zoom)</td><td>Knopf „Kamera-App“ (9.2 a)</td></tr>
+      <tr><td>Einfügen aus der Zwischenablage</td><td>Bild in Fotos sichern → „Hochladen“</td></tr>
+      <tr><td>Teilen-Menü</td><td>„Speichern“ wird ein Download → Dateien-App → „Downloads“</td></tr>
+      <tr><td>Weitere Aufnahmen (eigene Laute in der Anlaut-Tastatur, „Gespräche üben“, Musikwerkzeuge mit Mikrofon)</td><td>am
+        Server-Computer oder mit https (9.3)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Alles andere funktioniert ganz normal: Schreiben, Malen, Bilder, Übungen, Vorlesen, Töne abspielen.</p>
+
+  <h3>9.2 Die einfachen Wege</h3>
+
+  <h4>a) Fotos mit der Kamera-App</h4>
+  <ol class="steps">
+    <li>Im Heft ein Bild einfügen und im Bild-Dialog auf „Kamera“ tippen. Statt der Vorschau erscheint ein Hinweis und der Knopf
+      <span class="ui">„Kamera-App“</span>.</li>
+    <li><span class="ui">„Kamera-App“</span> tippen – die normale Kamera des iPads öffnet sich.</li>
+    <li>Foto machen → <em>„Foto verwenden“</em>. Das Foto kommt ins Heft.</li>
+  </ol>
+
+  <h4>b) Töne mit der Sprachmemos-App</h4>
+  <ol class="steps">
+    <li>Die App <strong>Sprachmemos</strong> öffnen und mit dem roten Knopf aufnehmen, dann stoppen.</li>
+    <li>Die Aufnahme antippen → <em>„…“</em> (Mehr) → <em>„Teilen“</em> → <em>„In Dateien sichern“</em> → einen Ort wählen (z. B.
+      „Auf meinem iPad“) → <em>„Sichern“</em>.</li>
+    <li>Zurück in Lernsachen-Heft: Ton einfügen → im Ton-Dialog <span class="ui">„Hochladen“</span> → die Datei wählen
+      („Durchsuchen“ → Ort von eben).</li>
+  </ol>
+  <div class="tip"><span class="label">Aufräumen auf geteilten iPads</span>
+    Lösche die Aufnahmen danach in Sprachmemos und in der Dateien-App – sonst hört das nächste Kind sie.</div>
+
+  <h4>c) Aufnahmen am Server-Computer</h4>
+  <p>Am Server-Computer gehen alle Aufnahmen direkt (mit eingebautem Mikrofon oder Headset). Bereite Töne für ein Heft dort vor,
+    bevor du es austeilst – sie sind dann im ausgeteilten Heft enthalten. Werkzeuge für die ganze Klasse wie Lärmampel,
+    Applausometer oder Stimmgerät zeigst du am besten vom Server-Computer aus an der Tafel.</p>
+
+  <h3>9.3 Die schwierigen Wege</h3>
+  <p>Wenn die Kinder wirklich auf den iPads aufnehmen sollen, braucht der Server https – und die iPads müssen seinem Zertifikat
+    vertrauen. Das geht auf zwei Arten: von Hand an jedem iPad (d) oder für alle iPads auf einmal über die Geräteverwaltung der
+    Schule (e).</p>
+
+  <h4>d) https mit dem Zertifikat des Servers</h4>
+  <p>Der Server kann sich eine eigene kleine <strong>Zertifizierungsstelle</strong> anlegen – eine Art Stempelstelle, die
+    bestätigt: „Dieser Server ist echt.“ Jedes iPad muss dieser Stelle einmal vertrauen. Danach ist der Server zusätzlich unter
+    <code>https://&lt;Adresse des Servers&gt;:8766</code> erreichbar – eine sichere Seite, auf der Mikrofon und Kamera gehen.
+    Die normale http-Adresse bleibt daneben bestehen.</p>
+
+  <p><strong>Am Server-Computer (einmal):</strong></p>
+  <ol class="steps">
+    <li>In „Meine Hefte“ <span class="ui">„Server“ → „Sichere Verbindung (https) …“</span> öffnen.</li>
+    <li>Den Schalter <span class="ui">„https einschalten“</span> umlegen (das geht nur am Server-Computer selbst).</li>
+    <li>Der Dialog zeigt den Stand, den <strong>Fingerabdruck</strong> des Zertifikats (eine lange Zeichenfolge zum Vergleichen)
+      und einen QR-Code zur Zertifikatsseite <code>http://&lt;Adresse des Servers&gt;:8765/zertifikat</code>. Im Fenster des
+      Servers erscheint die Meldung „Sichere Verbindung (https) eingeschaltet – Port 8766“; ab dem nächsten Start steht oben
+      zusätzlich „Sicher (https): https://…:8766“.</li>
+    <li>Unter Linux auch den Port 8766 freigeben (<code>sudo ufw allow 8766/tcp</code>). Auf Mac und Windows gilt die
+      Erlaubnis vom ersten Start auch für https.</li>
+  </ol>
+
+  <p><strong>Auf jedem iPad (einmal, in Safari):</strong></p>
+  <ol class="steps">
+    <li>Den QR-Code aus dem Dialog scannen oder in <strong>Safari</strong> <code>http://&lt;Adresse des Servers&gt;:8765/zertifikat</code>
+      öffnen. (Andere Browser auf dem iPad können keine Profile laden.)</li>
+    <li>Auf <span class="ui">„Profil für iPad / iPhone / Mac laden“</span> tippen. Safari fragt, ob die Website ein
+      Konfigurationsprofil laden darf → <em>„Erlauben“</em>. Es folgt „Profil geladen“ → <em>„Schließen“</em>.</li>
+    <li>Die App <em>Einstellungen</em> öffnen. Oben steht <em>„Profil geladen“</em> – antippen. (Oder: <em>Einstellungen →
+      Allgemein → VPN und Geräteverwaltung</em> → „Lernsachen-Heft Schulnetz“.)</li>
+    <li>Oben rechts <em>„Installieren“</em> → Gerätecode eingeben → bei der Warnung zum Root-Zertifikat noch einmal
+      <em>„Installieren“</em> → <em>„Installieren“</em> → <em>„Fertig“</em>. Das muss innerhalb von etwa acht Minuten nach
+      Schritt 2 passieren, sonst verwirft das iPad das geladene Profil – dann Schritt 2 wiederholen.</li>
+    <li><em>Einstellungen → Allgemein → Info</em> → ganz nach unten → <em>„Zertifikatsvertrauenseinstellungen“</em>. Unter
+      <em>„Volles Vertrauen für Root-Zertifikate aktivieren“</em> den Schalter bei <em>„Lernsachen-Heft Schulnetz …“</em>
+      einschalten → <em>„Fortfahren“</em>.</li>
+    <li>Ab jetzt die <strong>https-Adresse</strong> benutzen: In <span class="ui">„Lehrer-iPad verbinden …“</span> und auf der
+      Tafelseite beim Austeilen gibt es dann die Wahl <span class="ui">„https (mit Zertifikat)“</span> /
+      <span class="ui">„http (ohne Zertifikat)“</span> – für diese iPads https wählen. Beim ersten Aufnehmen fragt Safari nach
+      dem Mikrofon → <em>„Erlauben“</em>.</li>
+  </ol>
+
+  <div class="warn"><span class="label">Neue Adresse = eigener Speicher</span>
+    <code>https://…:8766</code> ist für den Browser eine andere Adresse als <code>http://…:8765</code>. „Meine Hefte“ auf dem
+    Lehrer-iPad und die angefangenen Hefte der Kinder unter http sind unter https nicht zu sehen (sie sind nicht weg – nur unter
+    der alten Adresse). Die gespeicherten Schülerhefte auf dem Server betrifft das nicht. Am besten stellst du deshalb
+    <strong>vor dem Einsatz in der Klasse</strong> um und bleibst dann bei https. Eigene Hefte bringst du mit „Sicherung“
+    hinüber (<a href="#lehrerversion">Kapitel 5.1</a>).</div>
+  <div class="warn"><span class="label">„Diese Verbindung ist nicht privat“</span>
+    Öffnet ein iPad <em>ohne</em> Zertifikat die https-Adresse, warnt Safari. Klick die Warnung nicht weg: Entweder auf diesem
+    iPad das Zertifikat einrichten oder für dieses iPad den http-QR-Code benutzen. Die http-Adresse läuft weiter.</div>
+
+  <h4>Ist das sicher?</h4>
+  <ul>
+    <li><strong>Namensbeschränkung:</strong> Das Zertifikat darf nur Adressen im Schulnetz bestätigen – private Adressen wie
+      <code>192.168.…</code>, <code>10.…</code> oder <code>172.16.…</code> und Namen wie <code>….local</code> oder
+      <code>….lan</code>. Für Internetseiten (eine Bank, eine Suchmaschine …) gilt es nicht. Selbst wenn jemand den Schlüssel
+      des Servers kopieren würde, könnte er damit keine Internetseite vortäuschen.</li>
+    <li>Der geheime Schlüssel liegt nur auf dem Server-Computer in <span class="path">Daten/zertifikat</span> (auch in jeder
+      Sicherung des Ordners <span class="path">Daten</span>). Gib ihn nicht weiter: Mit ihm könnte jemand zwar keine
+      Internetseite, aber Geräte im Schulnetz (z. B. die Seite des Routers) vortäuschen. Der Server sperrt den Ordner deshalb
+      für alle anderen Konten des Computers. Das geht nicht auf einem USB-Stick (FAT/exFAT) oder einem geteilten Laufwerk –
+      dann steht im Fenster des Servers eine Warnung. Leg den Server-Ordner auf einem Computer, an dem sich auch Kinder
+      anmelden, deshalb nicht dorthin. Das Zertifikat selbst (.cer und Profil) ist öffentlich und harmlos.</li>
+    <li>Vergleiche ruhig einmal den Fingerabdruck auf der Zertifikatsseite mit dem im Dialog am Server-Computer – dann weißt
+      du sicher, dass es dein Server ist.</li>
+    <li>Ändert sich die IP-Adresse des Servers, stellt er sich beim Start von selbst ein passendes Server-Zertifikat aus. Die
+      iPads müssen nichts neu einrichten (die Hefte im Browser gehören aber wieder zur neuen Adresse).</li>
+    <li>Löschst du den Ordner <span class="path">Daten/zertifikat</span>, entsteht eine neue Zertifizierungsstelle – dann müssen
+      alle iPads das neue Zertifikat einrichten.</li>
+  </ul>
+
+  <h4>Zertifikat wieder entfernen</h4>
+  <p>Am iPad: <em>Einstellungen → Allgemein → VPN und Geräteverwaltung</em> → „Lernsachen-Heft Schulnetz“ →
+    <em>„Profil entfernen“</em> → Gerätecode. Am Server-Computer schaltest du https im Dialog wieder aus.</p>
+
+  <div class="tip"><span class="label">Andere Geräte</span>
+    Ein weiterer Mac lädt dasselbe Profil (danach <em>Systemeinstellungen → Allgemein → Geräteverwaltung</em> → Installieren).
+    Windows-Computer laden auf der Zertifikatsseite die .cer-Datei → Doppelklick → <em>„Zertifikat installieren“</em> →
+    Speicher <em>„Vertrauenswürdige Stammzertifizierungsstellen“</em>.</div>
+
+  <h4>e) Über die Geräteverwaltung der Schule (MDM)</h4>
+  <p>Viele Schulen verwalten ihre iPads zentral mit einer <strong>Geräteverwaltung</strong> (MDM, „Mobile Device Management“),
+    z. B. Jamf School, Mosyle, Relution oder Microsoft Intune. Darüber kann die IT-Betreuung das Zertifikat an alle iPads auf
+    einmal verteilen. Einem Zertifikat aus der Geräteverwaltung vertrauen die iPads <strong>automatisch</strong> – am iPad muss
+    niemand etwas tippen. Auf verwalteten iPads ist das oft sogar der einzige Weg, weil sich dort keine Profile von Hand
+    installieren lassen.</p>
+  <ol class="steps">
+    <li>https am Server-Computer einschalten (siehe d).</li>
+    <li>Am Server-Computer <code>http://localhost:8765/zertifikat</code> öffnen und <span class="ui">„Zertifikat (.cer) für die
+      Geräteverwaltung (MDM) oder andere Geräte“</span> laden. Du bekommst die Datei
+      <span class="path">Lernsachen-Heft-Schulnetz.cer</span>.</li>
+    <li>Die Datei mit dem Fingerabdruck an die IT-Betreuung geben (Mustertext unten).</li>
+    <li>Die IT-Betreuung legt ein Profil mit einem Zertifikat (Root-Zertifikat) an und weist es den Klassen-iPads zu.</li>
+    <li>Prüfen: Auf einem iPad unter <em>Einstellungen → Allgemein → VPN und Geräteverwaltung</em> steht das Profil, und die
+      https-Adresse öffnet sich ohne Warnung.</li>
+  </ol>
+  <p><strong>Mustertext für die IT-Betreuung:</strong></p>
+  <div class="mustertext">
+    <p>Hallo,</p>
+    <p>im Unterricht nutze ich den „Lernsachen-Heft-Server“ (ein kleines Programm ohne Internetzugriff) auf dem Computer
+      <span class="fill">&nbsp;</span> im Raum <span class="fill" style="min-width:6em">&nbsp;</span>. Die Klassen-iPads öffnen
+      darüber Arbeitshefte im Browser.</p>
+    <p>Damit die iPads im Browser Ton aufnehmen und die Kamera nutzen dürfen, braucht der Server https. Er bringt dafür eine
+      eigene Zertifizierungsstelle mit: Datei <em>Lernsachen-Heft-Schulnetz.cer</em>, SHA-256-Fingerabdruck
+      <span class="fill">&nbsp;</span>. Das Zertifikat hat eine kritische Namensbeschränkung (Name Constraints) auf private
+      IP-Bereiche (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 u. a.) und lokale Namen (.local, .lan, .home.arpa, .internal) –
+      es kann keine Internet-Domains bestätigen.</p>
+    <p>Könntest du bitte</p>
+    <ul>
+      <li>das Zertifikat als Root-Zertifikat per MDM an die iPads der Gruppe <span class="fill" style="min-width:8em">&nbsp;</span> verteilen,</li>
+      <li>dem Computer eine feste IP-Adresse geben und</li>
+      <li>prüfen, dass die iPads ihn im WLAN auf den Ports 8765 und 8766 (TCP) erreichen (keine Client-Isolation)?</li>
+    </ul>
+    <p>Vielen Dank!</p>
+  </div>
+
+  <h4>f) Warum kein „echtes“ Internet-Zertifikat?</h4>
+  <p>Internetseiten bekommen ihre Zertifikate von öffentlichen Stellen, z. B. kostenlos von Let's Encrypt. Dafür braucht man aber
+    eine <strong>eigene Internet-Adresse</strong> (Domain), muss über das Internet beweisen, dass sie einem gehört, und das
+    Zertifikat alle paar Wochen erneuern. Der Lernsachen-Heft-Server soll dagegen ohne Internet und ohne Domain auskommen – darum
+    macht er das nicht selbst. Wer sich auskennt, kann einen eigenen Webserver mit so einem Zertifikat vor den
+    Lernsachen-Heft-Server schalten (ein sogenannter Reverse-Proxy). Für die meisten Schulen sind die Wege a) bis e) einfacher.</p>
+</section>
+
+<!-- ============================================================ 10 -->
+<section id="datenschutz" class="chapter">
+  <h2><span class="nr">10</span> Datenschutz</h2>
+  <ul>
+    <li><strong>Alles bleibt auf dem Server-Computer.</strong> Der Server schickt nichts ins Internet und braucht kein Internet.
+      Es gibt kein Konto und keine Anmeldung.</li>
+    <li><strong>Keine Werbung, kein Tracking.</strong> Die Seiten, die die Kinder sehen, laden von sich aus nichts von fremden
+      Servern – Schriften, Bilder und Programme sind alle eingebaut. Ausnahme: Internet-Inhalte, die du selbst ins Heft gelegt
+      hast (z. B. ein Video oder eine Webseite), kommen beim Abspielen aus dem Internet.</li>
+    <li><strong>Namen der Kinder:</strong> Der Name, den ein Kind beim Speichern eingibt, steht im Ordnernamen, in der Datei und
+      in den Meldungen im Fenster des Servers. Vorname und erster Buchstabe des Nachnamens reichen völlig (z. B. „Max S.“). Die Hefte
+      enthalten außerdem alles, was das Kind hineingeschrieben, gemalt oder aufgenommen hat, und deine Rückmeldung.</li>
+    <li><strong>Wer kann was sehen?</strong> Wer den Code einer Austeilung kennt und im selben Netz ist, kann das Heft öffnen und
+      hineinspeichern – aber nicht die Hefte der anderen Kinder sehen. Ein persönlicher Rückgabe-Code öffnet nur das eine Heft
+      dieses Kindes. Alle Schülerhefte sieht nur, wer am Server-Computer sitzt oder den Lehrer-Link hat.
+      Die Codes sind kurz, damit Kinder sie abtippen können. Wer sich auskennt, könnte sie im Netz durchprobieren. Gib Hefte
+      deshalb nur so lange zurück, wie nötig: Haben alle Kinder ihr Heft gesehen, nimm die Rückgaben mit
+      „Zurücknehmen“ zurück oder beende das Austeilen.</li>
+    <li><strong>Lehrer-Link geheim halten</strong> (<a href="#lehrerversion">Kapitel 5.4</a>).</li>
+    <li><strong>Am Schuljahresende löschen:</strong> die Ordner der Kinder in <span class="path">Schülerhefte</span>, den
+      <span class="path">Daten/papierkorb</span> und <span class="path">Daten/rueckgabe</span> sowie beendete Austeilungen. Auf
+      geteilten Klassen-iPads außerdem die Website-Daten in Safari löschen (<em>Einstellungen → Apps → Safari → Verlauf und
+      Websitedaten löschen</em>; bei älterem iPadOS <em>Einstellungen → Safari</em>).</li>
+    <li><strong>Sicherungen</strong> (USB-Stick, Schul-Laufwerk) enthalten dieselben Daten – nur verschlüsselte Datenträger
+      benutzen und mitlöschen.</li>
+    <li><strong>Absprache:</strong> Kläre den Einsatz vorher mit der Schulleitung und der oder dem Datenschutzbeauftragten der
+      Schule – besonders, ob der Server auf einem privaten Computer laufen darf. Die Regeln dafür unterscheiden sich je nach
+      Bundesland.</li>
+  </ul>
+</section>
+
+<!-- ============================================================ 11 -->
+<section id="aktualisieren" class="chapter">
+  <h2><span class="nr">11</span> Aktualisieren und Sichern</h2>
+
+  <h3>11.1 Auf eine neue Version aktualisieren</h3>
+  <ol class="steps">
+    <li>Server beenden.</li>
+    <li>Die neue <span class="path">Lernsachen-Heft-Server.zip</span> herunterladen und entpacken (<a href="#installation">Kapitel 3</a>).</li>
+    <li>Im bisherigen Ordner den Ordner <span class="path">programm</span>, die drei Startdateien und
+      <span class="path">LIESMICH.html</span> durch die neuen ersetzen.</li>
+    <li>Die Ordner <span class="path">Schülerhefte</span> und <span class="path">Daten</span> <strong>behalten</strong> – darin
+      sind die Hefte der Kinder, die Austeilungen, Rückgaben, Einstellungen, der Lehrer-Schlüssel und das Zertifikat.</li>
+    <li>Server starten. Oben im Fenster steht „Lernsachen-Heft-Server &lt;Version&gt; läuft“ mit der neuen Version.</li>
+  </ol>
+  <p>So bleiben dein Lehrer-iPad verbunden, die Codes gültig und das Zertifikat auf den iPads gültig. Die Lehrerversion von
+    Lernsachen-Heft steckt im Ordner <span class="path">programm</span> und wird dabei mit aktualisiert. Auf dem Mac und unter
+    Windows kann beim ersten Start der neuen Version noch einmal die Sicherheitsabfrage kommen (<a href="#installation">Kapitel 3</a>).</p>
+
+  <h3>11.2 Sichern</h3>
+  <ul>
+    <li><strong>Schülerhefte und Server:</strong> Server beenden (oder zumindest eine Zeit wählen, in der niemand speichert) und
+      den ganzen Ordner „Lernsachen-Heft-Server“ kopieren – oder nur <span class="path">Schülerhefte</span> und
+      <span class="path">Daten</span>. Zurückholen = zurückkopieren.</li>
+    <li><strong>Deine eigenen Hefte</strong> liegen im Browser, nicht im Ordner: <span class="ui">„Sicherung“ → „Sichern …“</span>
+      auf jedem Gerät (<a href="#lehrerversion">Kapitel 5.5</a>).</li>
+  </ul>
+
+  <h3>11.3 Auf einen anderen Computer umziehen</h3>
+  <ol class="steps">
+    <li>Die Kinder speichern vorher alle ihre Hefte (was nur auf dem iPad liegt, gehört zur alten Adresse und ist danach nicht
+      mehr zu sehen).</li>
+    <li>Auf dem alten Computer und dem Lehrer-iPad die eigenen Hefte sichern (<span class="ui">„Sicherung“ → „Sichern …“</span>).</li>
+    <li>Server beenden und den ganzen Ordner auf den neuen Computer kopieren.</li>
+    <li>Dort starten (Sicherheitsabfragen wie bei der Installation) und die Sicherung mit
+      <span class="ui">„Sicherung“ → „Wiederherstellen …“</span> einspielen.</li>
+    <li>Der neue Computer hat eine andere IP-Adresse: Lehrer-iPad neu verbinden und dort die Sicherung wiederherstellen.
+      Neue QR-Codes an die Kinder.</li>
+  </ol>
+</section>
+
+<!-- ============================================================ 12 -->
+<section id="fragen" class="chapter faq">
+  <h2><span class="nr">12</span> Häufige Fragen und Probleme</h2>
+
+  <h3>Das iPad findet den Server nicht.</h3>
+  <ul>
+    <li>Sind iPad und Server-Computer im <strong>selben WLAN</strong>? (Nicht eins im Gäste-WLAN, das andere im Lehrer-WLAN.)</li>
+    <li>Ist die Adresse vollständig, mit <code>http://</code> vorne und <code>:8765</code> hinten? Safari versucht sonst manchmal
+      https.</li>
+    <li>Läuft der Server noch (Fenster offen)? Ist der Computer im Ruhezustand?</li>
+    <li>Hat die Firewall den Zugriff erlaubt (<a href="#installation">Kapitel 3</a>)?</li>
+    <li>Test: Öffne am Server-Computer selbst die Netzwerk-Adresse (z. B. <code>http://192.168.1.20:8765</code>). Geht es dort,
+      aber nicht am iPad, liegt es an der Firewall oder an der Client-Isolation des WLANs (<a href="#voraussetzungen">Kapitel 2</a>).</li>
+    <li>Läuft auf dem Server-Computer ein VPN? Dann kann er im Schulnetz unsichtbar sein – VPN ausschalten.</li>
+  </ul>
+
+  <h3>Das iPad zeigt „Diese Adresse ist hier nicht erlaubt.“</h3>
+  <p>Der Server wird über einen Namen geöffnet, den er nicht kennt (z. B. einen Namen, den die IT-Betreuung vergeben hat). Trag
+    ihn in <span class="path">Daten/einstellungen.json</span> bei <code>"erlaubteNamen"</code> ein
+    (<a href="#starten">Kapitel 4.4</a>) und starte den Server neu – oder benutze die IP-Adresse.</p>
+
+  <h3>Der QR-Code öffnet nichts.</h3>
+  <ul>
+    <li>Mit der normalen Kamera-App scannen, kurz ruhig halten und dann auf den gelben Link tippen.</li>
+    <li>Auf dem Beamer ist der Code zu klein oder spiegelt? Näher herangehen oder den Code eintippen (<a href="#austeilen">Kapitel 6.2</a>).</li>
+    <li>Sind auf den iPads Webinhalte beschränkt (Bildschirmzeit oder Geräteverwaltung), kann Safari Adressen mit Zahlen
+      blockieren. Dann die Adresse des Servers dort freigeben lassen.</li>
+  </ul>
+
+  <h3>Das Fenster meldet „Fehler: Port 8765 ist schon belegt“.</h3>
+  <p>Ein anderes Programm benutzt diesen Port. Trag in <span class="path">Daten/einstellungen.json</span> bei
+    <code>"port"</code> eine andere Zahl ein, z. B. <code>8767</code> (<a href="#starten">Kapitel 4.4</a>) – nicht
+    <code>8766</code>, auch wenn das Fenster es vorschlägt: 8766 braucht die sichere Verbindung (https). Achtung: Mit einem
+    neuen Port ist „Meine Hefte“ zuerst leer, und das Lehrer-iPad muss sich neu verbinden.</p>
+
+  <h3>„Der Lernsachen-Heft-Server läuft schon.“</h3>
+  <p>Kein Fehler: Ein Server läuft bereits (vielleicht in einem verkleinerten Fenster im Dock bzw. in der Taskleiste). Der zweite
+    Start öffnet einfach nur die Lehrerversion.</p>
+
+  <h3>Das App-Fenster öffnet sich nicht.</h3>
+  <ul>
+    <li>Öffne <code>http://localhost:8765</code> selbst im Browser.</li>
+    <li>Steht in <span class="path">Daten/einstellungen.json</span> <code>"browserOeffnen": false</code>? Dann auf
+      <code>true</code> stellen.</li>
+    <li>Öffnet sich der falsche Browser, trag bei <code>"browser"</code> den gewünschten ein oder <code>"standard"</code>.</li>
+  </ul>
+
+  <h3>Auf dem Lehrer-iPad sind „Meine Hefte“ plötzlich leer.</h3>
+  <p>Die Hefte sind nicht gelöscht, sie gehören zu einer anderen Adresse. Mögliche Gründe: Die IP-Adresse des Servers hat sich
+    geändert, du hast von http zu https gewechselt (oder umgekehrt), oder du hast Safari statt des Home-Bildschirm-Symbols
+    benutzt. Öffne die alte Adresse bzw. den alten Weg wieder, sichere die Hefte („Sicherung“ → „Sichern …“) und stelle sie
+    unter der neuen Adresse wieder her. Damit es nicht wieder passiert: feste IP-Adresse (<a href="#voraussetzungen">Kapitel 2</a>).</p>
+
+  <h3>Ein Kind hat unter einem falschen Namen gespeichert.</h3>
+  <p>Menü <span class="ui">„…“</span> des Kinderordners → <span class="ui">„Umbenennen“</span>. Ist es eigentlich ein vorhandener
+    Name, gib genau diesen ein – dann werden die Ordner zusammengelegt. Liegt der Ordner in der falschen Klasse:
+    <span class="ui">„Verschieben nach …“</span>.</p>
+
+  <h3>Zwei Kinder haben denselben Namen benutzt.</h3>
+  <p>Überschrieben wird nichts – im Ordner liegen dann zwei Dateien, z. B. <span class="path">Mein Heft.html</span> und
+    <span class="path">Mein Heft (2).html</span>. Lass das zweite Kind noch einmal unter einem eindeutigen Namen speichern (z. B.
+    „Max T.“) und lösche danach seine alte Datei im Ordner des ersten Kindes. Oder verschiebe die Datei auf dem Server-Computer
+    im Ordner <span class="path">Schülerhefte</span> in einen neuen Ordner mit dem richtigen Namen.</p>
+
+  <h3>Ein Kind sieht „Kein Heft mit dem Code …“.</h3>
+  <p>Hat sich das Kind nicht vertippt, wurde das Austeilen beendet. Du kannst das Heft neu austeilen („Schülerheft öffnen“) – es
+    bekommt dann aber einen <strong>neuen Code</strong>, und die Kinder fangen mit einem frischen Heft an. Was sie unter dem alten
+    Code nicht gespeichert haben, ist auf dem iPad nicht mehr zu öffnen. Die schon gespeicherten Hefte bleiben in „Schülerhefte“,
+    lassen sich aber nicht mehr zurückgeben – zeig sie stattdessen „An der Tafel“ oder gib sie „Als Datei“ weiter.</p>
+
+  <h3>Das Kind sieht sein zurückgegebenes Heft nicht.</h3>
+  <ul>
+    <li>Arbeitet es an einem anderen iPad? Dann den persönlichen Code bzw. die Rückgabe-Karte benutzen.</li>
+    <li>Hat das Kind bei „Dein Heft ist zurück!“ auf „Später“ getippt? Dann fragt das iPad nicht noch einmal – den persönlichen
+      Code benutzen.</li>
+    <li>Hat es beim Öffnen „Neu anfangen“ gewählt oder öffnet es eine andere Adresse als vorher (https statt http)? Dann
+      ebenfalls den persönlichen Code benutzen.</li>
+    <li>Wurde die Rückgabe zurückgenommen? Dann neu zurückgeben. Wurde das Austeilen beendet, geht Zurückgeben nicht mehr.</li>
+    <li>Hat das iPad die Website-Daten gelöscht? Dann ebenfalls den persönlichen Code benutzen.</li>
+  </ul>
+
+  <h3>Das PDF erscheint nicht.</h3>
+  <p>Nach „PDF“ noch einmal auf <span class="ui">„PDF öffnen“</span> tippen. Öffnet sich kein Tab, ist das PDF als Download
+    gespeichert: in Safari auf das Pfeil-Symbol oben tippen oder in der Dateien-App unter „Downloads“ nachsehen. Große Hefte
+    brauchen etwas Zeit.</p>
+
+  <h3>Auf den iPads geht Aufnehmen oder die Kamera nicht.</h3>
+  <p>Das liegt an der http-Verbindung im Schulnetz – siehe <a href="#ton-kamera">Kapitel 9</a>.</p>
+
+  <h3>Safari meldet „Diese Verbindung ist nicht privat“.</h3>
+  <p>Das iPad hat die https-Adresse geöffnet, kennt das Zertifikat aber nicht. Zertifikat einrichten (<a href="#ton-kamera">Kapitel
+    9.3</a>) oder für dieses iPad die http-Adresse benutzen.</p>
+
+  <h3>Unter Windows bleibt das Fenster des Servers „stehen“.</h3>
+  <p>Klickt man in ein Windows-Konsolenfenster, kann es in einen Markieren-Modus gehen und das Programm anhalten. Dieser Modus
+    ist beim Server abgeschaltet. Steht im Fenstertitel trotzdem „Auswählen“ oder „Markieren“, drück <kbd>Enter</kbd> oder
+    <kbd>Esc</kbd> – dann läuft der Server weiter.</p>
+
+  <h3>macOS oder Windows lässt das Programm nicht starten.</h3>
+  <p>Das ist die Schutzabfrage für Programme, die nicht von einem bei Apple bzw. Microsoft registrierten Entwickler signiert
+    sind (macOS: Gatekeeper, Windows: SmartScreen). Wie
+    du sie einmal bestätigst, steht in <a href="#installation">Kapitel 3.3 und 3.4</a>.</p>
+
+  <h3>Ein Kind hat „Nicht gespeichert“ und Speichern klappt nicht.</h3>
+  <p>Meist ist das WLAN kurz weg oder der Server beendet. Nichts geht verloren: Der Stand bleibt auf dem iPad. Später, wenn der
+    Server wieder erreichbar ist, noch einmal speichern.</p>
+</section>
+
+<!-- ============================================================ 13 -->
+<section id="kurzanleitung" class="chapter quick">
+  <h2><span class="nr">13</span> Kurzanleitung zum Ausdrucken</h2>
+  <p>Adresse des Servers: <code>http://</code><span class="fill">&nbsp;</span><code>:8765</code></p>
+  <ol class="steps">
+    <li><strong>Starten</strong> Doppelklick auf „Lernsachen-Heft-Server starten (Mac / Windows / Linux)“. Das Fenster des
+      Servers offen lassen. Die Lehrerversion öffnet sich von selbst (sonst: <code>http://localhost:8765</code>).</li>
+    <li><strong>Lehrer-iPad verbinden (einmal)</strong> „Meine Hefte“ → „Server“ → „Lehrer-iPad verbinden …“ → QR-Code mit dem
+      iPad scannen → Teilen → „Zum Home-Bildschirm“. Den QR-Code nie an der Tafel zeigen.</li>
+    <li><strong>Austeilen</strong> „Meine Hefte“ → beim Heft „…“ → „Schülerheft öffnen“ → die Seite mit dem QR-Code an der Tafel
+      zeigen.</li>
+    <li><strong>Kinder arbeiten</strong> QR-Code scannen (oder Adresse + Code eintippen), arbeiten, dann „Speichern“ → Namen
+      eintragen → „Speichern“. Beim nächsten Öffnen: „Ich bin …“ (eigenes Heft) oder „Neu anfangen“ (anderes Kind am geteilten iPad).</li>
+    <li><strong>Korrigieren</strong> „Meine Hefte“ → „Schülerhefte“ → Kind → Heft antippen → hineinschreiben (speichert von
+      selbst) → „Rückmeldung“: Stempel + ein paar Sätze.</li>
+    <li><strong>Zurückgeben</strong> „Speichern und zurückgeben“ – oder auf der Tafelseite (über „Gerade ausgeteilt“) „Zurückgeben …“ → „Alle
+      zurückgeben“. Die Kinder öffnen den Klassen-Code wieder; an fremden iPads mit der Rückgabe-Karte. Erst danach
+      „Austeilen beenden“.</li>
+  </ol>
+  <div class="tip"><span class="label">Aufnehmen auf den iPads</span>
+    Fotos: im Bild-Dialog „Kamera-App“. Töne: Sprachmemos → Teilen → „In Dateien sichern“ → im Ton-Dialog „Hochladen“. Oder
+    am Server-Computer aufnehmen.</div>
+  <p><strong>Beenden:</strong> „Server“ → „Server beenden“ (oder das Fenster schließen). Vorher den Kindern Bescheid sagen.</p>
+</section>
+
+<footer>Lernsachen-Heft-Server 1.1.0 · Lernsachen.blog – CC BY-NC-SA 4.0</footer>
+</main>
+</body>
+</html>

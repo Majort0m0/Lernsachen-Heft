@@ -8,6 +8,8 @@
 
 **⬇ Komplett:** [Lernsachen-Heft-komplett.html](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft-komplett.html) – dieselbe App, dazu die Editoren von Quizsachen, Schiebesachen und Textsachen eingebaut: Übungen erstellen und bearbeiten auch ohne Internet (eine Datei, etwa 23 MB)
 
+**⬇ Für das Schulnetz:** [Lernsachen-Heft-Server.zip](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft-Server.zip) – Lernsachen-Heft als kleiner Server auf einem Mac-, Windows- oder Linux-Computer der Schule: die Lehrerversion (komplett, ohne Internet) auf dem Computer und dem Lehrer-iPad, Hefte per QR-Code an die iPads der Klasse austeilen, die Kinder speichern mit ihrem Namen zurück, du korrigierst, gibst eine Rückmeldung und gibst die Hefte zurück – alles bleibt im Schulnetz. **[Installations- und Nutzungsanleitung](https://majort0m0.github.io/Lernsachen-Heft/Lernsachen-Heft-Server-Anleitung.html)** (neu – bisher auf dem Mac erprobt; Rückmeldungen zu Windows und Linux sind willkommen)
+
 - **Text** direkt auf der Seite (WYSIWYG): zehn Schriften (u. a. Andika, Grundschrift, Druckschrift wie in Bayern, Schreibschrift VA und SAS, Handschrift, Comic), Größe, Farbe, fett, kursiv, unterstrichen, Ausrichtung je Absatz; Vorlesen des eigenen Textes, auf Wunsch schon beim Tippen (jedes Wort oder jeder Satz)
 - **Schreiben auf Linien:** Auf Lineatur-Seiten sitzt die Schrift genau auf den Linien
 - **Bilder:** Bildersuche bei BildWort (Symbole), ARASAAC (Piktogramme) und Wikimedia Commons (Fotos; von Haus aus aus, mit Jugendschutzfilter) – Reihenfolge einstellbar, das für ein Wort gewählte Bild kommt beim nächsten Mal zuerst; eigene Dateien, die Kamera (Front/Rück, mit Zoom) oder ein Bildschirmfoto der Seite; Bild-Editor mit Zuschneiden, Drehen, kombinierbaren Effekten (Stärke einstellbar) und Unkenntlich machen
@@ -73,7 +75,8 @@
 - **Tage in Farbe:** Wochenplan und Stundenpläne zeigen die Wochentage in den Farben des sprechenden Kalenderblatts (abschaltbar), die Wochentag-Schilder im Regal ebenso
 - **Lineal und Geodreieck liegen bereit**, sobald man auf eine Seite mit Mess- oder Zeichenaufgaben kommt („Formen zeichnen“, Strecken messen und zeichnen)
 - **Anleitung** in der App mit Kapiteln als Kacheln, Suche, „Wie mache ich eigentlich …?“ und den **Lehrplanbezügen**: vom Lehrplaninhalt zur passenden Vorlage
-- Keine Anmeldung, kein Server, keine Cookies – siehe [Datenschutz](DATENSCHUTZ.md)
+- **Lernsachen-Heft-Server fürs Schulnetz** (eigener Download, siehe oben): Lehrerversion auf dem Computer und dem Lehrer-iPad, „Schülerheft öffnen“ zeigt eine Seite mit QR-Code für die Tafel, die Kinder arbeiten im einfachen Modus und speichern mit ihrem Namen auf den Server; in „Meine Hefte“ erscheint der Ordner „Schülerhefte“ mit einem Ordner je Kind, zu Klassenordnern zusammenfassbar; korrigieren, Rückmeldung mit Stempel und Text (zum Vorlesen) und das Heft zurückgeben – auf dem iPad des Kindes kommt es von selbst; auf Wunsch sichere Verbindung (https) mit eigenem Zertifikat, damit die iPads auch aufnehmen dürfen
+- Keine Anmeldung, kein Server im Internet, keine Cookies – siehe [Datenschutz](DATENSCHUTZ.md)
 
 ## Lizenz
 
