@@ -2,7 +2,11 @@
 
 **Mein digitales Heft** – ein besonders einfach zu bedienender Notizblock für Schülerinnen und Schüler, auch für Schreibanfänger in der Grundschule und für die Förderschule. Optimiert für das iPad im Querformat, mit oder ohne Bildschirmtastatur.
 
-**▶ Direkt im Browser starten:** https://majort0m0.github.io/Lernsachen-Heft/
+**📱 Als App für das iPad:** Lernsachen-Heft gibt es auch im App Store – Hefte sicher in der App, als eigene Heft-Datei (.lernheft) per AirDrop, Mail oder Dateien-App weitergeben, Fotos freistellen und alle neuen Funktionen. Hefte aus der App öffnet auch die kostenlose Web-Fassung.
+
+<a href="https://apps.apple.com/app/lernsachen-heft/id6836383552"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/de-de" alt="Laden im App Store" height="48"></a>
+
+**▶ Direkt im Browser starten (kostenlos):** https://majort0m0.github.io/Lernsachen-Heft/
 
 **⬇ Herunterladen:** [Lernsachen-Heft.html](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft.html) (eine einzige Datei, läuft offline – einfach im Browser öffnen)
 
