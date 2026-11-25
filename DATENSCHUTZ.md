@@ -4,7 +4,7 @@ Diese Erklärung steht auch in der App unter „?“ → „Datenschutz“.
 
 **Kurz gesagt:**
 
-- Lernsachen-Heft hat keinen Server im Internet. Alles läuft in deinem Browser auf deinem Gerät (mit dem Lernsachen-Heft-Server auf einem Computer deiner Schule – siehe 9).
+- Lernsachen-Heft hat keinen Server im Internet. Alles läuft in deinem Browser auf deinem Gerät.
 - Deine Hefte werden nur auf deinem Gerät gespeichert – oder in Dateien, die du selbst speicherst und weitergibst.
 - Keine Anmeldung, keine Cookies, kein Tracking, keine Werbung.
 - Ins Internet geht es nur, wenn du die Bildersuche (ARASAAC, BildWort, Wikimedia Commons) benutzt, eine Bildadresse einfügst, ein Video, eine Webseite oder einen Link ins Heft holst und benutzt, das Wetter im Element „Datum“ zeigst, eine Karte auswählst oder auf der Seite heranzoomst, eine Übung mit Quizsachen, Schiebesachen oder Textsachen erstellst oder bearbeitest, beim KI-Partner eine KI-Seite öffnest oder Wörter mit einer KI über eine API-Schnittstelle suchen lässt.
@@ -63,10 +63,6 @@ Die Vorlese-Funktion nutzt die Sprachausgabe deines Geräts. Lernsachen-Heft sch
 
 Du entscheidest, was in einem Heft steht. Fotos und Tonaufnahmen von anderen Menschen gehören nur mit deren Einverständnis ins Heft – erst recht, wenn du das Heft weitergibst. Mit „Unkenntlich machen“ im Bild-Editor kannst du Gesichter, Namen oder Autokennzeichen verpixeln.
 
-## 9. Lernsachen-Heft-Server im Schulnetz
-
-Für Klassen gibt es Lernsachen-Heft auch als kleinen Server, den eine Schule oder Lehrkraft selbst auf einem eigenen Computer im Schulnetz startet (Installationsvariante „Lernsachen-Heft-Server“, [Anleitung](https://majort0m0.github.io/Lernsachen-Heft/Lernsachen-Heft-Server-Anleitung.html)). Dann gilt zusätzlich: Die Seiten kommen von diesem Computer, nicht aus dem Internet; der Server schickt nichts ins Internet. Ausgeteilte Hefte und alles, was Kinder mit „Speichern“ schicken – das Heft, den eingegebenen Namen und den Stand der Übungen –, liegen auf diesem Computer im Ordner „Schülerhefte“, sichtbar nur für die Lehrkraft (am Server-Computer oder mit ihrem Lehrer-Link); Korrekturen und Rückmeldungen der Lehrkraft stehen dort in der Datei des Kindes. Für den Namensvorschlag fragt der Server den Namen des Geräts im Schulnetz ab (z. B. „iPad von Max“) – gespeichert wird er nur, wenn das Kind ihn übernimmt. Auf dem Gerät des Kindes merkt sich der Browser das ausgeteilte Heft (IndexedDB), den Namen, den Stand der Übungen und eine zufällige Kennung der Kopie (localStorage), damit es weiterarbeiten kann und zurückgegebene Hefte findet. Mit eingeschalteter sicherer Verbindung (https) legt der Server ein eigenes Zertifikat an, das nur Adressen im Schulnetz bestätigen kann. Verantwortlich für diese Daten ist, wer den Server betreibt (Schule bzw. Lehrkraft) – den Ordner „Schülerhefte“ löschen, wenn er nicht mehr gebraucht wird, zum Beispiel am Ende des Schuljahres.
-
-## 10. Verantwortlich
+## 9. Verantwortlich
 
 Lernsachen-Heft wird von [Lernsachen.blog](https://lernsachen.blog) bereitgestellt. Durch Lernsachen-Heft werden keine personenbezogenen Daten an Lernsachen.blog übermittelt. Fragen zum Datenschutz und das Impressum findest du unter [lernsachen.blog](https://lernsachen.blog).

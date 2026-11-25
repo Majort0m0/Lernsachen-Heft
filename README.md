@@ -12,8 +12,6 @@
 
 **⬇ Komplett:** [Lernsachen-Heft-komplett.html](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft-komplett.html) – dieselbe App, dazu die Editoren von Quizsachen, Schiebesachen und Textsachen eingebaut: Übungen erstellen und bearbeiten auch ohne Internet (eine Datei, etwa 25 MB)
 
-**⬇ Für das Schulnetz:** [Lernsachen-Heft-Server.zip](https://github.com/Majort0m0/Lernsachen-Heft/releases/latest/download/Lernsachen-Heft-Server.zip) – Lernsachen-Heft als kleiner Server auf einem Mac-, Windows- oder Linux-Computer der Schule: die Lehrerversion (komplett, ohne Internet) auf dem Computer und dem Lehrer-iPad, Hefte per QR-Code an die iPads der Klasse austeilen, die Kinder speichern mit ihrem Namen zurück, du korrigierst, gibst eine Rückmeldung und gibst die Hefte zurück – alles bleibt im Schulnetz. **[Installations- und Nutzungsanleitung](https://majort0m0.github.io/Lernsachen-Heft/Lernsachen-Heft-Server-Anleitung.html)** (neu – bisher auf dem Mac erprobt; Rückmeldungen zu Windows und Linux sind willkommen)
-
 - **Text** direkt auf der Seite (WYSIWYG): elf Schriften – dieselben in Quizsachen, Schiebesachen und Textsachen – (u. a. Andika, Grundschrift, Druckschrift wie in Bayern, Schreibschrift VA und SAS, Handschrift, Comic); die „Schrift des Hefts“ gilt auch für neue Seiten aus Vorlagen und als erste Wahl in Arbeitsblättern wie den Mathe-Aufgaben (auf Wunsch auch für alle Seiten, die es schon gibt); Größe, Farbe, fett, kursiv, unterstrichen, Ausrichtung je Absatz; Vorlesen des eigenen Textes, auf Wunsch schon beim Tippen (jedes Wort oder jeder Satz)
 - **Schreiben auf Linien:** Auf Lineatur-Seiten sitzt die Schrift genau auf den Linien
 - **Schreibmaschine:** eine Seite wie im Schreibprogramm – Feld antippen und lostippen, auf Wunsch in zwei Spalten; wird der Text zu lang, kommt von selbst eine neue Seite, beim Löschen rückt er zurück; unten rechts steht dezent, auf welcher Seite des Textes man ist („2 / 3“)
@@ -81,7 +79,6 @@
 - **Tage in Farbe:** Wochenplan und Stundenpläne zeigen die Wochentage in den Farben des sprechenden Kalenderblatts (abschaltbar), die Wochentag-Schilder im Regal ebenso
 - **Lineal und Geodreieck liegen bereit**, sobald man auf eine Seite mit Mess- oder Zeichenaufgaben kommt („Formen zeichnen“, Strecken messen und zeichnen)
 - **Anleitung** in der App mit Kapiteln als Kacheln, Suche, „Wie mache ich eigentlich …?“ und den **Lehrplanbezügen**: vom Lehrplaninhalt zur passenden Vorlage
-- **Lernsachen-Heft-Server fürs Schulnetz** (eigener Download, siehe oben): Lehrerversion auf dem Computer und dem Lehrer-iPad, „Schülerheft öffnen“ zeigt eine Seite mit QR-Code für die Tafel, die Kinder arbeiten im einfachen Modus und speichern mit ihrem Namen auf den Server; in „Meine Hefte“ erscheint der Ordner „Schülerhefte“ mit einem Ordner je Kind, zu Klassenordnern zusammenfassbar; korrigieren, Rückmeldung mit Stempel und Text (zum Vorlesen) und das Heft zurückgeben – auf dem iPad des Kindes kommt es von selbst; auf Wunsch sichere Verbindung (https) mit eigenem Zertifikat, damit die iPads auch aufnehmen dürfen
 - Keine Anmeldung, kein Server im Internet, keine Cookies – siehe [Datenschutz](DATENSCHUTZ.md)
 
 ## Lizenz
@@ -250,7 +247,7 @@ Die Vorlage „Linksammlung“ (Kategorie Video & Web) sammelt bis zu 12 Links m
 
 ### Regal
 
-Der Knopf „Regal“ steht unten rechts in der Fußleiste, neben „Elemente“ und „Seite“ – dort öffnen alle drei ihre Leiste. Sprechblasen, Comic-Wörter, Figuren, Emojis, Wetter, Zeit und Kalender, Klasse (Strichliste, Glücksrad, Würfel, Gefühle, Ampel, Ablaufplan), Schilder, Schule, Wohnen, Küche und mehr – alles in einer Liste, rechts springst du zu einer Kategorie, oben suchst du (z. B. „Pfeil“). Antippen setzt ein Element auf die Seite; zum Hinziehen ziehst du es mit dem Finger zur Seite (oder hältst es kurz fest) – nach oben und unten wischen blättert durch das Regal. In Sprechblasen kannst du schreiben; die Spitze der Sprechblase ziehst du an dem gelben Punkt dorthin, wo jemand spricht. Ganz oben stehen **Persönlich** und **Selbst gemacht** (eigene Figuren und sprechende Fotos). Persönlich: Tippe auf der Seite ein Bild, eine Zeichnung oder einen Sticker an (oder markiere mehrere) und dann „Ablegen“ – oder wähle in der Leiste „Ins Regal legen“. Danach liegt es in jedem Heft bereit; mit „…“ benennst du es um oder löschst es. Es wird in diesem Browser gespeichert – in der Lehrerversion des Lernsachen-Heft-Servers auch auf dem Server-Computer. Liegt es nur im Browser, kann es verloren gehen, wenn die Browserdaten gelöscht werden – „Sichern“ (Einstellungen → Sichern) nimmt es mit.
+Der Knopf „Regal“ steht unten rechts in der Fußleiste, neben „Elemente“ und „Seite“ – dort öffnen alle drei ihre Leiste. Sprechblasen, Comic-Wörter, Figuren, Emojis, Wetter, Zeit und Kalender, Klasse (Strichliste, Glücksrad, Würfel, Gefühle, Ampel, Ablaufplan), Schilder, Schule, Wohnen, Küche und mehr – alles in einer Liste, rechts springst du zu einer Kategorie, oben suchst du (z. B. „Pfeil“). Antippen setzt ein Element auf die Seite; zum Hinziehen ziehst du es mit dem Finger zur Seite (oder hältst es kurz fest) – nach oben und unten wischen blättert durch das Regal. In Sprechblasen kannst du schreiben; die Spitze der Sprechblase ziehst du an dem gelben Punkt dorthin, wo jemand spricht. Ganz oben stehen **Persönlich** und **Selbst gemacht** (eigene Figuren und sprechende Fotos). Persönlich: Tippe auf der Seite ein Bild, eine Zeichnung oder einen Sticker an (oder markiere mehrere) und dann „Ablegen“ – oder wähle in der Leiste „Ins Regal legen“. Danach liegt es in jedem Heft bereit; mit „…“ benennst du es um oder löschst es. Es wird in diesem Browser gespeichert. Liegt es nur im Browser, kann es verloren gehen, wenn die Browserdaten gelöscht werden – „Sichern“ (Einstellungen → Sichern) nimmt es mit.
 
 ## Anordnen und bearbeiten
 
@@ -840,6 +837,5 @@ Jede genannte Vorlage findest du unter „+ Seite“ mit der Suche in der Vorlag
 - **Künstliche Intelligenz verstehen und nutzen:** „KI-Partner bauen“
 - **Informieren und recherchieren:** „Linksammlung“, „Nachrichten in leichter Sprache“, „QR-Plakat“, „Webseite“, „Video“
 - **Eigene Medien produzieren und präsentieren:** „Erklärbär“ (als Video), „Animation“, „Puppentheater“, „Hörspiel-Studio“, „Diaschau“, „Elevator Pitch“, Kategorie „Präsentation“
-
 
 > **Tipp für das iPad:** Öffne Lernsachen-Heft in Safari und wähle „Teilen → Zum Home-Bildschirm“. Dann startet es wie eine App und der Speicher bleibt länger erhalten. Speichere wichtige Hefte trotzdem ab und zu als Datei.
